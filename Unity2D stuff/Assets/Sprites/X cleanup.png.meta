@@ -1,0 +1,5038 @@
+fileFormatVersion: 2
+guid: 0bfe809f579b6e84bbb471ce99cc5455
+timeCreated: 1426172717
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: X cleanup_0
+    21300002: X cleanup_1
+    21300004: X cleanup_2
+    21300006: X cleanup_3
+    21300008: X cleanup_4
+    21300010: X cleanup_5
+    21300012: X cleanup_6
+    21300014: X cleanup_7
+    21300016: X cleanup_8
+    21300018: X cleanup_9
+    21300020: X cleanup_10
+    21300022: X cleanup_11
+    21300024: X cleanup_12
+    21300026: X cleanup_13
+    21300028: X cleanup_14
+    21300030: X cleanup_15
+    21300032: X cleanup_16
+    21300034: X cleanup_17
+    21300036: X cleanup_18
+    21300038: X cleanup_19
+    21300040: X cleanup_20
+    21300042: X cleanup_21
+    21300044: X cleanup_22
+    21300046: X cleanup_23
+    21300048: X cleanup_24
+    21300050: X cleanup_25
+    21300052: X cleanup_26
+    21300054: X cleanup_27
+    21300056: X cleanup_28
+    21300058: X cleanup_29
+    21300060: X cleanup_30
+    21300062: X cleanup_31
+    21300064: X cleanup_32
+    21300066: X cleanup_33
+    21300068: X cleanup_34
+    21300070: X cleanup_35
+    21300072: X cleanup_36
+    21300074: X cleanup_37
+    21300076: X cleanup_38
+    21300078: X cleanup_39
+    21300080: X cleanup_40
+    21300082: X cleanup_41
+    21300084: X cleanup_42
+    21300086: X cleanup_43
+    21300088: X cleanup_44
+    21300090: X cleanup_45
+    21300092: X cleanup_46
+    21300094: X cleanup_47
+    21300096: X cleanup_48
+    21300098: X cleanup_49
+    21300100: X cleanup_50
+    21300102: X cleanup_51
+    21300104: X cleanup_52
+    21300106: X cleanup_53
+    21300108: X cleanup_54
+    21300110: X cleanup_55
+    21300112: X cleanup_56
+    21300114: X cleanup_57
+    21300116: X cleanup_58
+    21300118: X cleanup_59
+    21300120: X cleanup_60
+    21300122: X cleanup_61
+    21300124: X cleanup_62
+    21300126: X cleanup_63
+    21300128: X cleanup_64
+    21300130: X cleanup_65
+    21300132: X cleanup_66
+    21300134: X cleanup_67
+    21300136: X cleanup_68
+    21300138: X cleanup_69
+    21300140: X cleanup_70
+    21300142: X cleanup_71
+    21300144: X cleanup_72
+    21300146: X cleanup_73
+    21300148: X cleanup_74
+    21300150: X cleanup_75
+    21300152: X cleanup_76
+    21300154: X cleanup_77
+    21300156: X cleanup_78
+    21300158: X cleanup_79
+    21300160: X cleanup_80
+    21300162: X cleanup_81
+    21300164: X cleanup_82
+    21300166: X cleanup_83
+    21300168: X cleanup_84
+    21300170: X cleanup_85
+    21300172: X cleanup_86
+    21300174: X cleanup_87
+    21300176: X cleanup_88
+    21300178: X cleanup_89
+    21300180: X cleanup_90
+    21300182: X cleanup_91
+    21300184: X cleanup_92
+    21300186: X cleanup_93
+    21300188: X cleanup_94
+    21300190: X cleanup_95
+    21300192: X cleanup_96
+    21300194: X cleanup_97
+    21300196: X cleanup_98
+    21300198: X cleanup_99
+    21300200: X cleanup_100
+    21300202: X cleanup_101
+    21300204: X cleanup_102
+    21300206: X cleanup_103
+    21300208: X cleanup_104
+    21300210: X cleanup_105
+    21300212: X cleanup_106
+    21300214: X cleanup_107
+    21300216: X cleanup_108
+    21300218: X cleanup_109
+    21300220: X cleanup_110
+    21300222: X cleanup_111
+    21300224: X cleanup_112
+    21300226: X cleanup_113
+    21300228: X cleanup_114
+    21300230: X cleanup_115
+    21300232: X cleanup_116
+    21300234: X cleanup_117
+    21300236: X cleanup_118
+    21300238: X cleanup_119
+    21300240: X cleanup_120
+    21300242: X cleanup_121
+    21300244: X cleanup_122
+    21300246: X cleanup_123
+    21300248: X cleanup_124
+    21300250: X cleanup_125
+    21300252: X cleanup_126
+    21300254: X cleanup_127
+    21300256: X cleanup_128
+    21300258: X cleanup_129
+    21300260: X cleanup_130
+    21300262: X cleanup_131
+    21300264: X cleanup_132
+    21300266: X cleanup_133
+    21300268: X cleanup_134
+    21300270: X cleanup_135
+    21300272: X cleanup_136
+    21300274: X cleanup_137
+    21300276: X cleanup_138
+    21300278: X cleanup_139
+    21300280: X cleanup_140
+    21300282: X cleanup_141
+    21300284: X cleanup_142
+    21300286: X cleanup_143
+    21300288: X cleanup_144
+    21300290: X cleanup_145
+    21300292: X cleanup_146
+    21300294: X cleanup_147
+    21300296: X cleanup_148
+    21300298: X cleanup_149
+    21300300: X cleanup_150
+    21300302: X cleanup_151
+    21300304: X cleanup_152
+    21300306: X cleanup_153
+    21300308: X cleanup_154
+    21300310: X cleanup_155
+    21300312: X cleanup_156
+    21300314: X cleanup_157
+    21300316: X cleanup_158
+    21300318: X cleanup_159
+    21300320: X cleanup_160
+    21300322: X cleanup_161
+    21300324: X cleanup_162
+    21300326: X cleanup_163
+    21300328: X cleanup_164
+    21300330: X cleanup_165
+    21300332: X cleanup_166
+    21300334: X cleanup_167
+    21300336: X cleanup_168
+    21300338: X cleanup_169
+    21300340: X cleanup_170
+    21300342: X cleanup_171
+    21300344: X cleanup_172
+    21300346: X cleanup_173
+    21300348: X cleanup_174
+    21300350: X cleanup_175
+    21300352: X cleanup_176
+    21300354: X cleanup_177
+    21300356: X cleanup_178
+    21300358: X cleanup_179
+    21300360: X cleanup_180
+    21300362: X cleanup_181
+    21300364: X cleanup_182
+    21300366: X cleanup_183
+    21300368: X cleanup_184
+    21300370: X cleanup_185
+    21300372: X cleanup_186
+    21300374: X cleanup_187
+    21300376: X cleanup_188
+    21300378: X cleanup_189
+    21300380: X cleanup_190
+    21300382: X cleanup_191
+    21300384: X cleanup_192
+    21300386: X cleanup_193
+    21300388: X cleanup_194
+    21300390: X cleanup_195
+    21300392: X cleanup_196
+    21300394: X cleanup_197
+    21300396: X cleanup_198
+    21300398: X cleanup_199
+    21300400: X cleanup_200
+    21300402: X cleanup_201
+    21300404: X cleanup_202
+    21300406: X cleanup_203
+    21300408: X cleanup_204
+    21300410: X cleanup_205
+    21300412: X cleanup_206
+    21300414: X cleanup_207
+    21300416: X cleanup_208
+    21300418: X cleanup_209
+    21300420: X cleanup_210
+    21300422: X cleanup_211
+    21300424: X cleanup_212
+    21300426: X cleanup_213
+    21300428: X cleanup_214
+    21300430: X cleanup_215
+    21300432: X cleanup_216
+    21300434: X cleanup_217
+    21300436: X cleanup_218
+    21300438: X cleanup_219
+    21300440: X cleanup_220
+    21300442: X cleanup_221
+    21300444: X cleanup_222
+    21300446: X cleanup_223
+    21300448: X cleanup_224
+    21300450: X cleanup_225
+    21300452: X cleanup_226
+    21300454: X cleanup_227
+    21300456: X cleanup_228
+    21300458: X cleanup_229
+    21300460: X cleanup_230
+    21300462: X cleanup_231
+    21300464: X cleanup_232
+    21300466: X cleanup_233
+    21300468: X cleanup_234
+    21300470: X cleanup_235
+    21300472: X cleanup_236
+    21300474: X cleanup_237
+    21300476: X cleanup_238
+    21300478: X cleanup_239
+    21300480: X cleanup_240
+    21300482: X cleanup_241
+    21300484: X cleanup_242
+    21300486: X cleanup_243
+    21300488: X cleanup_244
+    21300490: X cleanup_245
+    21300492: X cleanup_246
+    21300494: X cleanup_247
+    21300496: X cleanup_248
+    21300498: X cleanup_249
+    21300500: X cleanup_250
+    21300502: X cleanup_251
+    21300504: X cleanup_252
+    21300506: X cleanup_253
+    21300508: X cleanup_254
+    21300510: X cleanup_255
+    21300512: X cleanup_256
+    21300514: X cleanup_257
+    21300516: X cleanup_258
+    21300518: X cleanup_259
+    21300520: X cleanup_260
+    21300522: X cleanup_261
+    21300524: X cleanup_262
+    21300526: X cleanup_263
+    21300528: X cleanup_264
+    21300530: X cleanup_265
+    21300532: X cleanup_266
+    21300534: X cleanup_267
+    21300536: X cleanup_268
+    21300538: X cleanup_269
+    21300540: X cleanup_270
+    21300542: X cleanup_271
+    21300544: X cleanup_272
+    21300546: X cleanup_273
+    21300548: X cleanup_274
+    21300550: X cleanup_275
+    21300552: X cleanup_276
+    21300554: X cleanup_277
+    21300556: X cleanup_278
+    21300558: X cleanup_279
+    21300560: X cleanup_280
+    21300562: X cleanup_281
+    21300564: X cleanup_282
+    21300566: X cleanup_283
+    21300568: X cleanup_284
+    21300570: X cleanup_285
+    21300572: X cleanup_286
+    21300574: X cleanup_287
+    21300576: X cleanup_288
+    21300578: X cleanup_289
+    21300580: X cleanup_290
+    21300582: X cleanup_291
+    21300584: X cleanup_292
+    21300586: X cleanup_293
+    21300588: X cleanup_294
+    21300590: X cleanup_295
+    21300592: X cleanup_296
+    21300594: X cleanup_297
+    21300596: X cleanup_298
+    21300598: X cleanup_299
+    21300600: X cleanup_300
+    21300602: X cleanup_301
+    21300604: X cleanup_302
+    21300606: X cleanup_303
+    21300608: X cleanup_304
+    21300610: X cleanup_305
+    21300612: X cleanup_306
+    21300614: X cleanup_307
+    21300616: X cleanup_308
+    21300618: X cleanup_309
+    21300620: X cleanup_310
+    21300622: X cleanup_311
+    21300624: X cleanup_312
+    21300626: X cleanup_313
+    21300628: X cleanup_314
+    21300630: X cleanup_315
+    21300632: X cleanup_316
+    21300634: X cleanup_317
+    21300636: X cleanup_318
+    21300638: X cleanup_319
+    21300640: X cleanup_320
+    21300642: X cleanup_321
+    21300644: X cleanup_322
+    21300646: X cleanup_323
+    21300648: X cleanup_324
+    21300650: X cleanup_325
+    21300652: X cleanup_326
+    21300654: X cleanup_327
+    21300656: X cleanup_328
+    21300658: X cleanup_329
+    21300660: X cleanup_330
+    21300662: X cleanup_331
+    21300664: X cleanup_332
+    21300666: X cleanup_333
+    21300668: X cleanup_334
+    21300670: X cleanup_335
+    21300672: X cleanup_336
+    21300674: X cleanup_337
+    21300676: X cleanup_338
+    21300678: X cleanup_339
+    21300680: X cleanup_340
+    21300682: X cleanup_341
+    21300684: X cleanup_342
+    21300686: X cleanup_343
+    21300688: X cleanup_344
+    21300690: X cleanup_345
+    21300692: X cleanup_346
+    21300694: X cleanup_347
+    21300696: X cleanup_348
+    21300698: X cleanup_349
+    21300700: X cleanup_350
+    21300702: X cleanup_351
+    21300704: X cleanup_352
+    21300706: X cleanup_353
+    21300708: X cleanup_354
+    21300710: X cleanup_355
+    21300712: X cleanup_356
+    21300714: X cleanup_357
+    21300716: X cleanup_358
+    21300718: X cleanup_359
+    21300720: X cleanup_360
+    21300722: X cleanup_361
+    21300724: X cleanup_362
+    21300726: X cleanup_363
+    21300728: X cleanup_364
+    21300730: X cleanup_365
+    21300732: X cleanup_366
+    21300734: X cleanup_367
+    21300736: X cleanup_368
+    21300738: X cleanup_369
+    21300740: X cleanup_370
+    21300742: X cleanup_371
+    21300744: X cleanup_372
+    21300746: X cleanup_373
+    21300748: X cleanup_374
+    21300750: X cleanup_375
+    21300752: X cleanup_376
+    21300754: X cleanup_377
+    21300756: X cleanup_378
+    21300758: X cleanup_379
+    21300760: X cleanup_380
+    21300762: X cleanup_381
+    21300764: X cleanup_382
+    21300766: X cleanup_383
+    21300768: X cleanup_384
+    21300770: X cleanup_385
+    21300772: X cleanup_386
+    21300774: X cleanup_387
+    21300776: X cleanup_388
+    21300778: X cleanup_389
+    21300780: X cleanup_390
+    21300782: X cleanup_391
+    21300784: X cleanup_392
+    21300786: X cleanup_393
+    21300788: X cleanup_394
+    21300790: X cleanup_395
+    21300792: X cleanup_396
+    21300794: X cleanup_397
+    21300796: X cleanup_398
+    21300798: X cleanup_399
+    21300800: X cleanup_400
+    21300802: X cleanup_401
+    21300804: X cleanup_402
+    21300806: X cleanup_403
+    21300808: X cleanup_404
+    21300810: X cleanup_405
+    21300812: X cleanup_406
+    21300814: X cleanup_407
+    21300816: X cleanup_408
+    21300818: X cleanup_409
+    21300820: X cleanup_410
+    21300822: X cleanup_411
+    21300824: X cleanup_412
+    21300826: X cleanup_413
+    21300828: X cleanup_414
+    21300830: X cleanup_415
+    21300832: X cleanup_416
+    21300834: X cleanup_417
+    21300836: X cleanup_418
+    21300838: X cleanup_419
+    21300840: X cleanup_420
+    21300842: X cleanup_421
+    21300844: X cleanup_422
+    21300846: X cleanup_423
+    21300848: X cleanup_424
+    21300850: X cleanup_425
+    21300852: X cleanup_426
+    21300854: X cleanup_427
+    21300856: X cleanup_428
+    21300858: X cleanup_429
+    21300860: X cleanup_430
+    21300862: X cleanup_431
+    21300864: X cleanup_432
+    21300866: X cleanup_433
+    21300868: X cleanup_434
+    21300870: X cleanup_435
+    21300872: X cleanup_436
+    21300874: X cleanup_437
+    21300876: X cleanup_438
+    21300878: X cleanup_439
+    21300880: X cleanup_440
+    21300882: X cleanup_441
+    21300884: X cleanup_442
+    21300886: X cleanup_443
+    21300888: X cleanup_444
+    21300890: X cleanup_445
+    21300892: X cleanup_446
+    21300894: X cleanup_447
+    21300896: X cleanup_448
+    21300898: X cleanup_449
+    21300900: X cleanup_450
+    21300902: X cleanup_451
+    21300904: X cleanup_452
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: X cleanup_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 845
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 846
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_2
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 846
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_3
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 850
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_4
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 851
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_5
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 848
+        width: 35
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_6
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 844
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_7
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 844
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_8
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 842
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_9
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 842
+        width: 42
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_10
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 842
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_11
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 843
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_12
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 843
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_13
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 847
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_14
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 848
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_15
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 848
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_16
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 842
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_17
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 842
+        width: 42
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_18
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 842
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_19
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 843
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_20
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 843
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_21
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 855
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_22
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 859
+        width: 5
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_23
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 865
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_24
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 783
+        width: 70
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_25
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 782
+        width: 53
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_26
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 785
+        width: 53
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_27
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 782
+        width: 68
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_28
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 781
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_29
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 783
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_30
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 785
+        width: 53
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_31
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 796
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_32
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 801
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_33
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 804
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_34
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 786
+        width: 70
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_35
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 785
+        width: 53
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_36
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 788
+        width: 53
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_37
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 785
+        width: 68
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_38
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 784
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_39
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 786
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_40
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 788
+        width: 53
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_41
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 701
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_42
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 700
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_43
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 700
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_44
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 699
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_45
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 700
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_46
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 703
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_47
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 707
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_48
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 706
+        width: 53
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_49
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 705
+        width: 53
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_50
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 704
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_51
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 699
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_52
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 705
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_53
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 712
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_54
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 711
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_55
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 711
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_56
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 710
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_57
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 711
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_58
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 714
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_59
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 718
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_60
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 717
+        width: 53
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_61
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 716
+        width: 53
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_62
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 717
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_63
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 712
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_64
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 718
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_65
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 711
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_66
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 698
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_67
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 665
+        width: 39
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_68
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 688
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_69
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 688
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_70
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 688
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_71
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 688
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_72
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 688
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_73
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 688
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_74
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 688
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_75
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 688
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_76
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 688
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_77
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 688
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_78
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 686
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_79
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 688
+        width: 20
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_80
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 688
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_81
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 688
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_82
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 688
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_83
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 675
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_84
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 673
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_85
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 675
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_86
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 675
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_87
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 675
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_88
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 675
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_89
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 675
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_90
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 675
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_91
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 675
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_92
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 673
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_93
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 675
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_94
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 675
+        width: 23
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_95
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 631
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_96
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 630
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_97
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 631
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_98
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 631
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_99
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 633
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_100
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 679
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_101
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 679
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_102
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 677
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_103
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 664
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_104
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 660
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_105
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 620
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_106
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 619
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_107
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 620
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_108
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 620
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_109
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 622
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_110
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 666
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_111
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 666
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_112
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 657
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_113
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 650
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_114
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 651
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_115
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 651
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_116
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 639
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_117
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 631
+        width: 45
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_118
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 653
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_119
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 651
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_120
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 653
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_121
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 651
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_122
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 639
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_123
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 625
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_124
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 630
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_125
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 631
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_126
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 630
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_127
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 640
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_128
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 640
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_129
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 640
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_130
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 632
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_131
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 641
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_132
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 639
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_133
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 612
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_134
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 615
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_135
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 626
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_136
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 630
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_137
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 626
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_138
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 628
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_139
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 628
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_140
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 617
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_141
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 598
+        width: 45
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_142
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 622
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_143
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 618
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_144
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 618
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_145
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 608
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_146
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 620
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_147
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 612
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_148
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 611
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_149
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 616
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_150
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 558
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_151
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 558
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_152
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 558
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_153
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 558
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_154
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 558
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_155
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 558
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_156
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 596
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_157
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 578
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_158
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 572
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_159
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 578
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_160
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 582
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_161
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 569
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_162
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 569
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_163
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 569
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_164
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 569
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_165
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 569
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_166
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 569
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_167
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 600
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_168
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 599
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_169
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 601
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_170
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 600
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_171
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 602
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_172
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 603
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_173
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 588
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_174
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 589
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_175
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 585
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_176
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 594
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_177
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 591
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_178
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 574
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_179
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 567
+        width: 45
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_180
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 487
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_181
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 488
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_182
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 488
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_183
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 488
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_184
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 488
+        width: 42
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_185
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 488
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_186
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 489
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_187
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 489
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_188
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 505
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_189
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 500
+        width: 10
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_190
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 500
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_191
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 501
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_192
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 501
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_193
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 499
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_194
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 499
+        width: 42
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_195
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 499
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_196
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 500
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_197
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 500
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_198
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 520
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_199
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 505
+        width: 5
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_200
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 524
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_201
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 510
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_202
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 428
+        width: 70
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_203
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 427
+        width: 53
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_204
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 430
+        width: 53
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_205
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 427
+        width: 68
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_206
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 426
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_207
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 428
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_208
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 430
+        width: 53
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_209
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 438
+        width: 70
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_210
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 437
+        width: 53
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_211
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 440
+        width: 53
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_212
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 437
+        width: 68
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_213
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 436
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_214
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 438
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_215
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 440
+        width: 53
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_216
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 346
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_217
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 345
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_218
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 345
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_219
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 344
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_220
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 345
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_221
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 348
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_222
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 352
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_223
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 351
+        width: 53
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_224
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 350
+        width: 53
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_225
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 349
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_226
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 344
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_227
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 350
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_228
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 356
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_229
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 355
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_230
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 355
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_231
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 354
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_232
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 355
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_233
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 358
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_234
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 362
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_235
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 361
+        width: 53
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_236
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 360
+        width: 53
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_237
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 363
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_238
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 358
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_239
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 364
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_240
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 357
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_241
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 343
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_242
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 265
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_243
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 264
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_244
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 265
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_245
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 265
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_246
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 267
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_247
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 275
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_248
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 274
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_249
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 275
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_250
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 275
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_251
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 277
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_252
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 315
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_253
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 315
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_254
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 315
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_255
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 315
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_256
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 315
+        width: 27
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_257
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 315
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_258
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 254
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_259
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 255
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_260
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 271
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_261
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 272
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_262
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 270
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_263
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 269
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_264
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 268
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_265
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 269
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_266
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 269
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_267
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 203
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_268
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 203
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_269
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 203
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_270
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 203
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_271
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 203
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_272
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 203
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_273
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 213
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_274
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 213
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_275
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 213
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_276
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 213
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_277
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 213
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_278
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 213
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_279
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 249
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_280
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 249
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_281
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 247
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_282
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 249
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_283
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 249
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_284
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 238
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_285
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 238
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_286
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 238
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_287
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 236
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_288
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 238
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_289
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 238
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_290
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 238
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_291
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 200
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_292
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 200
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_293
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 198
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_294
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 200
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_295
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 200
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_296
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 195
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_297
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 192
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_298
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 191
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_299
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 190
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_300
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 185
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_301
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 185
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_302
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 185
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_303
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 183
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_304
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 185
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_305
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 185
+        width: 24
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_306
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 185
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_307
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 185
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_308
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 185
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_309
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 185
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_310
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 138
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_311
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 136
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_312
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 134
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_313
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 133
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_314
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 134
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_315
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 134
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_316
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 134
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_317
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 133
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_318
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 134
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_319
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 134
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_320
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 133
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_321
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 133
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_322
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 133
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_323
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 143
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_324
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 136
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_325
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 136
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_326
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 136
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_327
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 133
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_328
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 133
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_329
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 136
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_330
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 161
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_331
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 168
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_332
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 162
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_333
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 143
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_334
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 144
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_335
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 146
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_336
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 127
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_337
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 148
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_338
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 128
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_339
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 131
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_340
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 127
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_341
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 138
+        width: 25
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_342
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 30
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_343
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 72
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_344
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 81
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_345
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 89
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_346
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 89
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_347
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 89
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_348
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 77
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_349
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 78
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_350
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 79
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_351
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 85
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_352
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 84
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_353
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 80
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_354
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 8
+        width: 147
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_355
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 82
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_356
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 81
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_357
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 81
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_358
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 80
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_359
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 82
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_360
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 79
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_361
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 75
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_362
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 40
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_363
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 74
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_364
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 78
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_365
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 57
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_366
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 74
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_367
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 71
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_368
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 71
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_369
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 69
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_370
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 71
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_371
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 65
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_372
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 71
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_373
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 71
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_374
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 71
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_375
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 71
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_376
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 71
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_377
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 71
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_378
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 26
+        width: 11
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_379
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 37
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_380
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 47
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_381
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 46
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_382
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 46
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_383
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 45
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_384
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 64
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_385
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 65
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_386
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 63
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_387
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 63
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_388
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 32
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_389
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 60
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_390
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 55
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_391
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 53
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_392
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 53
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_393
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 53
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_394
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 53
+        width: 28
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_395
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 55
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_396
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 55
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_397
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 55
+        width: 29
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_398
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 55
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_399
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 55
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_400
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 55
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_401
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 47
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_402
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 50
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_403
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 45
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_404
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 41
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_405
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 47
+        width: 39
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_406
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 36
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_407
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 39
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_408
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 39
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_409
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 39
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_410
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 42
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_411
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 38
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_412
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 37
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_413
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 25
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_414
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 8
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_415
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 8
+        width: 37
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_416
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 10
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_417
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 10
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_418
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 8
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_419
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 10
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_420
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 10
+        width: 27
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_421
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 10
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_422
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 8
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_423
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 10
+        width: 46
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_424
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 16
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_425
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 16
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_426
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 16
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_427
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 16
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_428
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 8
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_429
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 8
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_430
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 10
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_431
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 8
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_432
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 10
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_433
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 10
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_434
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 10
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_435
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 10
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_436
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 10
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_437
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 8
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_438
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 3
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_439
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_440
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 3
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_441
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 3
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_442
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 3
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_443
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 3
+        width: 31
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_444
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 3
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_445
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 3
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_446
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 3
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_447
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 1
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_448
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 1
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_449
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 3
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_450
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 3
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_451
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 3
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: X cleanup_452
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 3
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
