@@ -5,9 +5,10 @@ using UnityEngine.UI;
 public class EntityStats : MonoBehaviour
 {
     public bool animate = true;
-    public float curHealth;
-    float maxHealth = 100;
-    Image hpBar;
+    public float curHealth = 100;
+    public float maxHealth = 100;
+    public float touchDmg = 0;//amount of damage done to entities this entity touches
+    public Image hpBar;
 
     // Use this for initialization
     void Start()
@@ -15,18 +16,6 @@ public class EntityStats : MonoBehaviour
         curHealth = maxHealth;
         hpBar = gameObject.GetComponentInChildren<Image>();
     }
-
-    //defines behaviour when entity impacts other things
-    public void Hit(GameObject entity, string tag)
-    {
-        if (entity.tag == tag)//if gameObject hit is a bullet
-        {
-            curHealth -= entity.GetComponent<BulletScript>().getDamage();//deal damage to player based on bullet's damage
-            hpBar.fillAmount = (curHealth/maxHealth);
-        }
-            
-    }
-
     //defines behavior when entity's health drops to zero
     public virtual void Death() 
     {
@@ -39,4 +28,5 @@ public class EntityStats : MonoBehaviour
         if (curHealth <= 0)
             Death();
     }
+
 }

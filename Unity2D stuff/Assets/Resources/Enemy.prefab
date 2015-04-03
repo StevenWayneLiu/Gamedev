@@ -48,10 +48,9 @@ GameObject:
   - 114: {fileID: 11441530}
   - 50: {fileID: 5021578}
   - 212: {fileID: 21249842}
-  - 114: {fileID: 11457808}
   m_Layer: 9
   m_Name: Enemy
-  m_TagString: Enemy
+  m_TagString: Entity
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,18 +111,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchTime: 1
---- !u!114 &11457808
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f4c79602236ef242bbfeb48315a26ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocity: 10
 --- !u!114 &11491822
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -136,7 +123,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animate: 1
-  curHealth: 0
+  curHealth: 1
+  maxHealth: 100
+  touchDmg: 5
+  hpBar: {fileID: 0}
 --- !u!114 &11493284
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -203,7 +193,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300004, guid: f44d1e5d41628f74887a7853b5fe1a3e, type: 3}
   m_Color: {r: .920689642, g: .142165333, b: .142165333, a: 1}
 --- !u!222 &22296750
 CanvasRenderer:

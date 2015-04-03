@@ -7,9 +7,19 @@ public class PlayerStats : EntityStats {
     {
         //go to game-over screen
     }
+
     void OnTriggerEnter2D(Collider2D collider)
     {
         GameObject entity = collider.gameObject;//find gameObject for collider hit
-        Hit(entity, "Enemy");
+        if (entity.tag == "Entity")//if gameObject hit is a bullet
+        {
+            curHealth -= entity.GetComponent<EnemyStats>().touchDmg;//deal damage to player based on bullet's damage
+            hpBar.fillAmount = (curHealth / maxHealth);
+        }
+        if(entity.tag == "Bullet")
+        {
+            curHealth -= entity.GetComponent<BulletScript>().getDamage();//deal damage to player based on bullet's damage
+            hpBar.fillAmount = (curHealth / maxHealth);
+        }
     }
 }

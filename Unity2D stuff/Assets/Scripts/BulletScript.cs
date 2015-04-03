@@ -42,7 +42,7 @@ public class BulletScript : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D collider)//do stuff when bullet hits target
     {
         GameObject entity = collider.gameObject;//find gameObject for collider hit
-        if (entity.tag == "Enemy" && isFired)//if gameObject hit is a bullet and the bullet is active
+        if (entity.tag == "Entity" && isFired)//if gameObject hit isn't a bullet and the bullet is active
         {
             setFired(false,buff);//deactivate bullet and move to buffer
         }

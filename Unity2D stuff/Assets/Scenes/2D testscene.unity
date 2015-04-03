@@ -250,11 +250,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: .5
       objectReference: {fileID: 0}
-    - target: {fileID: 21249842, guid: 48c3b8e1d752d3245b3be8cb77f068b8, type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: f44d1e5d41628f74887a7853b5fe1a3e,
-        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 48c3b8e1d752d3245b3be8cb77f068b8, type: 2}
   m_IsPrefabParent: 0
@@ -369,6 +364,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animate: 1
   curHealth: 0
+  maxHealth: 100
+  touchDmg: 0
+  hpBar: {fileID: 0}
 --- !u!1 &954735798
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,7 +538,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 428940, guid: 5aec111cd57e59a48af133ae600a785e, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11476930, guid: 5aec111cd57e59a48af133ae600a785e, type: 2}
       propertyPath: sprite
