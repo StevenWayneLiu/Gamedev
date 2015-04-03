@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\EnemyManager.cs" />
      <Compile Include="Assets\Scripts\EnemyMoveScript.cs" />
      <Compile Include="Assets\Scripts\EnemyStats.cs" />
+     <Compile Include="Assets\Scripts\EntityStats.cs" />
      <Compile Include="Assets\Scripts\FlyerController2D.cs" />
      <Compile Include="Assets\Scripts\PhysicsController2D.cs" />
      <Compile Include="Assets\Scripts\PlayerStats.cs" />
