@@ -13,8 +13,17 @@ public class FlyerController2D : MonoBehaviour {
     private float angle;
 
     //bullet buffer stuff
-    public GameObject bullet;
-    private BulletPool bullets;//bullet buffer array, holds bullets inside
+    public GameObject bulletPrefab;
+    private GameObject[] bullets;//bullet buffer array, holds bullets inside
+    private int bufferIndex = 0;//current index of bullet array that is being acted on
+    private int bufferCap = 20;//the maximum number of bullets that can be on the screen at once
+    private Vector3 fireLoc;
+
+    //cooldown and fire rate
+    private float cooldown = 0.2f;//time it takes to be able to fire a bullet again when button is held down
+    public float fireRate;
+    private float cooldownTimer = 0f;//time until player is able to fire again while holding fire button
+    private Vector3 bufferLoc = new Vector3(0f, 0f, 0f);//location of the bullet buffer
 
     // Use this for initialization
     void Start()
@@ -22,7 +31,14 @@ public class FlyerController2D : MonoBehaviour {
         xVel = 0f;
         yVel = 0f;
         angle = 0f;
-        bullets = gameObject.GetComponent<BulletPool>();
+        fireRate = (1 / cooldown);//reflects how many shots can be fired in one second, rounded down
+        cooldownTimer = cooldown;//set timer to cooldown so player can fire immediately
+        bullets = new GameObject[bufferCap];
+        for (int index = 0; index < bufferCap; index++)//fills the buffer with bullets to use
+        {
+            bullets[index] = (GameObject)GameObject.Instantiate(bulletPrefab, bufferLoc, gameObject.transform.rotation);
+            bullets[index].GetComponent<BulletScript>().setFired(false,bufferLoc);//turn off bullet movement and send it to buffer
+        }
     }
 
     // Update is called once per frame
@@ -39,9 +55,19 @@ public class FlyerController2D : MonoBehaviour {
         else
             angle = Mathf.Atan(Mathf.Abs(yDir / xDir));//else, calculate angle for movement
 
-        if (fire)//if firing and the cooldown is over, then fire
+        //cooldown timer for firing shots
+        cooldownTimer += Time.deltaTime;//set a cooldown timer to count up from zero for number of seconds 
+        if (fire && cooldownTimer >= cooldown)//if firing and the cooldown is over, then fire
         {
-            bullets.Fire();
+            if (bufferIndex == bufferCap)//if at buffer cap, need to go back to index zero
+            {
+                bufferIndex = 0;//resets index to start at beginning of array
+            }
+            fireLoc = gameObject.transform.position;//set position to fire from to the player position
+            bullets[bufferIndex].GetComponent<BulletScript>().setFired(true,fireLoc);//activates bullet and moves it to firing location
+
+            cooldownTimer = 0f;//reset timer
+            bufferIndex++;
         }
     }
     void FixedUpdate()
