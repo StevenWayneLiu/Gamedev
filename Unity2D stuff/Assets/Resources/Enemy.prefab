@@ -45,9 +45,9 @@ GameObject:
   - 224: {fileID: 22438064}
   - 61: {fileID: 6145682}
   - 114: {fileID: 11491822}
-  - 114: {fileID: 11441530}
   - 50: {fileID: 5021578}
   - 212: {fileID: 21249842}
+  - 114: {fileID: 11419438}
   m_Layer: 9
   m_Name: Enemy
   m_TagString: Entity
@@ -83,6 +83,19 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: .529999971, y: .400000006}
+--- !u!114 &11419438
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 446adde38b1a5064ea533c728dddd2af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switchTime: .100000001
+  switchTime: .100000001
 --- !u!114 &11431524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -99,18 +112,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &11441530
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 169de3f97125f294dbd7ec66f25b3825, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  switchTime: 1
 --- !u!114 &11491822
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -191,7 +192,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1136792143
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300004, guid: f44d1e5d41628f74887a7853b5fe1a3e, type: 3}
   m_Color: {r: .920689642, g: .142165333, b: .142165333, a: 1}
