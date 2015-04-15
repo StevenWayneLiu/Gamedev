@@ -2,10 +2,12 @@
 using System.Collections;
 
 public class PlayerStats : EntityStats {
-	
+    public Canvas deathCanvas;
     public override void Death()
     {
         //go to game-over screen
+        deathCanvas.enabled = true;
+        
     }
 
     void OnTriggerEnter2D(Collider2D collider)

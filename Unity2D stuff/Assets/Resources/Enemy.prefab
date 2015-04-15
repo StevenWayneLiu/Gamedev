@@ -95,7 +95,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchTime: .100000001
-  switchTime: .100000001
 --- !u!114 &11431524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -217,7 +216,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1136792143
   m_SortingOrder: 0
 --- !u!224 &22429616
 RectTransform:

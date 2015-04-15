@@ -1,0 +1,33 @@
+Initialize engine version: 5.0.0f4 (5b98b70ebeb9)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics (ID=0xf31)
+    Vendor:   Intel
+    VRAM:     128 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Steven\Documents\GitHub\Gamedev\Unity2D stuff\build1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Steven\Documents\GitHub\Gamedev\Unity2D stuff\build1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Steven\Documents\GitHub\Gamedev\Unity2D stuff\build1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Steven\Documents\GitHub\Gamedev\Unity2D stuff\build1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Steven\Documents\GitHub\Gamedev\Unity2D stuff\build1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Steven\Documents\GitHub\Gamedev\Unity2D stuff\build1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.284 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Steven\Documents\GitHub\Gamedev\Unity2D stuff\build1_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Steven\Documents\GitHub\Gamedev\Unity2D stuff\build1_Data\Managed\System.dll (this message is harmless)
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 12.728013 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 266.
+Total: 0.588406 ms (FindLiveObjects: 0.055768 ms CreateObjectMapping: 0.021740 ms MarkObjects: 0.416847 ms  DeleteObjects: 0.092632 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.256212 ms
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 185.
+Total: 0.506644 ms (FindLiveObjects: 0.055296 ms CreateObjectMapping: 0.020795 ms MarkObjects: 0.362968 ms  DeleteObjects: 0.066166 ms)
+
