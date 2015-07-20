@@ -61,6 +61,7 @@
      <Compile Include="Assets\Custom Assets\Scripts\Menu Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Custom Assets\Scripts\PlayerStats.cs" />
      <Compile Include="Assets\Custom Assets\Scripts\Turn-Based Rpg\CharacterBaseClass.cs" />
+     <Compile Include="Assets\Custom Assets\Scripts\Turn-Based Rpg\ClickSelectable.cs" />
      <Compile Include="Assets\Custom Assets\Scripts\Turn-Based Rpg\GameData.cs" />
      <Compile Include="Assets\Custom Assets\Scripts\Turn-Based Rpg\TBBattleSystem.cs" />
      <Compile Include="Assets\Custom Assets\Scripts\mockup1controller.cs" />

@@ -1,15 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CharacterBaseClass : MonoBehaviour {
+public class CharacterBaseClass {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    //member variables
+    private int health;
+    private int strength;
+    private int speed;
+
+    //constructor
+    public CharacterBaseClass()
+    {
+        health = 100;
+        strength = 10;
+        speed = 5;
+    }
+
+    
+    public void attack(CharacterBaseClass target)
+    {
+        target.health -= strength;
+    }
+
 }

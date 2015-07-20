@@ -9,8 +9,7 @@ public class GameData : MonoBehaviour {
 
     public static GameData data;
 
-    public float health;
-    public float experience;
+    public CharacterBaseClass[] Characters = new CharacterBaseClass[4];//list of player's characters
 
 	// Use this for initialization
 	void Awake () {
@@ -25,6 +24,10 @@ public class GameData : MonoBehaviour {
         {
             Destroy(gameObject);//destroy this one
         }
+
+        //populate character list
+        //for (int i = 0; i < Characters.Length; i++)
+        //    Characters[i] = new CharacterBaseClass();
 	}
 
     //saving function
@@ -46,9 +49,8 @@ public class GameData : MonoBehaviour {
             pd = new PlayerData();//create a new PlayerData class to contain the data for serialization
         }
         
-        //write data in this session into class to be saved
-        pd.health = health;
-        pd.experience = experience;
+        //save characters into serializable class
+        pd.Characters = Characters;
 
         bf.Serialize(file, pd);//write PlayerData to file location
         file.Close();//close filestream after done
@@ -64,8 +66,7 @@ public class GameData : MonoBehaviour {
             PlayerData pd = (PlayerData)bf.Deserialize(file);//retrieve playerdata object from file
             file.Close();
 
-            health = pd.health;
-            experience = pd.experience;
+            Characters = pd.Characters;
         }
     }
 }
@@ -74,6 +75,6 @@ public class GameData : MonoBehaviour {
 [Serializable]//allows the class to be serialized, and therefore saved to a file in binary format
 class PlayerData
 {
-    public float health;
-    public float experience;
+    //character list
+    public CharacterBaseClass[] Characters;
 }
