@@ -26,8 +26,8 @@ public class GameData : MonoBehaviour {
         }
 
         //populate character list
-        //for (int i = 0; i < Characters.Length; i++)
-        //    Characters[i] = new CharacterBaseClass();
+        for (int i = 0; i < Characters.Length; i++)
+            Characters[i] = new CharacterBaseClass(CharacterBaseClass.Faction.Player);//create four player characters
 	}
 
     //saving function

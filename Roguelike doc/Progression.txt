@@ -1,0 +1,6 @@
+Ways Player can gain score:
+-Win battles
+-Complete levels and refuse an additional companion
+
+Ways Player can lose score:
+-Use Restore rooms

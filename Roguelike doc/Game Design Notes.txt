@@ -1,0 +1,2 @@
+-Have player choice (conflict of interest between objectives) in every level and state of gameplay
+-Make desirable objectives

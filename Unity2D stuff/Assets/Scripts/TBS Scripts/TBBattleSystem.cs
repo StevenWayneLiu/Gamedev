@@ -5,13 +5,13 @@ public class TBBattleSystem : MonoBehaviour
 {
     public static TBBattleSystem battleManager;
 
-    public enum BattleStates {Choose, Action, Win, Lose };
-    public enum Turn {Player, Enemy};
+    public enum BattleStates {Player, Enemy, Win, Lose };
 
     private BattleStates state;
-    private Turn turn;
+    public ArrayList enemies = new ArrayList();
     public ArrayList battlers = new ArrayList();
-    public CharacterBaseClass selected;//the character currently selected by the player
+    public CharacterBaseClass curChar;//the character currently acting their turn
+    public CharacterBaseClass target;//character currently selected to act on
 
     public Canvas UI;
 
@@ -19,29 +19,31 @@ public class TBBattleSystem : MonoBehaviour
     void Start()
     {
         battleManager = this;
-        state = BattleStates.Choose;
-        turn = Turn.Player;
+        state = BattleStates.Player;//placeholder code
         //populate turn list
         for (int i = 0; i < 4; i++)
-            battlers.Add(GameData.data.Characters[i]);
+            battlers.Add(GameData.data.Characters[i]);//add player characters
+
+        for (int i = 0; i < 3; i++)
+            enemies.Add(new CharacterBaseClass(CharacterBaseClass.Faction.Enemy));//create a list of enemies
+
+        for (int i = 0; i < 3; i++)
+            battlers.Add(enemies[i]);//add enemies to battler list
+
+        //go to first character in turn queue
+        curChar = (CharacterBaseClass)battlers[0];
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(state);
         switch (state)
         {
-            case (BattleStates.Choose):
-                //take input from player or AI. If input recieved, run Act()
-                if(turn == Turn.Player)//if it's the player's turn
-                {
-                    
-                }
-                state = BattleStates.Action;
+            case (BattleStates.Player)://waits for player to take an action
+                UI.enabled = true;
                 break;
-            case (BattleStates.Action):
-                Action();
+            case (BattleStates.Enemy)://turn on enemy AI to take a turn
+                EnemyChoose();
                 break;
             case (BattleStates.Win):
                 break;
@@ -52,44 +54,37 @@ public class TBBattleSystem : MonoBehaviour
         }
     }
 
-    //play out phase
-    private void Action()
+    //Wait for player or AI to make decision
+    public void PlayerChoose(int actionIndex)
     {
-        if (turn == Turn.Player)//swap whether it's enemy or ally turn
-            turn = Turn.Enemy;
+
+        curChar.Act(actionIndex, target);
+        Debug.Log(target.HealthFract);
+    }
+
+    private void EnemyChoose()
+    {
+        //AI code here
+        Debug.Log("Enemy waits");
+        EndTurn();
+    }
+
+    //end the turn and go to the execution phase
+    public void EndTurn()
+    {
+        if (UI.enabled)//turn off UI if it's not already off
+            UI.enabled = false;
+
+        //go to next character in turn queue
+        battlers.Add((CharacterBaseClass)battlers[0]);//add current character to end of queue
+        battlers.RemoveAt(0);//removes current character from front of queue
+        curChar = (CharacterBaseClass)battlers[0];//select new character at front of queue
+        
+        //check faction of next character
+        if (curChar.fac == CharacterBaseClass.Faction.Player)
+            state = BattleStates.Player;
         else
-            turn = Turn.Player;
-
-        //check if winning or losing conditions are met
-
-
-        //add another turn to the turn queue
-
-        //transition back to waiting for input
-        state = BattleStates.Choose;
+            state = BattleStates.Enemy;
     }
 
-    //accept player or AI input
-    private void Choose()
-    {
-        bool isFinished = false;
-        if (turn == Turn.Player)//player turn
-        {
-            UI.enabled = true;//turn on player UI
-
-
-
-        }
-        else//enemy turn
-        {
-            //enemy AI makes decision here
-        }
-
-        if (isFinished)
-        {
-            if (UI.enabled)//turn off UI if it's not already off
-                UI.enabled = false;
-            state = BattleStates.Action;//advance to action stage
-        }
-    }
 }

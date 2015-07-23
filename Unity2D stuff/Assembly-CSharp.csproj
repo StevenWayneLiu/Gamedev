@@ -58,14 +58,16 @@
      <Compile Include="Assets\Scripts\Menu Scripts\DeathMenu.cs" />
      <Compile Include="Assets\Scripts\Menu Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Menu Scripts\PauseMenu.cs" />
-     <Compile Include="Assets\Scripts\Menu Scripts\TBSMenu.cs" />
      <Compile Include="Assets\Scripts\PhysicsController2D.cs" />
      <Compile Include="Assets\Scripts\PlayerStats.cs" />
      <Compile Include="Assets\Scripts\PolygonGenerator.cs" />
      <Compile Include="Assets\Scripts\RaycastController2D.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\CharacterBaseClass.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\ClickSelectable.cs" />
+     <Compile Include="Assets\Scripts\TBS Scripts\EnemyHPBarScript.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\GameData.cs" />
+     <Compile Include="Assets\Scripts\TBS Scripts\HPBarScript.cs" />
+     <Compile Include="Assets\Scripts\TBS Scripts\SkillManager.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\TBBattleSystem.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

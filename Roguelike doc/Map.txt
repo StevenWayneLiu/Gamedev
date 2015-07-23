@@ -1,0 +1,12 @@
+Navigation:
+-Unrestricted movement through levels
+-Square rooms with doors that separate them
+
+Rooms:
+-Enemy Room: Spawns with a monster inside
+-Door Room: Advances to the next level
+-Heal Room: Restores party's HP
+-Cleared Room: An already open room
+
+-Text prompt that indicates what kind of room is behind a door
+-Completing the room spawns more rooms on open sides

@@ -1,0 +1,16 @@
+Stats:
+-Health
+-Potency
+-Speed
+
+Skills:
+-Heavy Attack: Deal damage
+-Heal: Regain health
+
+Turn order:
+-Whichever side has the higher cumulative speed score goes first, if tied then random order
+
+Win/Lose:
+-Lose if all party members die
+-Win if all enemies die
+-Character death is permanent, and carries through battles
