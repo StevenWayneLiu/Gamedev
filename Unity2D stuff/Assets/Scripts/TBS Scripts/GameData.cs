@@ -9,7 +9,7 @@ public class GameData : MonoBehaviour {
 
     public static GameData data;
 
-    public CharacterBaseClass[] Characters = new CharacterBaseClass[4];//list of player's characters
+    public CharacterBaseClass[] Characters = new CharacterBaseClass[6];//list of player's characters
 
 	// Use this for initialization
 	void Awake () {

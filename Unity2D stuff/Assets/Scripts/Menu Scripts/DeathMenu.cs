@@ -15,6 +15,6 @@ public class DeathMenu : MonoBehaviour {
     }
 	public void Continue()
     {
-        Application.LoadLevel(Application.loadedLevel);//loads the currently loaded level again
+        Application.LoadLevel(1);//loads the currently loaded level again
     }
 }

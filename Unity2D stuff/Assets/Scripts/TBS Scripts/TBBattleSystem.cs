@@ -59,7 +59,6 @@ public class TBBattleSystem : MonoBehaviour
     {
 
         curChar.Act(actionIndex, target);
-        Debug.Log(target.HealthFract);
     }
 
     private void EnemyChoose()

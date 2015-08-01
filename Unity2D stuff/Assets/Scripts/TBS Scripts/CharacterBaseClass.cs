@@ -12,6 +12,8 @@ public class CharacterBaseClass {
     private float curHealth;
     private int strength;
     private int speed;
+    private int move;//movement range of character
+    private int range;//attack range of character
 
     //default constructor
     public CharacterBaseClass()
@@ -19,6 +21,8 @@ public class CharacterBaseClass {
         curHealth = maxHealth;
         strength = 10;
         speed = 5;
+        move = 5;
+        range = 3;
     }
     //constructor for setting faction
     public CharacterBaseClass(Faction faction)
@@ -41,6 +45,8 @@ public class CharacterBaseClass {
     }
     public int Strength { get; set; }
     public int Speed { get; set; }
+    public int Move { get; set; }
+    public int Range { get; set; }
 
     //generic action script for buttons to access
     public void Act(int actIndex, CharacterBaseClass target)
