@@ -14,6 +14,10 @@ public class CharacterBaseClass {
     private int speed;
     private int move;//movement range of character
     private int range;//attack range of character
+    public bool canMove = false;
+    private bool hasMoved = false;
+    private bool hasActed = false;
+    
 
     //default constructor
     public CharacterBaseClass()
@@ -47,38 +51,24 @@ public class CharacterBaseClass {
     public int Speed { get; set; }
     public int Move { get; set; }
     public int Range { get; set; }
-
-    //generic action script for buttons to access
-    public void Act(int actIndex, CharacterBaseClass target)
-    {
-        switch (actIndex)
-        {
-            case (0):
-                Wait();
-                break;
-            case(1):
-                Attack(target);
-                break;
-            default:
-                break;
-        }
-    }
     
+    //apply damage to target
     public void Attack(CharacterBaseClass target)
     {
-        target.curHealth -= strength;
-        TBBattleSystem.battleManager.EndTurn();
+        if (!hasActed)
+        {
+            target.curHealth -= strength;
+        }
     }
 
-    public void Modify(CharacterBaseClass target)
-    {
-
-
-    }
-
+    //turn on both flags to end turn
     public void Wait()
     {
-        TBBattleSystem.battleManager.EndTurn();
+        hasMoved = true;
+        hasActed = true;
     }
 
+    
+    
+    
 }

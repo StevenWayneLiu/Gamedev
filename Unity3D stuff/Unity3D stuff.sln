@@ -7,6 +7,8 @@ Project("{AC22BD32-06C4-4556-B7AD-CF8CD4AC574C}") = "Unity3D stuff", "Assembly-C
 EndProject
 Project("{AC22BD32-06C4-4556-B7AD-CF8CD4AC574C}") = "Unity3D stuff", "Assembly-CSharp-Editor.csproj", "{45E821AC-D3EE-6D33-A480-3FCBFABB0468}"
 EndProject
+Project("{AC22BD32-06C4-4556-B7AD-CF8CD4AC574C}") = "Unity3D stuff", "Assembly-UnityScript.unityproj", "{5C0C01F1-C418-A0F7-8629-A78AC6D54CF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,11 +27,15 @@ Global
 		{45E821AC-D3EE-6D33-A480-3FCBFABB0468}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45E821AC-D3EE-6D33-A480-3FCBFABB0468}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45E821AC-D3EE-6D33-A480-3FCBFABB0468}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C0C01F1-C418-A0F7-8629-A78AC6D54CF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C0C01F1-C418-A0F7-8629-A78AC6D54CF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C0C01F1-C418-A0F7-8629-A78AC6D54CF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C0C01F1-C418-A0F7-8629-A78AC6D54CF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																				GlobalSection(MonoDevelopProperties) = preSolution
+																																													GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

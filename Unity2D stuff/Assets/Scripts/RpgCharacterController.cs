@@ -3,6 +3,7 @@ using System.Collections;
 
 public class RpgCharacterController : MonoBehaviour {
 
+    public CharacterBaseClass charData;
     public float maxSpeed = 5f;
     public float xDir;
     public float yDir;
@@ -17,6 +18,7 @@ public class RpgCharacterController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        
         xDir = Input.GetAxis("Horizontal");
         yDir = Input.GetAxis("Vertical");
 
@@ -29,9 +31,12 @@ public class RpgCharacterController : MonoBehaviour {
 
     void FixedUpdate()
     {
-        //ensure magnitude of total velocity vector doesn't exceed max speed
-        xVel = Mathf.Clamp(Input.GetAxis("Horizontal") * maxSpeed, -1 * maxSpeed * Mathf.Cos(angle), maxSpeed * Mathf.Cos(angle));
-        yVel = Mathf.Clamp(Input.GetAxis("Vertical") * maxSpeed, -1 * maxSpeed * Mathf.Sin(angle), maxSpeed * Mathf.Sin(angle));
-        GetComponent<Rigidbody2D>().velocity = new Vector2(xVel, yVel);
+        if (TBBattleSystem.battleManager.canMove)//only move when it's player's turn and they're moving
+        {
+            //ensure magnitude of total velocity vector doesn't exceed max speed
+            xVel = Mathf.Clamp(Input.GetAxis("Horizontal") * maxSpeed, -1 * maxSpeed * Mathf.Cos(angle), maxSpeed * Mathf.Cos(angle));
+            yVel = Mathf.Clamp(Input.GetAxis("Vertical") * maxSpeed, -1 * maxSpeed * Mathf.Sin(angle), maxSpeed * Mathf.Sin(angle));
+            GetComponent<Rigidbody2D>().velocity = new Vector2(xVel, yVel);
+        }
     }
 }
