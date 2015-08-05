@@ -13,3 +13,5 @@ EditorBuildSettings:
     path: Assets/Scenes/TBS map scene.unity
   - enabled: 1
     path: Assets/Scenes/TBS battle scene.unity
+  - enabled: 1
+    path: Assets/Scenes/Death Scene.unity

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RpgCharacterController : MonoBehaviour {
+public class BattlerController : MonoBehaviour {
 
     public CharacterBaseClass charData;
     public float maxSpeed = 5f;
@@ -31,12 +31,17 @@ public class RpgCharacterController : MonoBehaviour {
 
     void FixedUpdate()
     {
-        if (TBBattleSystem.battleManager.canMove)//only move when it's player's turn and they're moving
+        if (TBBattleSystem.battleManager.canMove && charData == TBBattleSystem.battleManager.curChar)//only move when it's player's turn and they're moving
         {
             //ensure magnitude of total velocity vector doesn't exceed max speed
             xVel = Mathf.Clamp(Input.GetAxis("Horizontal") * maxSpeed, -1 * maxSpeed * Mathf.Cos(angle), maxSpeed * Mathf.Cos(angle));
             yVel = Mathf.Clamp(Input.GetAxis("Vertical") * maxSpeed, -1 * maxSpeed * Mathf.Sin(angle), maxSpeed * Mathf.Sin(angle));
             GetComponent<Rigidbody2D>().velocity = new Vector2(xVel, yVel);
         }
+    }
+    void OnMouseDown()
+    {
+        TBBattleSystem.battleManager.target = charData;//select the character associated to this object
+        TBBattleSystem.battleManager.targetObject = gameObject;//select this object
     }
 }

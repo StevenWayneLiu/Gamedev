@@ -5,7 +5,6 @@ using UnityEngine.UI;
 public class HPBarScript : MonoBehaviour {
 
     private Image hpBar;
-    public int characterIndex;//the index of a character in gamedata, from 0 to 3
 
 	// Use this for initialization
 	void Start () {
@@ -14,6 +13,7 @@ public class HPBarScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        hpBar.fillAmount = GameData.data.Characters[characterIndex].HealthFract;
+        if(TBBattleSystem.battleManager.target != null)
+            hpBar.fillAmount = TBBattleSystem.battleManager.target.HealthFract;
 	}
 }

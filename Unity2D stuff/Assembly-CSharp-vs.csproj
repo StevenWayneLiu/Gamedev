@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BattlerController.cs" />
      <Compile Include="Assets\Scripts\EnemyMoveScript.cs" />
      <Compile Include="Assets\Scripts\EnemyStats.cs" />
      <Compile Include="Assets\Scripts\EntityStats.cs" />
@@ -56,7 +57,7 @@
      <Compile Include="Assets\Scripts\PhysicsController2D.cs" />
      <Compile Include="Assets\Scripts\PlayerStats.cs" />
      <Compile Include="Assets\Scripts\PolygonGenerator.cs" />
-     <Compile Include="Assets\Scripts\RpgCharacterController.cs" />
+     <Compile Include="Assets\Scripts\RPGCharController.cs" />
      <Compile Include="Assets\Scripts\Shooter Scripts\BulletPool.cs" />
      <Compile Include="Assets\Scripts\Shooter Scripts\BulletScript.cs" />
      <Compile Include="Assets\Scripts\Shooter Scripts\EnemyBullet.cs" />

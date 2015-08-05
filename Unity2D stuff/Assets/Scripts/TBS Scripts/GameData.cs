@@ -9,7 +9,7 @@ public class GameData : MonoBehaviour {
 
     public static GameData data;
 
-    public CharacterBaseClass[] Characters = new CharacterBaseClass[6];//list of player's characters
+    public ArrayList Characters = new ArrayList();//list of player's characters
 
 	// Use this for initialization
 	void Awake () {
@@ -26,8 +26,8 @@ public class GameData : MonoBehaviour {
         }
 
         //populate character list
-        for (int i = 0; i < Characters.Length; i++)
-            Characters[i] = new CharacterBaseClass(CharacterBaseClass.Faction.Player);//create four player characters
+        for (int i = 0; i < 4; i++)
+            Characters.Add( new CharacterBaseClass(CharacterBaseClass.Faction.Player) );//create four player characters
 	}
 
     //saving function
@@ -76,5 +76,5 @@ public class GameData : MonoBehaviour {
 class PlayerData
 {
     //character list
-    public CharacterBaseClass[] Characters;
+    public ArrayList Characters;
 }

@@ -12,12 +12,15 @@ public class TBBattleSystem : MonoBehaviour
     public Transform[] charStartPos = new Transform[12];//stores starting positions for characters
 
     public ArrayList enemies = new ArrayList();
-    public ArrayList battlers = new ArrayList();
+    public ArrayList turnList = new ArrayList();
+    public ArrayList battlers = new ArrayList();//list containing characters on field
     public CharacterBaseClass curChar;//the character currently acting their turn
     public CharacterBaseClass target;//character currently selected to act on
+    private Transform curPos;//current position of character on map
 
     public Canvas UI;
 
+    public GameObject targetObject;//the gameobject on the battlefield linked to the target
 
     public bool canMove = false;
     private bool hasMoved = false;
@@ -32,24 +35,23 @@ public class TBBattleSystem : MonoBehaviour
         state = BattleStates.Player;//=============================placeholder code
 
         //populate turn list
-        for (int i = 0; i < 4; i++)
-            battlers.Add(GameData.data.Characters[i]);//add player characters
+        for (int i = 0; i < GameData.data.Characters.Count; i++)
+            turnList.Add(GameData.data.Characters[i]);//add player characters
 
         for (int i = 0; i < 3; i++)
             enemies.Add(new CharacterBaseClass(CharacterBaseClass.Faction.Enemy));//create a list of enemies
 
         for (int i = 0; i < 3; i++)
-            battlers.Add(enemies[i]);//add enemies to battler list
+            turnList.Add(enemies[i]);//add enemies to battler list
 
-        for (int i = 0; i < battlers.Count; i++)
+        for (int i = 0; i < turnList.Count; i++)
         {
-            GameObject battler;
-            battler = (GameObject)Instantiate(Resources.Load("Battler"), charStartPos[i].position, Quaternion.identity);
-            battler.GetComponent<RpgCharacterController>().charData = (CharacterBaseClass)battlers[i];
+            battlers.Add((GameObject)Instantiate(Resources.Load("Battler"), charStartPos[i].position, Quaternion.identity));
+            ((GameObject)battlers[i]).GetComponent<BattlerController>().charData = (CharacterBaseClass)turnList[i];
         }
 
             //go to first character in turn queue
-            curChar = (CharacterBaseClass)battlers[0];
+            curChar = (CharacterBaseClass)turnList[0];
     }
 
     // Update is called once per frame
@@ -63,11 +65,17 @@ public class TBBattleSystem : MonoBehaviour
                 else if(!UI.enabled)//else turn UI back on
                     UI.enabled = true;
                 break;
+            case(BattleStates.PlayerAct):
+                EndAct();
+                break;
             case (BattleStates.PlayerMove):
                 EndMove();//listen for end of movement phase
                 break;
             case (BattleStates.Enemy)://turn on enemy AI to take a turn
                 EnemyChoose();
+                break;
+            case (BattleStates.EnemyAct):
+                EndAct();
                 break;
             case (BattleStates.EnemyMove):
                 EndMove();
@@ -87,12 +95,12 @@ public class TBBattleSystem : MonoBehaviour
         switch (actionIndex)
         {
             case (0):
-                curChar.Wait();//end turn immediately
+                Wait();//end turn immediately
                 break;
             case (1):
-                curChar.Attack(target);
+                StartAct();
                 break;
-            case (3):
+            case (2):
                 StartMove();
                 break;
             default:
@@ -112,6 +120,70 @@ public class TBBattleSystem : MonoBehaviour
         EndTurn();
     }
 
+    //start action phase
+    public void StartAct()
+    {
+        if (!hasActed)
+        {
+            UI.enabled = false;
+            Debug.Log("Choose an attack target");
+            //change state to movement state
+            if (state == BattleStates.Player)
+                state = BattleStates.PlayerAct;
+            else if (state == BattleStates.Enemy)
+                state = BattleStates.EnemyAct;
+        }
+        
+    }
+
+    //end acting phase
+    public void EndAct()
+    {
+        if (state == BattleStates.PlayerAct && Input.GetButton("Submit"))
+        {
+            if (target == null)
+            {
+                Debug.Log("Select a target first!");
+            }
+            else
+            {
+                curChar.Attack(target);
+                if (target.CurHealth <= 0)//if target is dead
+                {
+                    turnList.Remove(target);
+                    battlers.Remove(targetObject);
+                    Destroy(targetObject);
+                    if(target.fac == CharacterBaseClass.Faction.Player)
+                    {
+                        GameData.data.Characters.Remove(target);
+                    }
+                    else if (target.fac == CharacterBaseClass.Faction.Enemy)
+                    {
+                        enemies.Remove(target);
+                    }
+                    target = null;
+                }
+
+                EndBattle();
+
+                UI.enabled = true;
+                hasActed = true;
+                state = BattleStates.Player;
+            }
+        }
+        else if (state == BattleStates.PlayerAct && Input.GetButton("Cancel"))
+        {
+            UI.enabled = true;
+            hasActed = false;
+            state = BattleStates.Player;
+        }
+        else if (state == BattleStates.EnemyMove)
+        {
+            hasActed = true;
+            state = BattleStates.Enemy;
+        }
+    }
+
     //start movement phase
     public void StartMove()
     {
@@ -119,6 +191,9 @@ public class TBBattleSystem : MonoBehaviour
         {
             canMove = true;
             UI.enabled = false;//turn off UI until the player finishes moving
+
+            //set curPos to position of character
+            curPos = ((GameObject)battlers[0]).transform;
 
             //change state to movement state
             if (state == BattleStates.Player)
@@ -137,8 +212,20 @@ public class TBBattleSystem : MonoBehaviour
             hasMoved = true;
             state = BattleStates.Player;
         }
+        else if (state == BattleStates.PlayerMove && Input.GetButton("Cancel"))
+        {
+            canMove = false;
+            hasMoved = false;
+            ((GameObject)battlers[0]).transform.position = curPos.position;//reset of character if cancel movement
+            state = BattleStates.Player;
+        }
         else if (state == BattleStates.EnemyMove)
+        {
+            canMove = false;
+            hasMoved = true;
             state = BattleStates.Enemy;
+        }
+            
     }
 
     //end the turn and go to the execution phase
@@ -148,20 +235,46 @@ public class TBBattleSystem : MonoBehaviour
             UI.enabled = false;
 
         //reset flags for ending turn
-        canMove = true;
+        canMove = false;
         hasMoved = false;
         hasActed = false;
 
+        EndBattle();
+        
         //go to next character in turn queue
-        battlers.Add((CharacterBaseClass)battlers[0]);//add current character to end of queue
-        battlers.RemoveAt(0);//removes current character from front of queue
-        curChar = (CharacterBaseClass)battlers[0];//select new character at front of queue
+        turnList.Add((CharacterBaseClass)turnList[0]);//add current character to end of queue
+        turnList.RemoveAt(0);//removes current character from front of queue
+        curChar = (CharacterBaseClass)turnList[0];//select new character at front of queue
 
         //check faction of next character
         if (curChar.fac == CharacterBaseClass.Faction.Player)
             state = BattleStates.Player;
         else
             state = BattleStates.Enemy;
+        
     }
 
+    //turn on both flags to end turn
+    public void Wait()
+    {
+        hasMoved = true;
+        hasActed = true;
+    }
+    public void EndBattle()
+    {
+        //check if the player has won or lost
+        if (enemies.Count == 0)//win condition
+            Win();
+        else if (GameData.data.Characters.Count == 0)//lose condition
+            Lose();
+    }
+
+    public void Win()
+    {
+        Application.LoadLevel(1);//go back to map screen
+    }
+    public void Lose()
+    {
+        Application.LoadLevel(3);//go to death screen
+    }
 }
