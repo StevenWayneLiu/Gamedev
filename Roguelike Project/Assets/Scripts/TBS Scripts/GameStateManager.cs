@@ -1,16 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TBBattleSystem : MonoBehaviour
+public class GameStateManager : MonoBehaviour
 {
-    public static TBBattleSystem battleManager;
+    public static GameStateManager stateManager;
+    //states
+    public enum PlayStates {PlayerTurn, PlayerMove, PlayerAct, EnemyTurn, EnemyMove, EnemyAct, Lose, Peace};
+    private PlayStates state;
 
-    public enum BattleStates {Player, PlayerMove, PlayerAct, Enemy, EnemyMove, EnemyAct, Win, Lose};
-
-    private BattleStates state;
-
+    //variables
+    public float timePoints = 100f;
+    public float bankedPoints = 0f;
     public Transform[] charStartPos = new Transform[12];//stores starting positions for characters
 
+    public ArrayList aggro = new ArrayList();//holds all the enemies that the player is currently aggroing
     public ArrayList enemies = new ArrayList();
     public ArrayList turnList = new ArrayList();
     public ArrayList battlers = new ArrayList();//list containing characters on field
@@ -22,17 +25,13 @@ public class TBBattleSystem : MonoBehaviour
 
     public GameObject targetObject;//the gameobject on the battlefield linked to the target
 
-    public bool canMove = false;
-    private bool hasMoved = false;
-    private bool hasActed = false;
-
     // Use this for initialization
     void Start()
     {
 
-        battleManager = this;
+        stateManager = this;
 
-        state = BattleStates.Player;//=============================placeholder code
+        state = PlayStates.PlayerTurn;//=============================placeholder code
 
         //populate turn list
         for (int i = 0; i < GameData.data.Characters.Count; i++)
@@ -59,30 +58,28 @@ public class TBBattleSystem : MonoBehaviour
     {
         switch (state)
         {
-            case (BattleStates.Player)://waits for player to take an action
-                if (hasMoved && hasActed)//check to see if turn should end
+            case (PlayStates.PlayerTurn)://waits for player to take an action
+                if (curChar.TimePoints == 0)//check to see if turn should end
                     EndTurn();
                 else if(!UI.enabled)//else turn UI back on
                     UI.enabled = true;
                 break;
-            case(BattleStates.PlayerAct):
+            case(PlayStates.PlayerAct):
                 EndAct();
                 break;
-            case (BattleStates.PlayerMove):
+            case (PlayStates.PlayerMove):
                 EndMove();//listen for end of movement phase
                 break;
-            case (BattleStates.Enemy)://turn on enemy AI to take a turn
+            case (PlayStates.EnemyTurn)://turn on enemy AI to take a turn
                 EnemyChoose();
                 break;
-            case (BattleStates.EnemyAct):
+            case (PlayStates.EnemyAct):
                 EndAct();
                 break;
-            case (BattleStates.EnemyMove):
+            case (PlayStates.EnemyMove):
                 EndMove();
                 break;
-            case (BattleStates.Win):
-                break;
-            case (BattleStates.Lose):
+            case (PlayStates.Lose):
                 break;
             default:
                 break;
@@ -106,10 +103,6 @@ public class TBBattleSystem : MonoBehaviour
             default:
                 break;
         }
-
-        //after taking an action, if both hasMoved and hasActed are true, end turn
-        if (hasMoved && hasActed)
-            EndTurn();
     }
 
     //AI logic
@@ -120,26 +113,28 @@ public class TBBattleSystem : MonoBehaviour
         EndTurn();
     }
 
+    //start a fight
+    public void StartBattle()
+    {
+        state = PlayStates.PlayerTurn;
+    }
+
     //start action phase
     public void StartAct()
     {
-        if (!hasActed)
-        {
-            UI.enabled = false;
-            Debug.Log("Choose an attack target");
-            //change state to movement state
-            if (state == BattleStates.Player)
-                state = BattleStates.PlayerAct;
-            else if (state == BattleStates.Enemy)
-                state = BattleStates.EnemyAct;
-        }
-        
+        UI.enabled = false;
+        Debug.Log("Choose an attack target");
+        //change state to movement state
+        if (state == PlayStates.PlayerTurn)
+            state = PlayStates.PlayerAct;
+        else if (state == PlayStates.EnemyTurn)
+            state = PlayStates.EnemyAct;  
     }
 
     //end acting phase
     public void EndAct()
     {
-        if (state == BattleStates.PlayerAct && Input.GetButton("Submit"))
+        if (state == PlayStates.PlayerAct && Input.GetButton("Submit"))
         {
             if (target == null)
             {
@@ -167,63 +162,55 @@ public class TBBattleSystem : MonoBehaviour
                 EndBattle();
 
                 UI.enabled = true;
-                hasActed = true;
-                state = BattleStates.Player;
+                state = PlayStates.PlayerTurn;
             }
         }
-        else if (state == BattleStates.PlayerAct && Input.GetButton("Cancel"))
+        else if (state == PlayStates.PlayerAct && Input.GetButton("Cancel"))
         {
             UI.enabled = true;
-            hasActed = false;
-            state = BattleStates.Player;
+            state = PlayStates.PlayerTurn;
         }
-        else if (state == BattleStates.EnemyMove)
+        else if (state == PlayStates.EnemyMove)
         {
-            hasActed = true;
-            state = BattleStates.Enemy;
+            
+            state = PlayStates.EnemyTurn;
         }
     }
 
     //start movement phase
     public void StartMove()
     {
-        if (!hasMoved)//can only move once per turn
-        {
-            canMove = true;
-            UI.enabled = false;//turn off UI until the player finishes moving
+        UI.enabled = false;//turn off UI until the player finishes moving
 
-            //set curPos to position of character
-            curPos = ((GameObject)battlers[0]).transform;
+        //set curPos to position of character
+        curPos = ((GameObject)battlers[0]).transform;
 
-            //change state to movement state
-            if (state == BattleStates.Player)
-                state = BattleStates.PlayerMove;
-            else if (state == BattleStates.Enemy)
-                state = BattleStates.EnemyMove;
-        }
+        //change state to movement state
+        if (state == PlayStates.PlayerTurn)
+            state = PlayStates.PlayerMove;
+        else if (state == PlayStates.EnemyTurn)
+            state = PlayStates.EnemyMove;
+        
     }
 
     //end movement phase
     public void EndMove()
     {
-        if (state == BattleStates.PlayerMove && Input.GetButton("Submit"))
+        if (state == PlayStates.PlayerMove && Input.GetButton("Submit"))
         {
-            canMove = false;
-            hasMoved = true;
-            state = BattleStates.Player;
+            
+            state = PlayStates.PlayerTurn;
         }
-        else if (state == BattleStates.PlayerMove && Input.GetButton("Cancel"))
+        else if (state == PlayStates.PlayerMove && Input.GetButton("Cancel"))
         {
-            canMove = false;
-            hasMoved = false;
+            
             ((GameObject)battlers[0]).transform.position = curPos.position;//reset of character if cancel movement
-            state = BattleStates.Player;
+            state = PlayStates.PlayerTurn;
         }
-        else if (state == BattleStates.EnemyMove)
+        else if (state == PlayStates.EnemyMove)
         {
-            canMove = false;
-            hasMoved = true;
-            state = BattleStates.Enemy;
+            
+            state = PlayStates.EnemyTurn;
         }
             
     }
@@ -234,12 +221,11 @@ public class TBBattleSystem : MonoBehaviour
         if (UI.enabled)//turn off UI if it's not already off
             UI.enabled = false;
 
-        //reset flags for ending turn
-        canMove = false;
-        hasMoved = false;
-        hasActed = false;
+        //reset character's TP and add banked TP from waiting
+        curChar.BankedTP = curChar.TimePoints;//any remaining TP is banked
+        curChar.TimePoints = 100f;
 
-        EndBattle();
+        EndBattle();//check if battle should end
         
         //go to next character in turn queue
         turnList.Add((CharacterBaseClass)turnList[0]);//add current character to end of queue
@@ -248,17 +234,16 @@ public class TBBattleSystem : MonoBehaviour
 
         //check faction of next character
         if (curChar.fac == CharacterBaseClass.Faction.Player)
-            state = BattleStates.Player;
+            state = PlayStates.PlayerTurn;
         else
-            state = BattleStates.Enemy;
+            state = PlayStates.EnemyTurn;
         
     }
 
     //turn on both flags to end turn
     public void Wait()
     {
-        hasMoved = true;
-        hasActed = true;
+        EndTurn();
     }
     public void EndBattle()
     {
@@ -271,7 +256,8 @@ public class TBBattleSystem : MonoBehaviour
 
     public void Win()
     {
-        Application.LoadLevel(1);//go back to map screen
+       //change back to walking mode
+        state = PlayStates.Peace;
     }
     public void Lose()
     {

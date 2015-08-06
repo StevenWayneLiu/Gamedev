@@ -15,6 +15,8 @@ public class CharacterBaseClass {
     private int speed;
     private int move;//movement range of character
     private int range;//attack range of character
+    private float timePoints;
+    private float bankedTP;
     
 
     //default constructor
@@ -23,7 +25,7 @@ public class CharacterBaseClass {
         name = "base";
         curHealth = maxHealth;
         strength = 100;
-        speed = 5;
+        speed = 1;
         move = 5;
         range = 3;
     }
@@ -34,7 +36,7 @@ public class CharacterBaseClass {
         fac = faction;
         curHealth = maxHealth;
         strength = 100;
-        speed = 5;
+        speed = 1;
     }
 
     //properties
@@ -55,11 +57,22 @@ public class CharacterBaseClass {
     public int Speed { get; set; }
     public int Move { get; set; }
     public int Range { get; set; }
+    public float TimePoints 
+    {
+        get { return TimePoints; }
+        set { TimePoints = value; }
+    }
+    public float BankedTP
+    {
+        get { return BankedTP; }
+        set { BankedTP = value; }
+    }
     
     //apply damage to target
     public void Attack(CharacterBaseClass target)
     {
         target.CurHealth -= strength;
+        timePoints -= 50;
     }
 
     

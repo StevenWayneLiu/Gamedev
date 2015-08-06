@@ -13,7 +13,7 @@ public class HPBarScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(TBBattleSystem.battleManager.target != null)
-            hpBar.fillAmount = TBBattleSystem.battleManager.target.HealthFract;
+        if(GameStateManager.stateManager.target != null)
+            hpBar.fillAmount = GameStateManager.stateManager.target.HealthFract;
 	}
 }

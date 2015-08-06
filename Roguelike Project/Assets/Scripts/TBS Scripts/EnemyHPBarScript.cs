@@ -14,6 +14,6 @@ public class EnemyHPBarScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        hpBar.fillAmount = ( (CharacterBaseClass) TBBattleSystem.battleManager.enemies[characterIndex] ).HealthFract;
+        hpBar.fillAmount = ( (CharacterBaseClass) GameStateManager.stateManager.enemies[characterIndex] ).HealthFract;
 	}
 }

@@ -31,7 +31,7 @@ public class BattlerController : MonoBehaviour {
 
     void FixedUpdate()
     {
-        if (TBBattleSystem.battleManager.canMove && charData == TBBattleSystem.battleManager.curChar)//only move when it's player's turn and they're moving
+        if (GameStateManager.stateManager.canMove && charData == GameStateManager.stateManager.curChar)//only move when it's player's turn and they're moving
         {
             //ensure magnitude of total velocity vector doesn't exceed max speed
             xVel = Mathf.Clamp(Input.GetAxis("Horizontal") * maxSpeed, -1 * maxSpeed * Mathf.Cos(angle), maxSpeed * Mathf.Cos(angle));
@@ -41,7 +41,7 @@ public class BattlerController : MonoBehaviour {
     }
     void OnMouseDown()
     {
-        TBBattleSystem.battleManager.target = charData;//select the character associated to this object
-        TBBattleSystem.battleManager.targetObject = gameObject;//select this object
+        GameStateManager.stateManager.target = charData;//select the character associated to this object
+        GameStateManager.stateManager.targetObject = gameObject;//select this object
     }
 }

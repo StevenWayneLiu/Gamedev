@@ -18,6 +18,6 @@ public class ClickSelectable : MonoBehaviour {
     void OnMouseDown()
     {
         //selects the character associated with this gameobject when it is clicked on
-        TBBattleSystem.battleManager.target = (CharacterBaseClass)TBBattleSystem.battleManager.enemies[character];
+        GameStateManager.stateManager.target = (CharacterBaseClass)GameStateManager.stateManager.enemies[character];
     }
 }
