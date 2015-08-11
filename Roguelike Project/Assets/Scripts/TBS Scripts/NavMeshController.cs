@@ -12,7 +12,8 @@ public class NavMeshController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetButton("Fire1"))
+        //movement during peacetime
+        if (Input.GetButton("Fire1") && GameStateManager.stateManager.state == GameStateManager.GameStates.Peace)
         {
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -27,6 +28,14 @@ public class NavMeshController : MonoBehaviour {
 
     }
 
-
+    //moves the character to the point on the screen where the mouse is
+    public void Move()
+    {
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Physics.Raycast(ray, out hit);//cast a ray where mouse clicked
+        agent.SetDestination(hit.point);//set destination to point of collision with map
+        Debug.Log(hit.point);
+    }
         
 }

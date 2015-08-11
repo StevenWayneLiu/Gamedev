@@ -17,7 +17,8 @@ public class CharacterBaseClass {
     private int range;//attack range of character
     private float timePoints;
     private float bankedTP;
-    
+
+    private GameObject battler;//battler character in the game
 
     //default constructor
     public CharacterBaseClass()
@@ -66,6 +67,11 @@ public class CharacterBaseClass {
     {
         get { return BankedTP; }
         set { BankedTP = value; }
+    }
+    public GameObject Battler
+    {
+        get { return battler; }
+        set { battler = value; }
     }
     
     //apply damage to target

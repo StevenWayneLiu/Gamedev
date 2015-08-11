@@ -5,13 +5,14 @@ public class GameStateManager : MonoBehaviour
 {
     public static GameStateManager stateManager;
     //states
-    public enum PlayStates {PlayerTurn, PlayerMove, PlayerAct, EnemyTurn, EnemyMove, EnemyAct, Lose, Peace};
-    private PlayStates state;
+    public enum GameStates {PlayerTurn, PlayerAct, EnemyTurn, EnemyAct, Lose, Peace};
+    public GameStates state;
 
     //variables
     public float timePoints = 100f;
     public float bankedPoints = 0f;
     public Transform[] charStartPos = new Transform[12];//stores starting positions for characters
+    public int actionIndex = 0;//the index of the action currently selected
 
     public ArrayList aggro = new ArrayList();//holds all the enemies that the player is currently aggroing
     public ArrayList enemies = new ArrayList();
@@ -31,7 +32,8 @@ public class GameStateManager : MonoBehaviour
 
         stateManager = this;
 
-        state = PlayStates.PlayerTurn;//=============================placeholder code
+        //start in peace
+        state = GameStates.Peace;
 
         //populate turn list
         for (int i = 0; i < GameData.data.Characters.Count; i++)
@@ -43,11 +45,14 @@ public class GameStateManager : MonoBehaviour
         for (int i = 0; i < 3; i++)
             turnList.Add(enemies[i]);//add enemies to battler list
 
+        //create battlers
         for (int i = 0; i < turnList.Count; i++)
         {
             battlers.Add((GameObject)Instantiate(Resources.Load("Battler"), charStartPos[i].position, Quaternion.identity));
             ((GameObject)battlers[i]).GetComponent<BattlerController>().charData = (CharacterBaseClass)turnList[i];
+            ((CharacterBaseClass)turnList[i]).Battler = (GameObject)battlers[i];
         }
+
 
             //go to first character in turn queue
             curChar = (CharacterBaseClass)turnList[0];
@@ -56,53 +61,71 @@ public class GameStateManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        switch (state)
+        switch (state)//state machine
         {
-            case (PlayStates.PlayerTurn)://waits for player to take an action
+            case (GameStates.PlayerTurn)://waits for player to take an action
                 if (curChar.TimePoints == 0)//check to see if turn should end
                     EndTurn();
                 else if(!UI.enabled)//else turn UI back on
                     UI.enabled = true;
                 break;
-            case(PlayStates.PlayerAct):
-                EndAct();
+            case(GameStates.PlayerAct):
+                AimAction();
                 break;
-            case (PlayStates.PlayerMove):
-                EndMove();//listen for end of movement phase
-                break;
-            case (PlayStates.EnemyTurn)://turn on enemy AI to take a turn
+            case (GameStates.EnemyTurn)://turn on enemy AI to take a turn
                 EnemyChoose();
                 break;
-            case (PlayStates.EnemyAct):
-                EndAct();
+            case (GameStates.EnemyAct):
                 break;
-            case (PlayStates.EnemyMove):
-                EndMove();
-                break;
-            case (PlayStates.Lose):
+            case (GameStates.Lose):
                 break;
             default:
                 break;
         }
     }
 
-    //Called by input for player to take action
-    public void PlayerChoose(int actionIndex)
+    //Called by input from player via UI
+    public void ChooseAction(int actIndex)
     {
-        switch (actionIndex)
+        //Set up choosing UI for respective actions
+        switch (actIndex)
         {
-            case (0):
-                Wait();//end turn immediately
-                break;
-            case (1):
-                StartAct();
-                break;
-            case (2):
-                StartMove();
-                break;
             default:
                 break;
         }
+
+
+        state = GameStates.PlayerAct;//transition states to confirmation stage
+    }
+
+    //Listens for player input to confirm current action
+    public void AimAction()
+    {
+        UI.enabled = false;
+        if (Input.GetButtonDown("Fire1"))//left mouse click to confirm action
+        {
+            switch (actionIndex)
+            {
+                case(0)://wait is selected
+                    Wait();
+                    break;
+                case(1)://move is selected
+                    Move(curChar.Battler);
+                    break;
+                case(2)://attack is selected
+                    Attack(target);
+                    break;
+                default:
+                    break;
+            }
+        }
+        
+    }
+
+    public void Move(GameObject character)
+    {
+        //move character to location
+        (character.GetComponent<NavMeshController>()).Move();
     }
 
     //AI logic
@@ -116,25 +139,15 @@ public class GameStateManager : MonoBehaviour
     //start a fight
     public void StartBattle()
     {
-        state = PlayStates.PlayerTurn;
+        state = GameStates.PlayerTurn;
     }
 
-    //start action phase
-    public void StartAct()
-    {
-        UI.enabled = false;
-        Debug.Log("Choose an attack target");
-        //change state to movement state
-        if (state == PlayStates.PlayerTurn)
-            state = PlayStates.PlayerAct;
-        else if (state == PlayStates.EnemyTurn)
-            state = PlayStates.EnemyAct;  
-    }
 
-    //end acting phase
-    public void EndAct()
+
+    //execute attack on target
+    public void Attack(CharacterBaseClass target)
     {
-        if (state == PlayStates.PlayerAct && Input.GetButton("Submit"))
+        if (Input.GetButtonDown("Submit"))
         {
             if (target == null)
             {
@@ -148,7 +161,7 @@ public class GameStateManager : MonoBehaviour
                     turnList.Remove(target);
                     battlers.Remove(targetObject);
                     Destroy(targetObject);
-                    if(target.fac == CharacterBaseClass.Faction.Player)
+                    if (target.fac == CharacterBaseClass.Faction.Player)
                     {
                         GameData.data.Characters.Remove(target);
                     }
@@ -162,57 +175,9 @@ public class GameStateManager : MonoBehaviour
                 EndBattle();
 
                 UI.enabled = true;
-                state = PlayStates.PlayerTurn;
+                state = GameStates.PlayerTurn;
             }
         }
-        else if (state == PlayStates.PlayerAct && Input.GetButton("Cancel"))
-        {
-            UI.enabled = true;
-            state = PlayStates.PlayerTurn;
-        }
-        else if (state == PlayStates.EnemyMove)
-        {
-            
-            state = PlayStates.EnemyTurn;
-        }
-    }
-
-    //start movement phase
-    public void StartMove()
-    {
-        UI.enabled = false;//turn off UI until the player finishes moving
-
-        //set curPos to position of character
-        curPos = ((GameObject)battlers[0]).transform;
-
-        //change state to movement state
-        if (state == PlayStates.PlayerTurn)
-            state = PlayStates.PlayerMove;
-        else if (state == PlayStates.EnemyTurn)
-            state = PlayStates.EnemyMove;
-        
-    }
-
-    //end movement phase
-    public void EndMove()
-    {
-        if (state == PlayStates.PlayerMove && Input.GetButton("Submit"))
-        {
-            
-            state = PlayStates.PlayerTurn;
-        }
-        else if (state == PlayStates.PlayerMove && Input.GetButton("Cancel"))
-        {
-            
-            ((GameObject)battlers[0]).transform.position = curPos.position;//reset of character if cancel movement
-            state = PlayStates.PlayerTurn;
-        }
-        else if (state == PlayStates.EnemyMove)
-        {
-            
-            state = PlayStates.EnemyTurn;
-        }
-            
     }
 
     //end the turn and go to the execution phase
@@ -234,15 +199,16 @@ public class GameStateManager : MonoBehaviour
 
         //check faction of next character
         if (curChar.fac == CharacterBaseClass.Faction.Player)
-            state = PlayStates.PlayerTurn;
+            state = GameStates.PlayerTurn;
         else
-            state = PlayStates.EnemyTurn;
+            state = GameStates.EnemyTurn;
         
     }
 
     //turn on both flags to end turn
     public void Wait()
     {
+        //save up TP
         EndTurn();
     }
     public void EndBattle()
@@ -257,7 +223,7 @@ public class GameStateManager : MonoBehaviour
     public void Win()
     {
        //change back to walking mode
-        state = PlayStates.Peace;
+        state = GameStates.Peace;
     }
     public void Lose()
     {
