@@ -48,7 +48,7 @@ public class GameStateManager : MonoBehaviour
         //create battlers
         for (int i = 0; i < turnList.Count; i++)
         {
-            battlers.Add((GameObject)Instantiate(Resources.Load("Battler"), charStartPos[i].position, Quaternion.identity));
+            battlers.Add((GameObject)Instantiate(Resources.Load("Enemy"), new Vector3(i,1,i), Quaternion.identity));
             ((GameObject)battlers[i]).GetComponent<BattlerController>().charData = (CharacterBaseClass)turnList[i];
             ((CharacterBaseClass)turnList[i]).Battler = (GameObject)battlers[i];
         }
@@ -140,6 +140,17 @@ public class GameStateManager : MonoBehaviour
     public void StartBattle()
     {
         state = GameStates.PlayerTurn;
+
+        for (int i = 0; i < turnList.Count; i++)//go through list and kill momentum
+        {
+            NavMeshAgent agent = ((CharacterBaseClass)turnList[i]).Battler.GetComponent<NavMeshAgent>();
+            //set character's destination to their current location
+            agent.SetDestination(((CharacterBaseClass)turnList[i]).Battler.transform.position);
+
+            agent.velocity = Vector3.zero;
+        }
+
+        
     }
 
 

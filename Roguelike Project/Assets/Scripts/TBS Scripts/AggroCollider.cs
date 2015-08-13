@@ -15,10 +15,16 @@ public class AggroCollider : MonoBehaviour {
 	
 	}
 
-    void OnTriggerEnter(Collider col)
+    void OnTriggerStay(Collider col)
     {
-        //move towards player when player enters aggro collider
-        target = col.gameObject.transform;//set target to transform of gameobject hit
-        gameObject.GetComponent<NavMeshAgent>().SetDestination(target.position);
+        if (GameStateManager.stateManager.state == GameStateManager.GameStates.Peace)
+        {
+            if (col.gameObject.tag == "Player")
+            {
+                //move towards player when player enters aggro collider
+                target = col.gameObject.transform;//set target to transform of gameobject hit
+                gameObject.GetComponentInParent<NavMeshAgent>().SetDestination(target.position);
+            }
+        }
     }
 }

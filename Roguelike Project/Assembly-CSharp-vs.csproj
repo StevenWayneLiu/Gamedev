@@ -78,6 +78,7 @@
      <Compile Include="Assets\Scripts\TBS Scripts\RoomGen.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\RoomScript.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\SkillManager.cs" />
+     <Compile Include="Assets\Scripts\TBS Scripts\StateMonitorScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -21,11 +21,15 @@ public class NavMeshController : MonoBehaviour {
             agent.SetDestination(hit.point);//set destination to point of collision with map
             Debug.Log(hit.point);
         }
+        if (GameStateManager.stateManager.state == GameStateManager.GameStates.PlayerTurn)
+        {
+            agent.SetDestination(gameObject.transform.position);
+        }
 	}
 
     void FixedUpdate()
     {
-
+        
     }
 
     //moves the character to the point on the screen where the mouse is

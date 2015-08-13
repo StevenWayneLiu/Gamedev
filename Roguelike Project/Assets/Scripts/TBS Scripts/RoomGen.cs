@@ -42,10 +42,10 @@ public class RoomGen : MonoBehaviour {
         {
             //add room content to the room script
             case 0:
-                room.GetComponent<RoomScript>().content = (GameObject)Instantiate(Resources.Load("FieldEnemy"), pos, Quaternion.identity);
+                room.GetComponent<RoomScript>().content = (GameObject)Instantiate(Resources.Load("Battler"), pos, Quaternion.identity);
                 break;
             case 1:
-                room.GetComponent<RoomScript>().content = (GameObject)Instantiate(Resources.Load("FieldEnemy"), pos, Quaternion.identity);
+                room.GetComponent<RoomScript>().content = (GameObject)Instantiate(Resources.Load("Battler"), pos, Quaternion.identity);
                 break;
             case 2:
                 room.GetComponent<RoomScript>().content = (GameObject)Instantiate(Resources.Load("Stairs"), pos, Quaternion.identity);

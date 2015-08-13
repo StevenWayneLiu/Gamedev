@@ -15,7 +15,7 @@ public class CharacterBaseClass {
     private int speed;
     private int move;//movement range of character
     private int range;//attack range of character
-    private float timePoints;
+    private float timePoints = 100;
     private float bankedTP;
 
     private GameObject battler;//battler character in the game
@@ -29,6 +29,7 @@ public class CharacterBaseClass {
         speed = 1;
         move = 5;
         range = 3;
+        timePoints = 100;
     }
     //constructor for setting faction
     public CharacterBaseClass(Faction faction)
@@ -38,6 +39,9 @@ public class CharacterBaseClass {
         curHealth = maxHealth;
         strength = 100;
         speed = 1;
+        move = 5;
+        range = 3;
+        timePoints = 100;
     }
 
     //properties
@@ -60,7 +64,7 @@ public class CharacterBaseClass {
     public int Range { get; set; }
     public float TimePoints 
     {
-        get { return TimePoints; }
+        get { return timePoints; }
         set { TimePoints = value; }
     }
     public float BankedTP
