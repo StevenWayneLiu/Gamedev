@@ -63,7 +63,7 @@ public class PolygonGenerator : MonoBehaviour {
 		for(int px=0; px < blocks.GetLength(0); px++){
 			for(int py = 0; py < blocks.GetLength(1); py++){
 				if(blocks[px,py]!=0){
-				GenCollider(px,py);
+				    GenCollider(px,py);
 					if(blocks[px,py] == 1){
 						GenSquare(px,py,tStone);
 					}
@@ -172,6 +172,7 @@ public class PolygonGenerator : MonoBehaviour {
 		newUV.Clear();
 		squareCount = 0;
 		
+        //create the collider mesh
 		Mesh newMesh = new Mesh();
 		newMesh.vertices = colVertices.ToArray();
 		newMesh.triangles = colTriangles.ToArray();

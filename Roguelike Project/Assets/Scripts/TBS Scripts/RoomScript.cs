@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;//need for lists
 
 public class RoomScript : MonoBehaviour
 {
 
     public GameObject content;
+
+
 
     // Use this for initialization
     void Start()
@@ -36,4 +39,8 @@ public class RoomScript : MonoBehaviour
                 content.GetComponent<FieldEnemy>().target = gameObject.transform;
         }
     }
+
+
+    
+
 }

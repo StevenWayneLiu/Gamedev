@@ -30,6 +30,7 @@ public class CharacterBaseClass {
         move = 5;
         range = 3;
         timePoints = 100;
+        bankedTP = 0;
     }
     //constructor for setting faction
     public CharacterBaseClass(Faction faction)
@@ -42,6 +43,7 @@ public class CharacterBaseClass {
         move = 5;
         range = 3;
         timePoints = 100;
+        bankedTP = 0;
     }
 
     //properties
@@ -65,12 +67,12 @@ public class CharacterBaseClass {
     public float TimePoints 
     {
         get { return timePoints; }
-        set { TimePoints = value; }
+        set { timePoints = value; }
     }
     public float BankedTP
     {
         get { return BankedTP; }
-        set { BankedTP = value; }
+        set { bankedTP = value; }
     }
     public GameObject Battler
     {

@@ -20,7 +20,7 @@ public class EngageCollider : MonoBehaviour {
     void OnTriggerEnter(Collider col)
     {
         //start battle phase if run into a player
-        if(col.tag == "Player")
+        if(col.tag == "Player" && GameStateManager.stateManager.state == GameStateManager.GameStates.Peace)
             GameStateManager.stateManager.StartBattle();
     }
 }

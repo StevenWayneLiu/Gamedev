@@ -94,7 +94,6 @@ public class GameStateManager : MonoBehaviour
                 break;
         }
 
-
         state = GameStates.PlayerAct;//transition states to confirmation stage
     }
 
@@ -198,7 +197,7 @@ public class GameStateManager : MonoBehaviour
             UI.enabled = false;
 
         //reset character's TP and add banked TP from waiting
-        curChar.BankedTP = curChar.TimePoints;//any remaining TP is banked
+        //curChar.BankedTP = curChar.TimePoints;//any remaining TP is banked
         curChar.TimePoints = 100f;
 
         EndBattle();//check if battle should end
