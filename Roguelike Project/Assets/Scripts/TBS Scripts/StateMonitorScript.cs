@@ -23,6 +23,9 @@ public class StateMonitorScript : MonoBehaviour {
             case (GameStateManager.GameStates.PlayerTurn):
                 stateText.text = "Player's turn";
                 break;
+            case (GameStateManager.GameStates.PlayerAct):
+                stateText.text = "choose action";
+                break;
             default:
                 break;
         }

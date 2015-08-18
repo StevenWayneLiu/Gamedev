@@ -4,10 +4,9 @@ using System.Collections;
 public class CharacterBaseClass {
 
     public enum Faction { Player, Enemy };//whether the character belongs to player or enemy
-
     public Faction fac;
 
-    //member variables
+    //Statistics
     private string name;
     private float maxHealth = 100;
     private float curHealth;
@@ -19,6 +18,7 @@ public class CharacterBaseClass {
     private float bankedTP;
 
     private GameObject battler;//battler character in the game
+    private CharacterManager manager;//used for accessing character in scene
 
     //default constructor
     public CharacterBaseClass()
@@ -33,7 +33,7 @@ public class CharacterBaseClass {
         bankedTP = 0;
     }
     //constructor for setting faction
-    public CharacterBaseClass(Faction faction)
+    public CharacterBaseClass(Faction faction, CharacterManager man)
     {
         name = "base";
         fac = faction;
@@ -44,6 +44,7 @@ public class CharacterBaseClass {
         range = 3;
         timePoints = 100;
         bankedTP = 0;
+        manager = man;
     }
 
     //properties
@@ -79,7 +80,12 @@ public class CharacterBaseClass {
         get { return battler; }
         set { battler = value; }
     }
-    
+    public CharacterManager Manager
+    {
+        get { return manager; }
+        set { manager = value; }
+    }
+
     //apply damage to target
     public void Attack(CharacterBaseClass target)
     {

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
@@ -9,7 +10,8 @@ public class GameData : MonoBehaviour {
 
     public static GameData data;
 
-    public ArrayList Characters = new ArrayList();//list of player's characters
+    public List<CharacterBaseClass> Characters = new List<CharacterBaseClass>();//list of player's characters
+    public List<CharacterBaseClass> Enemies = new List<CharacterBaseClass>();//list of field enemies
 
 	// Use this for initialization
 	void Awake () {
@@ -25,9 +27,7 @@ public class GameData : MonoBehaviour {
             Destroy(gameObject);//destroy this one
         }
 
-        //populate character list
-        for (int i = 0; i < 4; i++)
-            Characters.Add( new CharacterBaseClass(CharacterBaseClass.Faction.Player) );//create four player characters
+
 	}
 
     //saving function
@@ -51,6 +51,7 @@ public class GameData : MonoBehaviour {
         
         //save characters into serializable class
         pd.Characters = Characters;
+        Enemies = pd.Enemies;
 
         bf.Serialize(file, pd);//write PlayerData to file location
         file.Close();//close filestream after done
@@ -67,6 +68,7 @@ public class GameData : MonoBehaviour {
             file.Close();
 
             Characters = pd.Characters;
+            Enemies = pd.Enemies;
         }
     }
 }
@@ -76,5 +78,6 @@ public class GameData : MonoBehaviour {
 class PlayerData
 {
     //character list
-    public ArrayList Characters;
+    public List<CharacterBaseClass> Characters;
+    public List<CharacterBaseClass> Enemies;
 }

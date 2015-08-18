@@ -36,12 +36,7 @@ public class BattlerController : MonoBehaviour {
             //ensure magnitude of total velocity vector doesn't exceed max speed
             xVel = Mathf.Clamp(Input.GetAxis("Horizontal") * maxSpeed, -1 * maxSpeed * Mathf.Cos(angle), maxSpeed * Mathf.Cos(angle));
             yVel = Mathf.Clamp(Input.GetAxis("Vertical") * maxSpeed, -1 * maxSpeed * Mathf.Sin(angle), maxSpeed * Mathf.Sin(angle));
-            GetComponent<Rigidbody>().velocity = new Vector3(xVel, yVel, 0);
+            //GetComponent<Rigidbody>().velocity = new Vector3(xVel, yVel, 0);
         }
-    }
-    void OnMouseDown()
-    {
-        GameStateManager.stateManager.target = charData;//select the character associated to this object
-        GameStateManager.stateManager.targetObject = gameObject;//select this object
     }
 }

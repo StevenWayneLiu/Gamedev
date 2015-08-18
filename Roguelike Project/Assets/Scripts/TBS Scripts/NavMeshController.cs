@@ -9,11 +9,6 @@ public class NavMeshController : MonoBehaviour {
 	void Start () {
         agent = gameObject.GetComponent<NavMeshAgent>();
 
-        if (gameObject.tag == "Player")//if this is the player object, associate it with the player data
-        {
-            gameObject.GetComponent<BattlerController>().charData = (CharacterBaseClass)GameData.data.Characters[0];
-            gameObject.GetComponent<BattlerController>().charData.Battler = gameObject;
-        }
 	}
 	
 	// Update is called once per frame
