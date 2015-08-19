@@ -8,16 +8,20 @@ public class CharacterManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
         if (gameObject.tag == "Player")
         {
-            GameData.data.Characters.Add( new CharacterBaseClass(CharacterBaseClass.Faction.Player,gameObject.GetComponent<CharacterManager>()) );
+            //create character data for this object
+            charInfo = new CharacterBaseClass(CharacterBaseClass.Faction.Player, this);
+            GameData.data.Characters.Add(charInfo);//add character data to the gamedata
         }
         else
         {
-            GameData.data.Characters.Add( new CharacterBaseClass(CharacterBaseClass.Faction.Enemy, gameObject.GetComponent<CharacterManager>()) );
+            //if a new enemy object is created, add its data to the gamedata
+            charInfo = new CharacterBaseClass(CharacterBaseClass.Faction.Enemy, this);
+            GameData.data.Enemies.Add(charInfo);//add character data to the gamedata
         }
-
-        nav = GetComponent<NavMeshAgent>();
+        nav = GetComponent<NavMeshAgent>();//find the navmeshagent attached to this character
 
 	}
 	

@@ -8,19 +8,14 @@ public class NavMeshController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         agent = gameObject.GetComponent<NavMeshAgent>();
-
 	}
 	
 	// Update is called once per frame
 	void Update () {
         //movement during peacetime
-        if (Input.GetButton("Fire1") && GameStateManager.stateManager.state == GameStateManager.GameStates.Peace)
+        if (Input.GetButton("Fire1") && GameStateManager.stateManager.currentState.name == "Peace")
         {
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Physics.Raycast(ray, out hit);//cast a ray where mouse clicked
-            agent.SetDestination(hit.point);//set destination to point of collision with map
-            Debug.Log(hit.point);
+            Move();
         }
 	}
 

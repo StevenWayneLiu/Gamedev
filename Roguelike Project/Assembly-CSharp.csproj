@@ -74,12 +74,16 @@
      <Compile Include="Assets\Scripts\TBS Scripts\EngageCollider.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\FieldEnemy.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\GameData.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\GameStateManager.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\HPBarScript.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\NavMeshController.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\RoomGen.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\RoomScript.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\SkillManager.cs" />
+     <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\GameStateManager.cs" />
+     <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\PeaceState.cs" />
+     <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\PlayerChoose.cs" />
+     <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\State.cs" />
+     <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\StateManager.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\StateMonitorScript.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\TargetBoxScript.cs" />
  <Reference Include="UnityEngine.UI">

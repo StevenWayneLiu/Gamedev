@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameStateManager : MonoBehaviour
+public class GameStateManager : StateManager
 {
     public static GameStateManager stateManager;
     //states
@@ -9,9 +9,6 @@ public class GameStateManager : MonoBehaviour
     public GameStates state;
 
     //variables
-    public float timePoints = 100f;
-    public float bankedPoints = 0f;
-    public Transform[] charStartPos = new Transform[12];//stores starting positions for characters
     public int actionIndex = 0;//the index of the action currently selected
 
     public ArrayList aggro = new ArrayList();//holds all the enemies that the player is currently aggroing
@@ -35,6 +32,7 @@ public class GameStateManager : MonoBehaviour
 
         //start in peace
         state = GameStates.Peace;
+        AddActiveState(new PeaceState(this));
 
         //populate turn list
         for (int i = 0; i < GameData.data.Characters.Count; i++)

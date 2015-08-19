@@ -17,7 +17,7 @@ public class AggroCollider : MonoBehaviour {
 
     void OnTriggerStay(Collider col)
     {
-        if (GameStateManager.stateManager.state == GameStateManager.GameStates.Peace)
+        if (GameStateManager.stateManager.currentState.name == "Peace")
         {
             if (col.gameObject.tag == "Player")
             {
