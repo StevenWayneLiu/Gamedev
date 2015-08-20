@@ -17,8 +17,7 @@ public class CharacterBaseClass {
     private float timePoints = 100;
     private float bankedTP;
 
-    private GameObject battler;//battler character in the game
-    private CharacterManager manager;//used for accessing character in scene
+    public CharacterManager manager;//used for accessing character in scene
 
     //default constructor
     public CharacterBaseClass()
@@ -74,11 +73,6 @@ public class CharacterBaseClass {
     {
         get { return BankedTP; }
         set { bankedTP = value; }
-    }
-    public GameObject Battler
-    {
-        get { return battler; }
-        set { battler = value; }
     }
     public CharacterManager Manager
     {

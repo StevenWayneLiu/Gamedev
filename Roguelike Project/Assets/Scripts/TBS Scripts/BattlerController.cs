@@ -31,12 +31,9 @@ public class BattlerController : MonoBehaviour {
 
     void FixedUpdate()
     {
-        if (charData == GameStateManager.stateManager.curChar)//only move when it's player's turn and they're moving
-        {
-            //ensure magnitude of total velocity vector doesn't exceed max speed
-            xVel = Mathf.Clamp(Input.GetAxis("Horizontal") * maxSpeed, -1 * maxSpeed * Mathf.Cos(angle), maxSpeed * Mathf.Cos(angle));
-            yVel = Mathf.Clamp(Input.GetAxis("Vertical") * maxSpeed, -1 * maxSpeed * Mathf.Sin(angle), maxSpeed * Mathf.Sin(angle));
-            //GetComponent<Rigidbody>().velocity = new Vector3(xVel, yVel, 0);
-        }
+        //ensure magnitude of total velocity vector doesn't exceed max speed
+        xVel = Mathf.Clamp(Input.GetAxis("Horizontal") * maxSpeed, -1 * maxSpeed * Mathf.Cos(angle), maxSpeed * Mathf.Cos(angle));
+        yVel = Mathf.Clamp(Input.GetAxis("Vertical") * maxSpeed, -1 * maxSpeed * Mathf.Sin(angle), maxSpeed * Mathf.Sin(angle));
+        //GetComponent<Rigidbody>().velocity = new Vector3(xVel, yVel, 0);
     }
 }

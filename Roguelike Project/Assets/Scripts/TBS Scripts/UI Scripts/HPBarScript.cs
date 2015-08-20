@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class HPBarScript : MonoBehaviour {
 
     private Image hpBar;
+    public CharacterBaseClass target;
 
 	// Use this for initialization
 	void Start () {
@@ -13,7 +14,6 @@ public class HPBarScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(GameStateManager.stateManager.target != null)
-            hpBar.fillAmount = GameStateManager.stateManager.target.HealthFract;
+        //hpBar.fillAmount = target.HealthFract;
 	}
 }

@@ -5,18 +5,9 @@ public class PeaceState : State {
 
     public PeaceState(StateManager sm) : base(sm)
     {
-
+        name = "Peace";
     }
 
-	public void Update () 
-    {
-
-	}
-
-    public void Enter()
-    {
-        
-    }
 
     
 }

@@ -4,7 +4,7 @@ using System.Collections;
 public class CharacterManager : MonoBehaviour {
 
     public CharacterBaseClass charInfo;//character info associated with this character
-    public NavMeshAgent nav;//navmeshagent attached ot this character
+    public NavMeshAgent agent;//navmeshagent attached ot this character
 
 	// Use this for initialization
 	void Start () {
@@ -21,12 +21,17 @@ public class CharacterManager : MonoBehaviour {
             charInfo = new CharacterBaseClass(CharacterBaseClass.Faction.Enemy, this);
             GameData.data.Enemies.Add(charInfo);//add character data to the gamedata
         }
-        nav = GetComponent<NavMeshAgent>();//find the navmeshagent attached to this character
+        agent = GetComponent<NavMeshAgent>();//find the navmeshagent attached to this character
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+        if (GameStateManager.stateManager.currentState.name != "Peace")
+        {
+            agent.SetDestination(agent.gameObject.transform.position);
+            agent.velocity = Vector3.zero;
+        }
 	}
+
 }

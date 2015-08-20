@@ -21,6 +21,6 @@ public class EngageCollider : MonoBehaviour {
     {
         //start battle phase if run into a player
         if(col.tag == "Player" && GameStateManager.stateManager.currentState.name == "Peace")
-            GameStateManager.stateManager.ChangeState(new PlayerChoose(GameStateManager.stateManager));
+            GameStateManager.stateManager.RemoveCurrentState(new PlayerChooseState(GameStateManager.stateManager));
     }
 }

@@ -23,4 +23,8 @@ public abstract class State {
     { 
 
     }
+    public virtual void UIButtonPress(int butNum)//use with switch statements to handle UI button input
+    {
+
+    }
 }
