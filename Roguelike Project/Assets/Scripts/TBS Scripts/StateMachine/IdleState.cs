@@ -7,7 +7,7 @@ public class IdleState : State {
     //constructor
     public IdleState(StateManager sm) : base(sm)
     {
-        name = "Peace";
+        name = "Idle";
     }
 
     public override void Enter()
@@ -27,7 +27,10 @@ public class IdleState : State {
     {
         base.Update();
         //listen for movement input from player
-        
+        if ((Input.GetAxisRaw("Horizontal") != 0) || (Input.GetAxisRaw("Vertical") != 0))
+            stateMan.ChangeState(new ActionState(stateMan));//if any movement is done, move to action mode
+        else if(Input.GetButton("Submit"))
+            stateMan.ChangeState(new ActionState(stateMan));//if player presses execute button, go to action state
         //listen for menu input from player
 
         //listen for pause menun input from player

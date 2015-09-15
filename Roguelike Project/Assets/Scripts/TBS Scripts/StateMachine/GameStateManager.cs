@@ -13,7 +13,7 @@ public class GameStateManager : StateManager
     {
         stateManager = this;
         //add initial state to stateMachine
-        currentState = new PeaceState(this);
+        currentState = new IdleState(this);
         possibleStates.Add(currentState.name, currentState);
         //set reference to UI canvas
         UI = GetComponentInChildren<Canvas>();
