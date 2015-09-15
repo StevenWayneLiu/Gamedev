@@ -11,18 +11,6 @@ public class PlayerChooseState : State {
         name = "PlayerChoose";
     }
 
-    public override void Update()
-    {
-        base.Update();
-        //listen for input from buttons
-        
-        //listen for input from escape key
-        if (Input.GetButtonDown("Cancel"))//bring up the menu
-        {
-
-        }
-    }
-
     public override void Enter()
     {
         base.Enter();
@@ -37,19 +25,31 @@ public class PlayerChooseState : State {
         //stateMan.UI.enabled = false;
     }
 
+    public override void Update()
+    {
+        base.Update();
+        //listen for input from buttons
+        
+        //listen for input from escape key
+        if (Input.GetButtonDown("Cancel"))//bring up the pause menu
+        {
+            
+        }
+    }
+
     public override void UIButtonPress(int butNum)
     {
         base.UIButtonPress(butNum);
         switch (butNum)
         {
             case (0)://wait button
-                stateMan.RemoveCurrentState(new EnemyChooseState(stateMan));
+                stateMan.ChangeState(new EnemyChooseState(stateMan));
                 break;
             case(1)://attack button
-                stateMan.AddCurrentState(new PlayerActState(stateMan));
+                stateMan.ChangeState(new PlayerActState(stateMan));
                 break;
             case(2)://move button
-                stateMan.AddCurrentState(new PlayerMoveState(stateMan));
+                stateMan.ChangeState(new PlayerMoveState(stateMan));
                 break;
             default:
                 break;

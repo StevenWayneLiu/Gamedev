@@ -81,6 +81,7 @@
      <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\AnimState.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\EnemyChooseState.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\GameStateManager.cs" />
+     <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\IdleState.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\PeaceState.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\PlayerActState.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\PlayerChooseState.cs" />

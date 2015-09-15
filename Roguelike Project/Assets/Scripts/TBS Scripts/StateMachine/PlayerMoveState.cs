@@ -17,11 +17,11 @@ public class PlayerMoveState : State {
         if (Input.GetButtonDown("Fire1"))
         {
             Move();
-            stateMan.RemoveCurrentState(stateMan.possibleStates["PlayerChoose"]);//go back to player choice state
+            stateMan.ChangeState(stateMan.possibleStates["PlayerChoose"]);//go back to player choice state
         }
         else if (Input.GetButtonDown("Cancel"))
         {
-            stateMan.RemoveCurrentState(stateMan.possibleStates["PlayerChoose"]);//go back to player choice state
+            stateMan.ChangeState(stateMan.possibleStates["PlayerChoose"]);//go back to player choice state
         }
     }
 

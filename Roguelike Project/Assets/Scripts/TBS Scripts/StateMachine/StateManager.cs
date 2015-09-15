@@ -9,6 +9,7 @@ using System.Collections.Generic;
 public class StateManager : MonoBehaviour {
 
     public State currentState;//the currently active state
+    public State prevState;//previously active state
     public Dictionary<string, State> possibleStates = new Dictionary<string, State>();//state stack
     public Canvas UI;//UI canvas to refer to for UI controls and stuff
     
@@ -20,31 +21,40 @@ public class StateManager : MonoBehaviour {
             currentState.Update();
         Debug.Log(currentState.name);
     }
-    //change active state to an existing state in the list, should only be called by state
-    public void ChangeState(string st)
+    //change active state to new state, set current state to prev state
+    public void SwapState(State newState)
     {
-        currentState = possibleStates[st];
+        prevState = currentState;//set current state to previous state
+        if (possibleStates.ContainsValue(newState))
+        {
+            currentState = newState;//if new state is in dictionary, make current state
+        }
+        else//if new state isn't in dictionary
+        {
+            possibleStates.Add(newState.name, newState);//add state to the list of states
+            currentState = newState;//change to new state
+            if (currentState != null)
+                currentState.Enter();//setup state
+        }
     }
 
-    //add new active state and set to active state
-    public void AddCurrentState(State newState)
-    {
-        possibleStates.Add(newState.name, newState);//add state to the list of current states
-
-        if(currentState != null)
-            currentState.Enter();//setup state
-
-        ChangeState(newState.name);//change active state to new state
-    }
-    //remove the current state from the List. Switch current state to newState
-    public void RemoveCurrentState(State newState)
+    //remove the current state from the List. Switch to new state
+    public void ChangeState(State newState)
     {
         if (currentState != null)
             currentState.Exit();//clean up current state
         possibleStates.Remove(currentState.name);//remove current state from the list
-        currentState = newState;
-        if(newState != null)
-            newState.Enter();
+        if (possibleStates.ContainsValue(newState))
+        {
+            currentState = newState;//if new state is in dictionary, make current state
+        }
+        else//if new state isn't in dictionary
+        {
+            possibleStates.Add(newState.name, newState);//add state to the list of states
+            currentState = newState;//change to new state
+            if (currentState != null)
+                currentState.Enter();//setup state
+        }
     }
 
     public void UIButtonPress(int butNum)
