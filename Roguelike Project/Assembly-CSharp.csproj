@@ -66,12 +66,17 @@
      <Compile Include="Assets\Scripts\Shooter Scripts\RaycastController2D.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\BattlerController.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\BattlerHPBar.cs" />
+     <Compile Include="Assets\Scripts\TBS Scripts\CharSkills.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\Character Scripts\AggroCollider.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\Character Scripts\CharacterBaseClass.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\Character Scripts\CharacterManager.cs" />
+     <Compile Include="Assets\Scripts\TBS Scripts\Character Scripts\CharacterStats.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\GameData.cs" />
+     <Compile Include="Assets\Scripts\TBS Scripts\Inventory.cs" />
+     <Compile Include="Assets\Scripts\TBS Scripts\Item.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\NavMeshController.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\RoomGen.cs" />
+     <Compile Include="Assets\Scripts\TBS Scripts\Skill.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\SkillManager.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\ActionState.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\AnimState.cs" />

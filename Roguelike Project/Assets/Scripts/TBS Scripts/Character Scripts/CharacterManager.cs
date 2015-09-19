@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent (typeof (CharSkills))]
 public class CharacterManager : MonoBehaviour {
 
     public CharacterBaseClass charInfo;//character info associated with this character
-    public NavMeshAgent agent;//navmeshagent attached ot this character
+    public NavMeshAgent agent;//navmeshagent attached to this character
 
 	// Use this for initialization
 	void Start () {

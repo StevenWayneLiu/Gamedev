@@ -7,13 +7,8 @@ public class CharacterBaseClass {
     public Faction fac;
 
     //Statistics
+    private CharacterStats stats = new CharacterStats();
     private string name;
-    private float maxHealth = 100;
-    private float curHealth;
-    private int strength;
-    private int speed;
-    private int move;//movement range of character
-    private int range;//attack range of character
     private float timePoints = 100;
     private float bankedTP;
 
@@ -23,11 +18,6 @@ public class CharacterBaseClass {
     public CharacterBaseClass()
     {
         name = "base";
-        curHealth = maxHealth;
-        strength = 100;
-        speed = 1;
-        move = 5;
-        range = 3;
         timePoints = 100;
         bankedTP = 0;
     }
@@ -36,11 +26,11 @@ public class CharacterBaseClass {
     {
         name = "base";
         fac = faction;
-        curHealth = maxHealth;
-        strength = 100;
-        speed = 1;
-        move = 5;
-        range = 3;
+        stats.curHealth = stats.maxHealth;
+        stats.strength = 100;
+        stats.speed = 1;
+        stats.move = 5;
+        stats.range = 3;
         timePoints = 100;
         bankedTP = 0;
         manager = man;
@@ -50,14 +40,14 @@ public class CharacterBaseClass {
     public float MaxHealth { get; set; }
     public float CurHealth
     {
-        get { return curHealth; }
-        set { curHealth = value; }
+        get { return stats.curHealth; }
+        set { stats.curHealth = value; }
     }
     public float HealthFract//returns a float from 0 to 1 representing how much health is left
     {
         get
         {
-            return (float) (curHealth / maxHealth);
+            return (float) (stats.curHealth / stats.maxHealth);
         }
     }
     public int Strength { get; set; }
@@ -83,7 +73,7 @@ public class CharacterBaseClass {
     //apply damage to target
     public void Attack(CharacterBaseClass target)
     {
-        target.CurHealth -= strength;
+        target.CurHealth -= stats.strength;
         timePoints -= 50;
     }
 

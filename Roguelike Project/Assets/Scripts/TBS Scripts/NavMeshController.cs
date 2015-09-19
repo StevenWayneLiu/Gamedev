@@ -14,6 +14,7 @@ public class NavMeshController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         agent = gameObject.GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;//disable the rotation so characters don't spin when bumping
 	}
 	
 	// Update is called once per frame
