@@ -7,7 +7,7 @@ public class CharacterBaseClass {
     public Faction fac;
 
     //Statistics
-    private CharacterStats stats = new CharacterStats();
+    public CharacterStats stats = new CharacterStats();
     private string name;
     private float timePoints = 100;
     private float bankedTP;

@@ -24,6 +24,11 @@ public class CharacterStats {
 
     //apply effects to target set of character stats
     public virtual void Add(CharacterStats targ){
-        
+        targ.maxHealth += maxHealth;
+        targ.curHealth += curHealth;
+        targ.strength += strength;
+        targ.speed += speed;
+        targ.move += move;
+        targ.range += range;
     }
 }
