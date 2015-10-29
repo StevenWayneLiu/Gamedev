@@ -1,0 +1,4 @@
+-map generation
+-enemy design
+-character class design
+-items

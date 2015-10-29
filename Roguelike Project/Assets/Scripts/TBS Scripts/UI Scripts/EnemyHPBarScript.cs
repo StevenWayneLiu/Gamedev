@@ -5,15 +5,19 @@ using UnityEngine.UI;
 public class EnemyHPBarScript : MonoBehaviour {
 
     public Image hpBar;
-    public int characterIndex;//the index of a character in gamedata, from 0 to 3
+    public CharacterManager man;
+    public CharacterStats stats;
 
 	// Use this for initialization
 	void Start () {
-        hpBar = gameObject.GetComponent<Image>();//get the current button's image
-	}
+        hpBar = gameObject.GetComponentInChildren<Image>();//get the current button's image
+        man = gameObject.GetComponentInParent<CharacterManager>();
+        stats = man.charInfo.stats;
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        //hpBar.fillAmount = ( (CharacterBaseClass) GameStateManager.stateManager.enemies[characterIndex] ).HealthFract;
+        hpBar.fillAmount = stats.curHealth / stats.maxHealth;
+        Debug.Log(stats.curHealth);
 	}
 }

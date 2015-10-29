@@ -55,7 +55,6 @@
      <Compile Include="Assets\Scripts\Menu Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Menu Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\PhysicsController2D.cs" />
-     <Compile Include="Assets\Scripts\PlayerStats.cs" />
      <Compile Include="Assets\Scripts\PolygonGenerator.cs" />
      <Compile Include="Assets\Scripts\RPGCharController.cs" />
      <Compile Include="Assets\Scripts\Shooter Scripts\BulletPool.cs" />
@@ -71,10 +70,10 @@
      <Compile Include="Assets\Scripts\TBS Scripts\Character Scripts\CharacterBaseClass.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\Character Scripts\CharacterManager.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\Character Scripts\CharacterStats.cs" />
+     <Compile Include="Assets\Scripts\TBS Scripts\Character Scripts\NavMeshController.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\GameData.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\Inventory.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\Item.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\NavMeshController.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\RoomGen.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\Skill.cs" />
      <Compile Include="Assets\Scripts\TBS Scripts\SkillManager.cs" />

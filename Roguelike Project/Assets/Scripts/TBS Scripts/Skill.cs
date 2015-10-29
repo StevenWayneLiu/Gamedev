@@ -6,9 +6,9 @@ public class Skill : CharacterStats{
     public CharacterStats wepStats;//used when factoring character's equipment into damage
 
     //constructor
-    public Skill()
+    public Skill() : base()
     {
-        curHealth = 0;
+        curHealth = -5;
         maxHealth = 0;
 
         //calculate skill stats based on wepstats and character stats

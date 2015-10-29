@@ -2,9 +2,12 @@
 using System.Collections;
 
 public class BulletPool : MonoBehaviour {
+
+    public static BulletPool bullets;//static reference to this object
+
     public int poolSize = 20;
     public GameObject bullet;//bullet prefab to be fired
-    GameObject[] pool;//array for holding enemy bullets
+    public GameObject[] pool;//array for holding enemy bullets
 
     //cooldown and fire rate
     public float cooldown = 0.1f;//time it takes to be able to fire a bullet again when button is held down
@@ -12,26 +15,29 @@ public class BulletPool : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	    //create enemies
+        bullets = this;
+
+        //fill pool with bullets
         pool = new GameObject[poolSize];
-        for(int i = 0; i < poolSize; i++)//fill pool with bullets
+        for(int i = 0; i < poolSize; i++)
         {
             GameObject bull = (GameObject)Instantiate(bullet);
             pool[i] = bull;//store bullet
             pool[i].SetActive(false);//set inactive
         }
 	}
-	public void Fire()
+    //called when a character uses a bullet
+	public void Fire(Transform user)
     {
-        if(cooldownTimer <= 0)//if cooldown is over
+        if (cooldownTimer <= 0)//if cooldown is over
         {
             for (int i = 0; i < poolSize - 1; i++)//loop through pool looking for an inactive bullet
             {
                 if (!pool[i].activeInHierarchy)
                 {
                     //set bullet to location of the pool
-                    pool[i].transform.position = transform.position;
-                    pool[i].transform.rotation = transform.rotation;
+                    pool[i].transform.position = user.position;
+                    pool[i].transform.rotation = user.rotation;
                     pool[i].SetActive(true);
 
                     cooldownTimer = cooldown;//reset cooldown timer
@@ -40,8 +46,6 @@ public class BulletPool : MonoBehaviour {
                 }
             }
         }
-        
-        
     }
 	// Update is called once per frame
 	void Update () {

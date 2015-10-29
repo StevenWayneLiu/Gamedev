@@ -22,13 +22,13 @@ public class CharacterStats {
         range = 3;
     }
 
-    //apply effects to target set of character stats
+    //add target stats to character stats
     public virtual void Add(CharacterStats targ){
-        targ.maxHealth += maxHealth;
-        targ.curHealth += curHealth;
-        targ.strength += strength;
-        targ.speed += speed;
-        targ.move += move;
-        targ.range += range;
+        maxHealth += targ.maxHealth;
+        curHealth += targ.curHealth;
+        strength += targ.strength;
+        speed += targ.speed;
+        move += targ.move;
+        range += targ.range;
     }
 }

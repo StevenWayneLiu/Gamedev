@@ -7,9 +7,8 @@ public class CharacterManager : MonoBehaviour {
     public CharacterBaseClass charInfo;//character info associated with this character
     public NavMeshAgent agent;//navmeshagent attached to this character
 
-	// Use this for initialization
-	void Start () {
-
+    void Awake()
+    {
         if (gameObject.tag == "Player")
         {
             //create character data for this object
@@ -24,6 +23,12 @@ public class CharacterManager : MonoBehaviour {
         }
         agent = GetComponent<NavMeshAgent>();//find the navmeshagent attached to this character
 
+    }
+
+	// Use this for initialization
+	void Start () {
+
+        
 	}
 	
 	// Update is called once per frame

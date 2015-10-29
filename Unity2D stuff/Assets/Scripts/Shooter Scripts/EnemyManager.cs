@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class EnemyManager : MonoBehaviour {
-    GameObject[] enemyList;
     GameObject enemy;
     public Sprite sprite;
     public int capacity = 10;//number of enemies allowed in the scene at a time
@@ -14,18 +13,17 @@ public class EnemyManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        enemyList = new GameObject[capacity];
         waveTimer = startInterval;//pause and then start spawning wave
 	}
     //spawn single enemy at a specified point
 	void Spawn(GameObject enemy, Vector3 pos)
     {
-        enemyList[0] = (GameObject)GameObject.Instantiate(enemy, pos, gameObject.transform.rotation);
+        GameObject.Instantiate(enemy, pos, gameObject.transform.rotation);
     }
     //spawn a group of enemies
     void spawnWave()
     {
-        enemy = Resources.Load("Enemy") as GameObject;//pull an enemy prefab from resources
+        enemy = Resources.Load("Sidescroller/Enemy") as GameObject;//pull an enemy prefab from resources
         enemy.GetComponent<SpriteRenderer>().sprite = sprite;//set the sprite to something, will be fixed later.
         Vector3 spawnPoint = gameObject.transform.position;
 

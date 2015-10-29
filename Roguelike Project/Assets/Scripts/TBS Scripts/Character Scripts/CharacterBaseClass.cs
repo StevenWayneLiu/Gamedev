@@ -7,7 +7,7 @@ public class CharacterBaseClass {
     public Faction fac;
 
     //Statistics
-    public CharacterStats stats = new CharacterStats();
+    public CharacterStats stats; 
     private string name;
     private float timePoints = 100;
     private float bankedTP;
@@ -18,6 +18,7 @@ public class CharacterBaseClass {
     public CharacterBaseClass()
     {
         name = "base";
+        stats = new CharacterStats();
         timePoints = 100;
         bankedTP = 0;
     }
@@ -26,6 +27,8 @@ public class CharacterBaseClass {
     {
         name = "base";
         fac = faction;
+        stats = new CharacterStats();
+        stats.maxHealth = 100;
         stats.curHealth = stats.maxHealth;
         stats.strength = 100;
         stats.speed = 1;
