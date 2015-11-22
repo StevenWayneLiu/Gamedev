@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LeftMove : EnemyMoveScript {
+public class LeftMove : MonoBehaviour {
     public float switchTime = 0.1f;
+    public Vector2 vel;
+    float time = 0;
 	// Use this for initialization
 	void Start () {
-        xVel = -2f;
-        yVel = 3f;
+        vel = new Vector2(-2f,3f);
 	}
 	
 	// Update is called once per frame
@@ -19,9 +20,9 @@ public class LeftMove : EnemyMoveScript {
         time += Time.deltaTime;
         if (time > switchTime)
         {
-            yVel *= -1f;
+            vel.Scale(new Vector2(1f,-1f));
             time = 0f;
         }
-        GetComponent<Rigidbody2D>().velocity = new Vector2(xVel, yVel);
+        GetComponent<Rigidbody2D>().velocity = vel;
     }
 }

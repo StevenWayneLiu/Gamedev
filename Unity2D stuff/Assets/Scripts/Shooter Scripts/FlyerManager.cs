@@ -9,12 +9,21 @@ public class FlyerManager : CharacterManager {
     public Image hpBar;
     public Canvas deathCanvas;
     public int[] skillList;//holds indexes of usable skills from global skill list
+    FlyerController2D cont;
 
     void Start()
     {
         base.Start();
+        className = "Flyer";
+        charInfo.Strength = 5;
         if(GetComponentInChildren<Image>())
             hpBar = gameObject.GetComponentInChildren<Image>();
+
+        if (GetComponentInChildren<FlyerController2D>())
+            cont = gameObject.GetComponentInChildren<FlyerController2D>();
+        else
+            if(gameObject.tag == "Player")
+                cont = gameObject.AddComponent<FlyerController2D>();
     }
 
     //defines behavior when entity's health drops to zero
@@ -26,6 +35,11 @@ public class FlyerManager : CharacterManager {
             if(deathCanvas)
                 deathCanvas.enabled = true;
         }
+        else
+        {
+            GameData.data.Scores["Kills"]++;
+            Destroy(gameObject);
+        }
             
     }
 
@@ -34,20 +48,17 @@ public class FlyerManager : CharacterManager {
     {
         if (charInfo.CurHealth <= 0)//check for death
             Death();
+        hpBar.fillAmount = (charInfo.HealthFract);
     }
-
+    
+    //only enemies and bullets call this, player character has non-trigger collider
     void OnTriggerEnter2D(Collider2D collider)
     {
         GameObject entity = collider.gameObject;//find gameObject for collider hit
-        if (entity.tag == "Entity" || entity.tag == "Player")//if gameObject hit is a bullet
+        if (entity.tag != gameObject.tag && (entity.tag == "Player" || entity.tag == "Enemy"))
         {
-            charInfo.CurHealth -= entity.GetComponent<CharacterManager>().charInfo.Strength;//deal damage to player based on bullet's damage
+            entity.GetComponent<CharacterManager>().charInfo.CurHealth -= charInfo.Strength;//deal damage from touching
         }
-        if (entity.tag == "Bullet")
-        {
-            charInfo.CurHealth -= entity.GetComponent<BulletScript>().getDamage();//deal damage to player based on bullet's damage
-        }
-        if(hpBar)
-            hpBar.fillAmount = (charInfo.HealthFract);
+        
     }
 }

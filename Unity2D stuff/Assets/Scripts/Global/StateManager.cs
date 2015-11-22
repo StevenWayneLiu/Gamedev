@@ -13,7 +13,6 @@ public class StateManager : MonoBehaviour {
     public Dictionary<string, State> possibleStates = new Dictionary<string, State>();//state stack
     public Canvas UI;//UI canvas to refer to for UI controls and stuff
     
-
     //calls the state's update function
     public void Update()
     {
@@ -22,7 +21,7 @@ public class StateManager : MonoBehaviour {
         Debug.Log(currentState.name);
     }
     //change active state to new state, set current state to prev state
-    public void SwapState(State newState)
+    public void AddState(State newState)
     {
         prevState = currentState;//set current state to previous state
         if (possibleStates.ContainsValue(newState))

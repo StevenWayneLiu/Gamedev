@@ -20,9 +20,6 @@ public class GameStateManager : StateManager
         Debug.Log("Setup complete");
     }
 
-    
-
-
     public void Lose()
     {
         Application.LoadLevel(3);//go to death screen

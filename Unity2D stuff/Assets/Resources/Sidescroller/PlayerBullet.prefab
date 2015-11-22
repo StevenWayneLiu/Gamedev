@@ -9,12 +9,12 @@ GameObject:
   m_Component:
   - 4: {fileID: 434202}
   - 212: {fileID: 21249014}
-  - 114: {fileID: 11446856}
   - 50: {fileID: 5056468}
   - 61: {fileID: 6123422}
-  m_Layer: 8
+  - 114: {fileID: 11420050}
+  m_Layer: 10
   m_Name: PlayerBullet
-  m_TagString: Bullet
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,7 +60,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: .330000013, y: .159999996}
---- !u!114 &11446856
+--- !u!114 &11420050
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -68,9 +68,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 124796}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f4c79602236ef242bbfeb48315a26ee, type: 3}
+  m_Script: {fileID: 11500000, guid: 743201d7fee9df8428e47b2f954b9b71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  className: 
 --- !u!212 &21249014
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -103,7 +104,15 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 124796}

@@ -35,6 +35,7 @@ public class BulletPool : MonoBehaviour {
             {
                 if (!pool[i].activeInHierarchy)
                 {
+                    pool[i].tag = user.gameObject.tag;
                     //set bullet to location of the pool
                     pool[i].transform.position = user.position;
                     pool[i].transform.rotation = user.rotation;

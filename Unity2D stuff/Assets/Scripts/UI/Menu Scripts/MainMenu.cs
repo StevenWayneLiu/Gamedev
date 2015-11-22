@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour {
         menuCanvas = GetComponent<Canvas>();
     }
 	// Send you to game scene
-	public void loadLevel()
+	public void LoadLevel()
     {
         Application.LoadLevel(1);
     }

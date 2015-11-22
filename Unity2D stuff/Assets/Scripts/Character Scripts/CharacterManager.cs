@@ -6,6 +6,7 @@ using System.Collections;
 public class CharacterManager : MonoBehaviour {
 
     public Character charInfo;//character info associated with this character
+    public string className;//the name of the character class for a given character
 
     public void Start()
     {
@@ -14,16 +15,12 @@ public class CharacterManager : MonoBehaviour {
             //create character data for this object
             charInfo = new Character(Character.Faction.Player, this);
             GameData.data.Characters.Add(charInfo);//add character data to the gamedata
-            //add a character controller to this game object if there's not one already
-            if (gameObject.GetComponent<FlyerController2D>() == null)
-                gameObject.AddComponent<FlyerController2D>();
         }
         else
         {
             //create new enemy data for this object
             charInfo = new Character(Character.Faction.Enemy, this);
             GameData.data.Enemies.Add(charInfo);//add character data to the gamedata
-            //add AI script
         }
 
     }

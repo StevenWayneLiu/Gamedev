@@ -13,6 +13,8 @@ public class GameData : MonoBehaviour {
     public List<Entity> Characters = new List<Entity>();//list of player's characters
     public List<Entity> Enemies = new List<Entity>();//list of field enemies
 
+    public Dictionary<string, float> Scores = new Dictionary<string, float>();//data structure to store global number data
+
 	// Use this for initialization
 	void Awake () {
 
