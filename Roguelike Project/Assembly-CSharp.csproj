@@ -5,10 +5,10 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
+	<RootNamespace></RootNamespace>
 	<ProjectGuid>{009D0AEE-5006-960D-DBF4-F1372A18749C}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
-	<RootNamespace></RootNamespace>
 	<AssemblyName>Assembly-CSharp</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_5_1_2;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_2_3;UNITY_5_2;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -28,7 +28,6 @@
 	<DebugType>pdbonly</DebugType>
 	<Optimize>true</Optimize>
 	<OutputPath>Temp\bin\Release\</OutputPath>
-	<DefineConstants>TRACE</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -46,62 +45,68 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\EnemyMoveScript.cs" />
-     <Compile Include="Assets\Scripts\EnemyStats.cs" />
-     <Compile Include="Assets\Scripts\EntityStats.cs" />
-     <Compile Include="Assets\Scripts\FlyerController2D.cs" />
-     <Compile Include="Assets\Scripts\MapGen.cs" />
-     <Compile Include="Assets\Scripts\Menu Scripts\DeathMenu.cs" />
-     <Compile Include="Assets\Scripts\Menu Scripts\MainMenu.cs" />
-     <Compile Include="Assets\Scripts\Menu Scripts\PauseMenu.cs" />
-     <Compile Include="Assets\Scripts\PhysicsController2D.cs" />
-     <Compile Include="Assets\Scripts\PolygonGenerator.cs" />
-     <Compile Include="Assets\Scripts\RPGCharController.cs" />
-     <Compile Include="Assets\Scripts\Shooter Scripts\BulletPool.cs" />
-     <Compile Include="Assets\Scripts\Shooter Scripts\BulletScript.cs" />
-     <Compile Include="Assets\Scripts\Shooter Scripts\EnemyBullet.cs" />
-     <Compile Include="Assets\Scripts\Shooter Scripts\EnemyManager.cs" />
-     <Compile Include="Assets\Scripts\Shooter Scripts\LeftMove.cs" />
-     <Compile Include="Assets\Scripts\Shooter Scripts\RaycastController2D.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\BattlerController.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\BattlerHPBar.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\CharSkills.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\Character Scripts\AggroCollider.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\Character Scripts\CharacterBaseClass.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\Character Scripts\CharacterManager.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\Character Scripts\CharacterStats.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\Character Scripts\NavMeshController.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\GameData.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\Inventory.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\Item.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\RoomGen.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\Skill.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\SkillManager.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\ActionState.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\AnimState.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\GameStateManager.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\IdleState.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\State.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\StateManager.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\Unused\AimAttack.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\Unused\EnemyChooseState.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\Unused\PeaceState.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\Unused\PlayerActState.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\Unused\PlayerChooseState.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\StateMachine\Unused\PlayerMoveState.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\TargetBoxScript.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\UI Scripts\EnemyHPBarScript.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\UI Scripts\HPBarScript.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\UI Scripts\StateMonitorScript.cs" />
-     <Compile Include="Assets\Scripts\TBS Scripts\UI Scripts\UIFollowScript.cs" />
+     <Compile Include="Assets\Core\Scripts\Character Scripts\Attributes.cs" />
+     <Compile Include="Assets\Core\Scripts\Character Scripts\CharacterManager.cs" />
+     <Compile Include="Assets\Core\Scripts\Character Scripts\RPGCharController.cs" />
+     <Compile Include="Assets\Core\Scripts\Character Scripts\SkillManager.cs" />
+     <Compile Include="Assets\Core\Scripts\Global\Character.cs" />
+     <Compile Include="Assets\Core\Scripts\Global\Entity.cs" />
+     <Compile Include="Assets\Core\Scripts\Global\GameData.cs" />
+     <Compile Include="Assets\Core\Scripts\Global\GameStateManager.cs" />
+     <Compile Include="Assets\Core\Scripts\Global\IEntity.cs" />
+     <Compile Include="Assets\Core\Scripts\Global\IItem.cs" />
+     <Compile Include="Assets\Core\Scripts\Global\IItemRank.cs" />
+     <Compile Include="Assets\Core\Scripts\Global\Inventory.cs" />
+     <Compile Include="Assets\Core\Scripts\Global\Item.cs" />
+     <Compile Include="Assets\Core\Scripts\Global\ItemRank.cs" />
+     <Compile Include="Assets\Core\Scripts\Global\ItemRankDatabase.cs" />
+     <Compile Include="Assets\Core\Scripts\Global\Skill.cs" />
+     <Compile Include="Assets\Core\Scripts\Global\State.cs" />
+     <Compile Include="Assets\Core\Scripts\Global\StateManager.cs" />
+     <Compile Include="Assets\Core\Scripts\UI\DeathMenu.cs" />
+     <Compile Include="Assets\Core\Scripts\UI\HPBar.cs" />
+     <Compile Include="Assets\Core\Scripts\UI\MainMenu.cs" />
+     <Compile Include="Assets\Core\Scripts\UI\PauseMenu.cs" />
+     <Compile Include="Assets\Resources\Scripts\CamFollow.cs" />
+     <Compile Include="Assets\Resources\Scripts\FindNPC.cs" />
+     <Compile Include="Assets\Resources\Scripts\InteractButton.cs" />
+     <Compile Include="Assets\Resources\Scripts\InventoryButton.cs" />
+     <Compile Include="Assets\Resources\Scripts\NPCInteraction.cs" />
+     <Compile Include="Assets\Resources\Scripts\RpgController.cs" />
+     <Compile Include="Assets\Resources\Scripts\Shooter Scripts\BulletPool.cs" />
+     <Compile Include="Assets\Resources\Scripts\Shooter Scripts\BulletScript.cs" />
+     <Compile Include="Assets\Resources\Scripts\Shooter Scripts\EnemyBullet.cs" />
+     <Compile Include="Assets\Resources\Scripts\Shooter Scripts\EnemyManager.cs" />
+     <Compile Include="Assets\Resources\Scripts\Shooter Scripts\LeftMove.cs" />
+     <Compile Include="Assets\Resources\Scripts\Shooter Scripts\RaycastController2D.cs" />
+     <Compile Include="Assets\Resources\Unused\EnemyMoveScript.cs" />
+     <Compile Include="Assets\Resources\Unused\Scripts\FlyerController2D.cs" />
+     <Compile Include="Assets\Resources\Unused\Scripts\NavMeshController.cs" />
+     <Compile Include="Assets\Resources\Unused\Scripts\PhysicsController2D.cs" />
+     <Compile Include="Assets\Resources\Unused\Scripts\RoomGen.cs" />
+     <Compile Include="Assets\Resources\Unused\Scripts\UIFollowScript.cs" />
+     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\ImportBehaviour.cs" />
+     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\SortingLayerExposed.cs" />
+     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TileAnimator.cs" />
+     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TiledInitialShaderProperties.cs" />
+     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TiledMap.cs" />
+     <None Include="Assets\Tiled2Unity\Prefabs\_ReadMe.txt" />
+     <None Include="Assets\Tiled2Unity\Shaders\shaTiledMap.shader" />
+     <None Include="Assets\Tiled2Unity\Tiled2Unity.export.txt" />
+     <None Include="Assets\Tiled2Unity\Materials\_ReadMe.txt" />
+     <None Include="Assets\Tiled2Unity\Textures\_ReadMe.txt" />
+     <None Include="Assets\Tiled2Unity\License.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Field.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\_ReadMe.txt" />
+     <None Include="Assets\Tiled2Unity\Meshes\_ReadMe.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ <Reference Include="Mono.Cecil">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
