@@ -4,8 +4,8 @@ using System.Collections;
 
 public class InventoryButton : MonoBehaviour {
 
-    public Text text;
-    public Button button;
+    Text text;
+    Button button;
 
 
     // Use this for initialization
@@ -14,4 +14,11 @@ public class InventoryButton : MonoBehaviour {
         text = GetComponent<Text>();
         button = GetComponent<Button>();
     }
+
+    public Text Text
+    {
+        get { return text; }
+        set { text = value; }
+    }
+
 }
