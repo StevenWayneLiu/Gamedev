@@ -8,7 +8,6 @@ public class Character : MonoBehaviour , IEntity, IInteractable {
 
     public CharacterData charData;//character info associated with this character
 
-    public SkillManager skillMan;
     public InventoryScreen invScr;//inventory screen
     Rigidbody2D rbody;
     float findRange = 1f;//radius of circlecast for finding npcs
@@ -154,7 +153,7 @@ public class Character : MonoBehaviour , IEntity, IInteractable {
         }
         else//else if skill applies effect directly to target's stats
         {
-            skill.Calculate(targ);
+            //find target
         }
     }
 

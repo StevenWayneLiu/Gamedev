@@ -55,7 +55,6 @@
      <Compile Include="Assets\Core\Resources\Scripts\Character Scripts\Item.cs" />
      <Compile Include="Assets\Core\Resources\Scripts\Character Scripts\ItemData.cs" />
      <Compile Include="Assets\Core\Resources\Scripts\Character Scripts\Skill.cs" />
-     <Compile Include="Assets\Core\Resources\Scripts\Character Scripts\SkillManager.cs" />
      <Compile Include="Assets\Core\Resources\Scripts\Global\GameData.cs" />
      <Compile Include="Assets\Core\Resources\Scripts\Global\GameStateManager.cs" />
      <Compile Include="Assets\Core\Resources\Scripts\Global\IEntity.cs" />

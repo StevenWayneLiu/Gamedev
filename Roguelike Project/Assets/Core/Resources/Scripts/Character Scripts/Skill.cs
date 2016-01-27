@@ -23,11 +23,11 @@ public class Skill : Entity{
         //calculate skill stats based on wepstats and character stats
     }
 
-    //generic use function for all skills, may need to take in parameters
-    //for the user character and ally characters at some point.
-    public virtual void Use()
+    public virtual void Use(IEntity targ)
     {
-        
+        //find target
+        //apply damage
+        CalculateDamage(targ);
     }
     //a deactivate skill might be useful for skills that have a duration effect
 
