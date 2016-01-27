@@ -9,23 +9,23 @@ public class Entity : IEntity {
     //member variables
     string name;
     public Attributes stats;//Entity Statistics
-    public Inventory<Skill> skills;//list of usable skills for this character
-    public Inventory<ItemData> items;//list of items in this entity's inventory
+    public Database<Skill> skills;//list of usable skills for this character
+    public Database<ItemData> items;//list of items in this entity's inventory
     
 
     //default constructor
     public Entity()
     {
         stats = new Attributes();
-        skills = new Inventory<Skill>();
-        items = new Inventory<ItemData>();
+        skills = new Database<Skill>();
+        items = new Database<ItemData>();
     }
     //copy constructor
     public Entity(Entity orig)
     {
         stats = new Attributes(orig.stats);//clone stats
-        skills = new Inventory<Skill>(orig.skills);//clone skills
-        items = new Inventory<ItemData>(orig.items);//clone items
+        skills = new Database<Skill>(orig.skills);//clone skills
+        items = new Database<ItemData>(orig.items);//clone items
     }
 
     //properties

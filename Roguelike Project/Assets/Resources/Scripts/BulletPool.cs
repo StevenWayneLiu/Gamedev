@@ -33,6 +33,9 @@ public class BulletPool : MonoBehaviour {
                     pool[i].transform.position = transform.position;
                     pool[i].transform.rotation = transform.rotation;
                     pool[i].transform.Rotate(new Vector3(0,0,ang));
+                    //tell bullet the character's stats
+                    pool[i].GetComponent<BulletScript>().charAttack = gameObject.GetComponent<Character>().charData.Attack;
+
                     pool[i].SetActive(true);
 
                     cooldownTimer = cooldown;//reset cooldown timer

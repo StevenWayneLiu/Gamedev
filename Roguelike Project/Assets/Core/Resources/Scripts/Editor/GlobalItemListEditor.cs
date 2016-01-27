@@ -4,7 +4,7 @@ using UnityEditor;
 
 public class GlobalItemListEditor : EditorWindow {
 
-    Inventory<ItemData> inv;
+    Database<ItemData> inv;
 
     [MenuItem("CitrusCore/GameData/GlobalItemList")]
     public static void Init()

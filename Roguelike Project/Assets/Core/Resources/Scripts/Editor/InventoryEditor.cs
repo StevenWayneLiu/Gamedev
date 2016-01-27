@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEditor;
 
-[CustomEditor(typeof(Inventory<>))]
+[CustomEditor(typeof(Database<>))]
 public class InventoryEditor : Editor {
 
     public override void OnInspectorGUI()

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 //allows game object to use skills
 public class SkillManager : MonoBehaviour {
 
-    public Inventory<Skill> skills = new Inventory<Skill>();//holds skills that entity can use
+    public Database<Skill> skills = new Database<Skill>();//holds skills that entity can use
     float timer = 0;//count time for duration
     public bool getTargs = false;//determines when to start checking for targets
     List<GameObject> targ;//targets for direct targeting

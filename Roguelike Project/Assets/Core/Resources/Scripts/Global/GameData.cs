@@ -13,10 +13,10 @@ public class GameData : MonoBehaviour {
     //game data
     public List<CharacterData> Characters = new List<CharacterData>();//list of player's characters
     public List<CharacterData> Enemies = new List<CharacterData>();//list of field enemies
-    public Inventory<ItemData> AllItems = new Inventory<ItemData>();//list of all items in the game
-    public Inventory<Skill> AllSkills = new Inventory<Skill>();//list of all skills in the game
+    public Inventory AllItems = new Inventory();//list of all items in the game
+    public Database<Skill> AllSkills = new Database<Skill>();//list of all skills in the game
 
-    public Inventory<ItemData> WorldItems = new Inventory<ItemData>();//list of items not owned by an entity; "on the ground" items
+    public Database<ItemData> WorldItems = new Database<ItemData>();//list of items not owned by an entity; "on the ground" items
 
 
     public Dictionary<string, float> Scores = new Dictionary<string, float>();//data structure to store global number data

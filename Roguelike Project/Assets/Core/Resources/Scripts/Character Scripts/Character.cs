@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 //holds methods for controlling character, animations, etc. Has references to character data.
-public class Character : MonoBehaviour , IEntity {
+public class Character : MonoBehaviour , IEntity, IInteractable {
 
     public CharacterData charData;//character info associated with this character
 
@@ -82,11 +82,11 @@ public class Character : MonoBehaviour , IEntity {
     {
         rbody.velocity = Vector2.ClampMagnitude(new Vector2(xDir, yDir), 1f)*maxSpeed;
         velocity = rbody.velocity;
-        direction = velocity;
+        direction = velocity.normalized;
     }
 
     //what this character does when interacted with
-    public void Interact()
+    public void Interact(IInteractable other)
     {
         ToggleInventory();
     }
@@ -118,27 +118,45 @@ public class Character : MonoBehaviour , IEntity {
             targ = nearest.gameObject.GetComponent<Character>();
         return targ;
     }
-
-    void ToggleInventory()
+    //open character's inventory for player to see
+    public void ToggleInventory()
     {
         if(invScr.gameObject.activeInHierarchy)
             invScr.gameObject.SetActive(false);
         else
             invScr.gameObject.SetActive(true);
-        //spawn in objects
         //populate item list UI
         if (invScr.isActiveAndEnabled)
         {
-            for (int i = 0; i < charData.items.Count; i++)
-            {
-                invScr.AddButton(charData.items[i].Name);
-
-            }
+            invScr.Refresh(this, Items);
         }
     }
 
+    public void UseItem(ItemData item)
+    {
+        if (item.Equippable)
+        {
+            //if equippable
+        }
+        else//else if consumable item
+        {
+            //either modify stats
+            //or spawn an item
+        }
+    }
 
-
+    public void UseSkill(Skill skill, Attributes targ)
+    {
+        if (skill.spawnObject)//if skill spawns a prefab object
+        {
+            //spawn slightly in front of character
+            Instantiate(skill.prefab, rbody.transform.position + new Vector3(direction.x, direction.y, 0f), Quaternion.identity);
+        }
+        else//else if skill applies effect directly to target's stats
+        {
+            skill.Calculate(targ);
+        }
+    }
 
     //properties
 

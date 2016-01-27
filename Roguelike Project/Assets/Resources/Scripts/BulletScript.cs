@@ -7,6 +7,10 @@ public class BulletScript : MonoBehaviour {
     protected Vector2 travel;//keeps track of distance traveled from start position
     protected int damageVal = 10;//damage value for projectile
     protected Vector2 initPos;
+
+    public float skillMultiplier = 1.3f;//damage multiplier that comes from skill
+    public float charAttack = 1f;//attack value of character
+
     Attributes stats = new Attributes();
 
     protected float lifeTime = 2.0f;
@@ -56,10 +60,16 @@ public class BulletScript : MonoBehaviour {
         {
             if (entity.GetComponent<Character>() != null)
             {
-                entity.GetComponent<Character>().CurHealth += stats.curHealth;//add bullet damage to stats
+                CalculateDamage(entity.GetComponent<Character>());//add bullet damage to stats
             }
             Deactivate();//deactivate bullet
         }
+    }
+
+    void CalculateDamage(IEntity targ)
+    {
+        float rawAtk = charAttack * skillMultiplier;
+        targ.CurHealth -= rawAtk/(rawAtk + targ.Defense) * rawAtk;
     }
     
 }

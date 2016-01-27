@@ -34,9 +34,13 @@ public class RpgController : MonoBehaviour {
         //interact with npcs
         if (Input.GetButtonDown("Jump"))
         {
-            Character targ = character.FindNearest();
-            if(targ)
-                targ.Interact();
+            IInteractable targ = character.FindNearest();
+            if(targ != null)
+                targ.Interact(character);
+        }
+        if (Input.GetKeyDown("i"))
+        {
+            character.ToggleInventory();
         }
 
     }

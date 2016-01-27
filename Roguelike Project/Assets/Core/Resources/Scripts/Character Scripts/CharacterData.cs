@@ -11,7 +11,7 @@ public class CharacterData : IEntity
     public Faction fac;
 
     public Attributes stats;//Entity Statistics
-    public Inventory<Skill> skills;//list of usable skills for this character
+    public Database<Skill> skills;//list of usable skills for this character
     public List<ItemData> items;//list of items in this entity's inventory
     
 
@@ -25,10 +25,10 @@ public class CharacterData : IEntity
         manager = man;
 
         stats = new Attributes();
-        skills = new Inventory<Skill>();
+        skills = new Database<Skill>();
         items = new List<ItemData>();
 
-        skills.AddItem(new Skill());//base skill
+        skills.AddEntry(new Skill());//base skill
     }
     //copy constructor
     public CharacterData(Character man, CharacterData orig)
@@ -37,10 +37,10 @@ public class CharacterData : IEntity
         manager = man;
 
         stats = new Attributes(orig.stats);//clone stats
-        skills = new Inventory<Skill>(orig.skills);//clone skills
+        skills = new Database<Skill>(orig.skills);//clone skills
         items = new List<ItemData>(orig.items);//clone items
 
-        skills.AddItem(new Skill());//base skill
+        skills.AddEntry(new Skill());//base skill
     }
 
     public CharacterData(Faction faction, Character man)
@@ -49,10 +49,10 @@ public class CharacterData : IEntity
         manager = man;
 
         stats = new Attributes();
-        skills = new Inventory<Skill>();
+        skills = new Database<Skill>();
         items = new List<ItemData>();
 
-        skills.AddItem(new Skill());//base skill
+        skills.AddEntry(new Skill());//base skill
     }
 
     public Character Manager

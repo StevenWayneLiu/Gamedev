@@ -460,7 +460,7 @@ TextureImporter:
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -470,7 +470,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -482,7 +482,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: 1
+    filterMode: 0
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -490,11 +490,12 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -512,6 +513,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 23.5}
+        - {x: -20, y: 6.5}
+        - {x: -20, y: -6.5}
+        - {x: -11, y: -23.5}
+        - {x: 20, y: -23.5}
+        - {x: 20, y: 7.5}
+        - {x: 8, y: 23.5}
     - name: X cleanup_1
       rect:
         serializedVersion: 2
@@ -522,6 +531,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 22.5}
+        - {x: -20, y: 13.5}
+        - {x: -20, y: -11.5}
+        - {x: -16, y: -22.5}
+        - {x: 18, y: -22.5}
+        - {x: 20, y: -15.5}
+        - {x: 20, y: 8.5}
+        - {x: 16, y: 22.5}
     - name: X cleanup_2
       rect:
         serializedVersion: 2
@@ -532,6 +550,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 23.5}
+        - {x: -19.5, y: 9.5}
+        - {x: -19.5, y: -23.5}
+        - {x: 19.5, y: -23.5}
+        - {x: 19.5, y: 11.5}
+        - {x: 15.5, y: 23.5}
     - name: X cleanup_3
       rect:
         serializedVersion: 2
@@ -542,6 +567,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 21}
+        - {x: -18, y: 13}
+        - {x: -18, y: -16}
+        - {x: -17, y: -21}
+        - {x: 18, y: -21}
+        - {x: 18, y: 18}
+        - {x: 17, y: 21}
     - name: X cleanup_4
       rect:
         serializedVersion: 2
@@ -552,6 +585,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.5, y: 19}
+        - {x: -17.5, y: 19}
+        - {x: -17.5, y: -1}
+        - {x: -13.5, y: -19}
+        - {x: 9.5, y: -19}
+        - {x: 10.5, y: -18}
+        - {x: 16.5, y: -7}
+        - {x: 17.5, y: 0}
     - name: X cleanup_5
       rect:
         serializedVersion: 2
@@ -562,6 +604,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 20}
+        - {x: -17.5, y: 5}
+        - {x: -10.5, y: -20}
+        - {x: 16.5, y: -20}
+        - {x: 17.5, y: -17}
+        - {x: 17.5, y: 20}
     - name: X cleanup_6
       rect:
         serializedVersion: 2
@@ -572,6 +621,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.5, y: 19}
+        - {x: 2.5, y: 25}
+        - {x: -7.5, y: 25}
+        - {x: -21.5, y: 14}
+        - {x: -21.5, y: -8}
+        - {x: -11.5, y: -25}
+        - {x: 17.5, y: -25}
+        - {x: 19.5, y: -24}
+        - {x: 21.5, y: -20}
+        - {x: 21.5, y: 8}
     - name: X cleanup_7
       rect:
         serializedVersion: 2
@@ -582,6 +642,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.5, y: 19}
+        - {x: 2.5, y: 25}
+        - {x: -7.5, y: 25}
+        - {x: -21.5, y: 14}
+        - {x: -21.5, y: -8}
+        - {x: -11.5, y: -25}
+        - {x: 17.5, y: -25}
+        - {x: 19.5, y: -24}
+        - {x: 21.5, y: -20}
+        - {x: 21.5, y: 8}
     - name: X cleanup_8
       rect:
         serializedVersion: 2
@@ -592,6 +663,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 25.5}
+        - {x: -19.5, y: 10.5}
+        - {x: -19.5, y: -5.5}
+        - {x: -6.5, y: -25.5}
+        - {x: 14.5, y: -25.5}
+        - {x: 19.5, y: -13.5}
+        - {x: 19.5, y: 13.5}
+        - {x: 9.5, y: 25.5}
     - name: X cleanup_9
       rect:
         serializedVersion: 2
@@ -602,6 +682,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 26.5}
+        - {x: -21, y: 16.5}
+        - {x: -21, y: -1.5}
+        - {x: -9, y: -26.5}
+        - {x: 21, y: -26.5}
+        - {x: 21, y: 25.5}
+        - {x: 18, y: 26.5}
     - name: X cleanup_10
       rect:
         serializedVersion: 2
@@ -612,6 +700,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 26}
+        - {x: -21, y: 16}
+        - {x: -21, y: -5}
+        - {x: -11, y: -26}
+        - {x: 14, y: -26}
+        - {x: 21, y: -7}
+        - {x: 21, y: 24}
+        - {x: 18, y: 26}
     - name: X cleanup_11
       rect:
         serializedVersion: 2
@@ -622,6 +719,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 26}
+        - {x: -21, y: 11}
+        - {x: -21, y: 2}
+        - {x: -6, y: -26}
+        - {x: 9, y: -26}
+        - {x: 21, y: -4}
+        - {x: 21, y: 17}
+        - {x: 13, y: 26}
     - name: X cleanup_12
       rect:
         serializedVersion: 2
@@ -632,6 +738,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 22.5}
+        - {x: -20, y: 20.5}
+        - {x: -20, y: -22.5}
+        - {x: 7, y: -22.5}
+        - {x: 20, y: -14.5}
+        - {x: 20, y: 22.5}
     - name: X cleanup_13
       rect:
         serializedVersion: 2
@@ -642,6 +755,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 23.5}
+        - {x: -20, y: 6.5}
+        - {x: -20, y: -6.5}
+        - {x: -11, y: -23.5}
+        - {x: 20, y: -23.5}
+        - {x: 20, y: 7.5}
+        - {x: 8, y: 23.5}
     - name: X cleanup_14
       rect:
         serializedVersion: 2
@@ -652,6 +773,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 22.5}
+        - {x: -20, y: 13.5}
+        - {x: -20, y: -11.5}
+        - {x: -16, y: -22.5}
+        - {x: 18, y: -22.5}
+        - {x: 20, y: -15.5}
+        - {x: 20, y: 8.5}
+        - {x: 16, y: 22.5}
     - name: X cleanup_15
       rect:
         serializedVersion: 2
@@ -662,6 +792,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 23.5}
+        - {x: -19.5, y: 9.5}
+        - {x: -19.5, y: -23.5}
+        - {x: 19.5, y: -23.5}
+        - {x: 19.5, y: 11.5}
+        - {x: 15.5, y: 23.5}
     - name: X cleanup_16
       rect:
         serializedVersion: 2
@@ -672,6 +809,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 25.5}
+        - {x: -19.5, y: 10.5}
+        - {x: -19.5, y: -5.5}
+        - {x: -6.5, y: -25.5}
+        - {x: 14.5, y: -25.5}
+        - {x: 19.5, y: -13.5}
+        - {x: 19.5, y: 13.5}
+        - {x: 9.5, y: 25.5}
     - name: X cleanup_17
       rect:
         serializedVersion: 2
@@ -682,6 +828,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 26.5}
+        - {x: -21, y: 16.5}
+        - {x: -21, y: -1.5}
+        - {x: -9, y: -26.5}
+        - {x: 21, y: -26.5}
+        - {x: 21, y: 25.5}
+        - {x: 18, y: 26.5}
     - name: X cleanup_18
       rect:
         serializedVersion: 2
@@ -692,6 +846,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 26}
+        - {x: -21, y: 16}
+        - {x: -21, y: -5}
+        - {x: -11, y: -26}
+        - {x: 14, y: -26}
+        - {x: 21, y: -7}
+        - {x: 21, y: 24}
+        - {x: 18, y: 26}
     - name: X cleanup_19
       rect:
         serializedVersion: 2
@@ -702,6 +865,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 26}
+        - {x: -21, y: 11}
+        - {x: -21, y: 2}
+        - {x: -6, y: -26}
+        - {x: 9, y: -26}
+        - {x: 21, y: -4}
+        - {x: 21, y: 17}
+        - {x: 13, y: 26}
     - name: X cleanup_20
       rect:
         serializedVersion: 2
@@ -712,6 +884,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 22.5}
+        - {x: -20, y: 20.5}
+        - {x: -20, y: -22.5}
+        - {x: 7, y: -22.5}
+        - {x: 20, y: -14.5}
+        - {x: 20, y: 22.5}
     - name: X cleanup_21
       rect:
         serializedVersion: 2
@@ -722,6 +901,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_22
       rect:
         serializedVersion: 2
@@ -732,6 +912,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_23
       rect:
         serializedVersion: 2
@@ -742,6 +923,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_24
       rect:
         serializedVersion: 2
@@ -752,6 +934,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 20.5}
+        - {x: -35, y: -0.5}
+        - {x: -35, y: -13.5}
+        - {x: -14, y: -20.5}
+        - {x: 35, y: -20.5}
+        - {x: 35, y: -8.5}
+        - {x: 9, y: 20.5}
     - name: X cleanup_25
       rect:
         serializedVersion: 2
@@ -762,6 +952,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 20.5}
+        - {x: -26.5, y: 0.5}
+        - {x: -26.5, y: -15.5}
+        - {x: -10.5, y: -20.5}
+        - {x: 26.5, y: -20.5}
+        - {x: 26.5, y: -0.5}
+        - {x: 10.5, y: 20.5}
     - name: X cleanup_26
       rect:
         serializedVersion: 2
@@ -772,6 +970,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.5, y: 20.5}
+        - {x: -20.5, y: 20.5}
+        - {x: -26.5, y: 1.5}
+        - {x: -26.5, y: -13.5}
+        - {x: -6.5, y: -20.5}
+        - {x: 26.5, y: -20.5}
+        - {x: 26.5, y: 0.5}
+        - {x: 22.5, y: 18.5}
     - name: X cleanup_27
       rect:
         serializedVersion: 2
@@ -782,6 +989,19 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 24}
+        - {x: -34, y: 12}
+        - {x: -34, y: 0}
+        - {x: -27, y: -13}
+        - {x: -18, y: -24}
+        - {x: -13, y: -24}
+        - {x: -9, y: -23}
+        - {x: -6, y: -20}
+        - {x: -1, y: -24}
+        - {x: 34, y: -24}
+        - {x: 34, y: -20}
+        - {x: 1, y: 24}
     - name: X cleanup_28
       rect:
         serializedVersion: 2
@@ -792,6 +1012,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 23.5}
+        - {x: -25, y: 8.5}
+        - {x: -25, y: -9.5}
+        - {x: -14, y: -22.5}
+        - {x: -12, y: -23.5}
+        - {x: 25, y: -23.5}
+        - {x: 25, y: 5.5}
+        - {x: 14, y: 23.5}
     - name: X cleanup_29
       rect:
         serializedVersion: 2
@@ -802,6 +1031,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 22.5}
+        - {x: -22, y: 7.5}
+        - {x: -22, y: -10.5}
+        - {x: -12, y: -22.5}
+        - {x: 22, y: -22.5}
+        - {x: 22, y: 13.5}
+        - {x: 16, y: 22.5}
     - name: X cleanup_30
       rect:
         serializedVersion: 2
@@ -812,6 +1049,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.5, y: 20.5}
+        - {x: -17.5, y: 20.5}
+        - {x: -26.5, y: 0.5}
+        - {x: -26.5, y: -14.5}
+        - {x: -6.5, y: -20.5}
+        - {x: 26.5, y: -20.5}
+        - {x: 26.5, y: 14.5}
     - name: X cleanup_31
       rect:
         serializedVersion: 2
@@ -822,6 +1067,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_32
       rect:
         serializedVersion: 2
@@ -832,6 +1078,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_33
       rect:
         serializedVersion: 2
@@ -842,6 +1089,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_34
       rect:
         serializedVersion: 2
@@ -852,6 +1100,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 20.5}
+        - {x: -35, y: -0.5}
+        - {x: -35, y: -13.5}
+        - {x: -14, y: -20.5}
+        - {x: 35, y: -20.5}
+        - {x: 35, y: -8.5}
+        - {x: 9, y: 20.5}
     - name: X cleanup_35
       rect:
         serializedVersion: 2
@@ -862,6 +1118,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 20.5}
+        - {x: -26.5, y: 0.5}
+        - {x: -26.5, y: -15.5}
+        - {x: -10.5, y: -20.5}
+        - {x: 26.5, y: -20.5}
+        - {x: 26.5, y: -0.5}
+        - {x: 10.5, y: 20.5}
     - name: X cleanup_36
       rect:
         serializedVersion: 2
@@ -872,6 +1136,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.5, y: 20.5}
+        - {x: -20.5, y: 20.5}
+        - {x: -26.5, y: 1.5}
+        - {x: -26.5, y: -13.5}
+        - {x: -6.5, y: -20.5}
+        - {x: 26.5, y: -20.5}
+        - {x: 26.5, y: 0.5}
+        - {x: 22.5, y: 18.5}
     - name: X cleanup_37
       rect:
         serializedVersion: 2
@@ -882,6 +1155,19 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 24}
+        - {x: -34, y: 12}
+        - {x: -34, y: 0}
+        - {x: -27, y: -13}
+        - {x: -18, y: -24}
+        - {x: -13, y: -24}
+        - {x: -9, y: -23}
+        - {x: -6, y: -20}
+        - {x: -1, y: -24}
+        - {x: 34, y: -24}
+        - {x: 34, y: -20}
+        - {x: 1, y: 24}
     - name: X cleanup_38
       rect:
         serializedVersion: 2
@@ -892,6 +1178,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 23.5}
+        - {x: -25, y: 8.5}
+        - {x: -25, y: -9.5}
+        - {x: -14, y: -22.5}
+        - {x: -12, y: -23.5}
+        - {x: 25, y: -23.5}
+        - {x: 25, y: 5.5}
+        - {x: 14, y: 23.5}
     - name: X cleanup_39
       rect:
         serializedVersion: 2
@@ -902,6 +1197,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 22.5}
+        - {x: -22, y: 7.5}
+        - {x: -22, y: -10.5}
+        - {x: -12, y: -22.5}
+        - {x: 22, y: -22.5}
+        - {x: 22, y: 13.5}
+        - {x: 16, y: 22.5}
     - name: X cleanup_40
       rect:
         serializedVersion: 2
@@ -912,6 +1215,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.5, y: 20.5}
+        - {x: -17.5, y: 20.5}
+        - {x: -26.5, y: 0.5}
+        - {x: -26.5, y: -14.5}
+        - {x: -6.5, y: -20.5}
+        - {x: 26.5, y: -20.5}
+        - {x: 26.5, y: 14.5}
     - name: X cleanup_41
       rect:
         serializedVersion: 2
@@ -922,6 +1233,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 26}
+        - {x: -22.5, y: 19}
+        - {x: -22.5, y: 1}
+        - {x: -5.5, y: -26}
+        - {x: 6.5, y: -26}
+        - {x: 22.5, y: -5}
+        - {x: 22.5, y: 22}
+        - {x: 15.5, y: 26}
     - name: X cleanup_42
       rect:
         serializedVersion: 2
@@ -932,6 +1252,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 26}
+        - {x: -22.5, y: 19}
+        - {x: -22.5, y: 1}
+        - {x: -5.5, y: -26}
+        - {x: 6.5, y: -26}
+        - {x: 22.5, y: -5}
+        - {x: 22.5, y: 22}
+        - {x: 15.5, y: 26}
     - name: X cleanup_43
       rect:
         serializedVersion: 2
@@ -942,6 +1271,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 26}
+        - {x: -24.5, y: 15}
+        - {x: -24.5, y: 1}
+        - {x: -7.5, y: -26}
+        - {x: 4.5, y: -26}
+        - {x: 24.5, y: -1}
+        - {x: 24.5, y: 10}
+        - {x: 10.5, y: 26}
     - name: X cleanup_44
       rect:
         serializedVersion: 2
@@ -952,6 +1290,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.5, y: 26}
+        - {x: -10.5, y: 26}
+        - {x: -24.5, y: 16}
+        - {x: -24.5, y: -3}
+        - {x: -11.5, y: -26}
+        - {x: 5.5, y: -26}
+        - {x: 15.5, y: -17}
+        - {x: 24.5, y: -1}
+        - {x: 24.5, y: 13}
     - name: X cleanup_45
       rect:
         serializedVersion: 2
@@ -962,6 +1310,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 26}
+        - {x: -24.5, y: 16}
+        - {x: -24.5, y: -3}
+        - {x: -11.5, y: -26}
+        - {x: 8.5, y: -26}
+        - {x: 24.5, y: -3}
+        - {x: 24.5, y: 15}
+        - {x: 13.5, y: 26}
     - name: X cleanup_46
       rect:
         serializedVersion: 2
@@ -972,6 +1329,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 23}
+        - {x: -11, y: 23}
+        - {x: -18, y: 19}
+        - {x: -24, y: 14}
+        - {x: -24, y: -20}
+        - {x: -23, y: -23}
+        - {x: 24, y: -23}
+        - {x: 24, y: 10}
     - name: X cleanup_47
       rect:
         serializedVersion: 2
@@ -982,6 +1348,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 19}
+        - {x: -1, y: 19}
+        - {x: -27, y: 13}
+        - {x: -29, y: 10}
+        - {x: -29, y: -13}
+        - {x: -28, y: -19}
+        - {x: 25, y: -19}
+        - {x: 29, y: -10}
+        - {x: 29, y: 9}
     - name: X cleanup_48
       rect:
         serializedVersion: 2
@@ -992,6 +1368,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.5, y: 19}
+        - {x: -23.5, y: 19}
+        - {x: -26.5, y: 15}
+        - {x: -26.5, y: -19}
+        - {x: 16.5, y: -19}
+        - {x: 26.5, y: -11}
+        - {x: 26.5, y: 8}
     - name: X cleanup_49
       rect:
         serializedVersion: 2
@@ -1002,6 +1386,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 19}
+        - {x: -21.5, y: 12}
+        - {x: -24.5, y: 9}
+        - {x: -26.5, y: 2}
+        - {x: -26.5, y: -19}
+        - {x: 26.5, y: -19}
+        - {x: 26.5, y: 9}
+        - {x: 15.5, y: 19}
     - name: X cleanup_50
       rect:
         serializedVersion: 2
@@ -1012,6 +1405,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_51
       rect:
         serializedVersion: 2
@@ -1022,6 +1416,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_52
       rect:
         serializedVersion: 2
@@ -1032,6 +1427,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_53
       rect:
         serializedVersion: 2
@@ -1042,6 +1438,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 26}
+        - {x: -22.5, y: 19}
+        - {x: -22.5, y: 1}
+        - {x: -5.5, y: -26}
+        - {x: 6.5, y: -26}
+        - {x: 22.5, y: -5}
+        - {x: 22.5, y: 22}
+        - {x: 15.5, y: 26}
     - name: X cleanup_54
       rect:
         serializedVersion: 2
@@ -1052,6 +1457,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 26}
+        - {x: -22.5, y: 19}
+        - {x: -22.5, y: 1}
+        - {x: -5.5, y: -26}
+        - {x: 6.5, y: -26}
+        - {x: 22.5, y: -5}
+        - {x: 22.5, y: 22}
+        - {x: 15.5, y: 26}
     - name: X cleanup_55
       rect:
         serializedVersion: 2
@@ -1062,6 +1476,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 26}
+        - {x: -24.5, y: 15}
+        - {x: -24.5, y: 1}
+        - {x: -7.5, y: -26}
+        - {x: 4.5, y: -26}
+        - {x: 24.5, y: -1}
+        - {x: 24.5, y: 10}
+        - {x: 10.5, y: 26}
     - name: X cleanup_56
       rect:
         serializedVersion: 2
@@ -1072,6 +1495,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.5, y: 26}
+        - {x: -10.5, y: 26}
+        - {x: -24.5, y: 16}
+        - {x: -24.5, y: -3}
+        - {x: -11.5, y: -26}
+        - {x: 5.5, y: -26}
+        - {x: 15.5, y: -17}
+        - {x: 24.5, y: -1}
+        - {x: 24.5, y: 13}
     - name: X cleanup_57
       rect:
         serializedVersion: 2
@@ -1082,6 +1515,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 26}
+        - {x: -24.5, y: 16}
+        - {x: -24.5, y: -3}
+        - {x: -11.5, y: -26}
+        - {x: 8.5, y: -26}
+        - {x: 24.5, y: -3}
+        - {x: 24.5, y: 15}
+        - {x: 13.5, y: 26}
     - name: X cleanup_58
       rect:
         serializedVersion: 2
@@ -1092,6 +1534,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 23}
+        - {x: -11, y: 23}
+        - {x: -18, y: 19}
+        - {x: -24, y: 14}
+        - {x: -24, y: -20}
+        - {x: -23, y: -23}
+        - {x: 24, y: -23}
+        - {x: 24, y: 10}
     - name: X cleanup_59
       rect:
         serializedVersion: 2
@@ -1102,6 +1553,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 19}
+        - {x: -1, y: 19}
+        - {x: -27, y: 13}
+        - {x: -29, y: 10}
+        - {x: -29, y: -13}
+        - {x: -28, y: -19}
+        - {x: 25, y: -19}
+        - {x: 29, y: -10}
+        - {x: 29, y: 9}
     - name: X cleanup_60
       rect:
         serializedVersion: 2
@@ -1112,6 +1573,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.5, y: 19}
+        - {x: -23.5, y: 19}
+        - {x: -26.5, y: 15}
+        - {x: -26.5, y: -19}
+        - {x: 16.5, y: -19}
+        - {x: 26.5, y: -11}
+        - {x: 26.5, y: 8}
     - name: X cleanup_61
       rect:
         serializedVersion: 2
@@ -1122,6 +1591,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 19}
+        - {x: -21.5, y: 12}
+        - {x: -24.5, y: 9}
+        - {x: -26.5, y: 2}
+        - {x: -26.5, y: -19}
+        - {x: 26.5, y: -19}
+        - {x: 26.5, y: 9}
+        - {x: 15.5, y: 19}
     - name: X cleanup_62
       rect:
         serializedVersion: 2
@@ -1132,6 +1610,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_63
       rect:
         serializedVersion: 2
@@ -1142,6 +1621,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_64
       rect:
         serializedVersion: 2
@@ -1152,6 +1632,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_65
       rect:
         serializedVersion: 2
@@ -1162,6 +1643,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_66
       rect:
         serializedVersion: 2
@@ -1172,6 +1654,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_67
       rect:
         serializedVersion: 2
@@ -1182,6 +1665,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_68
       rect:
         serializedVersion: 2
@@ -1192,6 +1676,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_69
       rect:
         serializedVersion: 2
@@ -1202,6 +1687,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_70
       rect:
         serializedVersion: 2
@@ -1212,6 +1698,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_71
       rect:
         serializedVersion: 2
@@ -1222,6 +1709,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_72
       rect:
         serializedVersion: 2
@@ -1232,6 +1720,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_73
       rect:
         serializedVersion: 2
@@ -1242,6 +1731,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_74
       rect:
         serializedVersion: 2
@@ -1252,6 +1742,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_75
       rect:
         serializedVersion: 2
@@ -1262,6 +1753,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_76
       rect:
         serializedVersion: 2
@@ -1272,6 +1764,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_77
       rect:
         serializedVersion: 2
@@ -1282,6 +1775,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_78
       rect:
         serializedVersion: 2
@@ -1292,6 +1786,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_79
       rect:
         serializedVersion: 2
@@ -1302,6 +1797,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_80
       rect:
         serializedVersion: 2
@@ -1312,6 +1808,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_81
       rect:
         serializedVersion: 2
@@ -1322,6 +1819,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_82
       rect:
         serializedVersion: 2
@@ -1332,6 +1830,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_83
       rect:
         serializedVersion: 2
@@ -1342,6 +1841,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_84
       rect:
         serializedVersion: 2
@@ -1352,6 +1852,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_85
       rect:
         serializedVersion: 2
@@ -1362,6 +1863,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_86
       rect:
         serializedVersion: 2
@@ -1372,6 +1874,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_87
       rect:
         serializedVersion: 2
@@ -1382,6 +1885,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_88
       rect:
         serializedVersion: 2
@@ -1392,6 +1896,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_89
       rect:
         serializedVersion: 2
@@ -1402,6 +1907,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_90
       rect:
         serializedVersion: 2
@@ -1412,6 +1918,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_91
       rect:
         serializedVersion: 2
@@ -1422,6 +1929,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_92
       rect:
         serializedVersion: 2
@@ -1432,6 +1940,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_93
       rect:
         serializedVersion: 2
@@ -1442,6 +1951,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_94
       rect:
         serializedVersion: 2
@@ -1452,6 +1962,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_95
       rect:
         serializedVersion: 2
@@ -1462,6 +1973,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: 26}
+        - {x: -4, y: 26}
+        - {x: -21, y: 21}
+        - {x: -21, y: 3}
+        - {x: -8, y: -26}
+        - {x: 11, y: -26}
+        - {x: 20, y: -15}
+        - {x: 21, y: -13}
     - name: X cleanup_96
       rect:
         serializedVersion: 2
@@ -1472,6 +1992,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: 26}
+        - {x: -4, y: 26}
+        - {x: -21, y: 21}
+        - {x: -21, y: 3}
+        - {x: -8, y: -26}
+        - {x: 11, y: -26}
+        - {x: 20, y: -15}
+        - {x: 21, y: -13}
     - name: X cleanup_97
       rect:
         serializedVersion: 2
@@ -1482,6 +2011,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 26}
+        - {x: -22.5, y: 22}
+        - {x: -22.5, y: 2}
+        - {x: -9.5, y: -26}
+        - {x: 20.5, y: -26}
+        - {x: 22.5, y: -25}
+        - {x: 22.5, y: 26}
     - name: X cleanup_98
       rect:
         serializedVersion: 2
@@ -1492,6 +2029,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 26}
+        - {x: -22, y: 21}
+        - {x: -22, y: 3}
+        - {x: -9, y: -26}
+        - {x: 17, y: -26}
+        - {x: 22, y: -22}
+        - {x: 22, y: 24}
+        - {x: 19, y: 26}
     - name: X cleanup_99
       rect:
         serializedVersion: 2
@@ -1502,6 +2048,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 3}
+        - {x: -3, y: -26}
+        - {x: 16, y: -26}
+        - {x: 22, y: -18}
+        - {x: 22, y: 26}
+        - {x: -12, y: 26}
+        - {x: -22, y: 24}
     - name: X cleanup_100
       rect:
         serializedVersion: 2
@@ -1512,6 +2066,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_101
       rect:
         serializedVersion: 2
@@ -1522,6 +2077,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_102
       rect:
         serializedVersion: 2
@@ -1532,6 +2088,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_103
       rect:
         serializedVersion: 2
@@ -1542,6 +2099,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_104
       rect:
         serializedVersion: 2
@@ -1552,6 +2110,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_105
       rect:
         serializedVersion: 2
@@ -1562,6 +2121,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: 26}
+        - {x: -4, y: 26}
+        - {x: -21, y: 21}
+        - {x: -21, y: 3}
+        - {x: -8, y: -26}
+        - {x: 11, y: -26}
+        - {x: 20, y: -15}
+        - {x: 21, y: -13}
     - name: X cleanup_106
       rect:
         serializedVersion: 2
@@ -1572,6 +2140,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: 26}
+        - {x: -4, y: 26}
+        - {x: -21, y: 21}
+        - {x: -21, y: 3}
+        - {x: -8, y: -26}
+        - {x: 11, y: -26}
+        - {x: 20, y: -15}
+        - {x: 21, y: -13}
     - name: X cleanup_107
       rect:
         serializedVersion: 2
@@ -1582,6 +2159,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 26}
+        - {x: -22.5, y: 22}
+        - {x: -22.5, y: 2}
+        - {x: -9.5, y: -26}
+        - {x: 20.5, y: -26}
+        - {x: 22.5, y: -25}
+        - {x: 22.5, y: 26}
     - name: X cleanup_108
       rect:
         serializedVersion: 2
@@ -1592,6 +2177,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 26}
+        - {x: -22, y: 21}
+        - {x: -22, y: 3}
+        - {x: -9, y: -26}
+        - {x: 17, y: -26}
+        - {x: 22, y: -22}
+        - {x: 22, y: 24}
+        - {x: 19, y: 26}
     - name: X cleanup_109
       rect:
         serializedVersion: 2
@@ -1602,6 +2196,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 3}
+        - {x: -3, y: -26}
+        - {x: 16, y: -26}
+        - {x: 22, y: -18}
+        - {x: 22, y: 26}
+        - {x: -12, y: 26}
+        - {x: -22, y: 24}
     - name: X cleanup_110
       rect:
         serializedVersion: 2
@@ -1612,6 +2214,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_111
       rect:
         serializedVersion: 2
@@ -1622,6 +2225,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_112
       rect:
         serializedVersion: 2
@@ -1632,6 +2236,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_113
       rect:
         serializedVersion: 2
@@ -1642,6 +2247,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_114
       rect:
         serializedVersion: 2
@@ -1652,6 +2258,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_115
       rect:
         serializedVersion: 2
@@ -1662,6 +2269,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_116
       rect:
         serializedVersion: 2
@@ -1672,6 +2280,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_117
       rect:
         serializedVersion: 2
@@ -1682,6 +2291,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_118
       rect:
         serializedVersion: 2
@@ -1692,6 +2302,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_119
       rect:
         serializedVersion: 2
@@ -1702,6 +2313,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_120
       rect:
         serializedVersion: 2
@@ -1712,6 +2324,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_121
       rect:
         serializedVersion: 2
@@ -1722,6 +2335,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_122
       rect:
         serializedVersion: 2
@@ -1732,6 +2346,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_123
       rect:
         serializedVersion: 2
@@ -1742,6 +2357,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_124
       rect:
         serializedVersion: 2
@@ -1752,6 +2368,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_125
       rect:
         serializedVersion: 2
@@ -1762,6 +2379,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_126
       rect:
         serializedVersion: 2
@@ -1772,6 +2390,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_127
       rect:
         serializedVersion: 2
@@ -1782,6 +2401,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_128
       rect:
         serializedVersion: 2
@@ -1792,6 +2412,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_129
       rect:
         serializedVersion: 2
@@ -1802,6 +2423,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_130
       rect:
         serializedVersion: 2
@@ -1812,6 +2434,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_131
       rect:
         serializedVersion: 2
@@ -1822,6 +2445,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_132
       rect:
         serializedVersion: 2
@@ -1832,6 +2456,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_133
       rect:
         serializedVersion: 2
@@ -1842,6 +2467,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_134
       rect:
         serializedVersion: 2
@@ -1852,6 +2478,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_135
       rect:
         serializedVersion: 2
@@ -1862,6 +2489,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_136
       rect:
         serializedVersion: 2
@@ -1872,6 +2500,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_137
       rect:
         serializedVersion: 2
@@ -1882,6 +2511,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_138
       rect:
         serializedVersion: 2
@@ -1892,6 +2522,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_139
       rect:
         serializedVersion: 2
@@ -1902,6 +2533,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_140
       rect:
         serializedVersion: 2
@@ -1912,6 +2544,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_141
       rect:
         serializedVersion: 2
@@ -1922,6 +2555,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_142
       rect:
         serializedVersion: 2
@@ -1932,6 +2566,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_143
       rect:
         serializedVersion: 2
@@ -1942,6 +2577,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_144
       rect:
         serializedVersion: 2
@@ -1952,6 +2588,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_145
       rect:
         serializedVersion: 2
@@ -1962,6 +2599,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_146
       rect:
         serializedVersion: 2
@@ -1972,6 +2610,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_147
       rect:
         serializedVersion: 2
@@ -1982,6 +2621,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_148
       rect:
         serializedVersion: 2
@@ -1992,6 +2632,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_149
       rect:
         serializedVersion: 2
@@ -2002,6 +2643,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_150
       rect:
         serializedVersion: 2
@@ -2012,6 +2654,19 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: -4.5}
+        - {x: 24, y: -2.5}
+        - {x: 24, y: 14.5}
+        - {x: 15, y: 23.5}
+        - {x: -6, y: 23.5}
+        - {x: -7, y: 18.5}
+        - {x: -24, y: 7.5}
+        - {x: -24, y: -1.5}
+        - {x: -18, y: -23.5}
+        - {x: 17, y: -23.5}
+        - {x: 19, y: -17.5}
+        - {x: 13, y: -6.5}
     - name: X cleanup_151
       rect:
         serializedVersion: 2
@@ -2022,6 +2677,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 23.5}
+        - {x: -23.5, y: 8.5}
+        - {x: -23.5, y: 0.5}
+        - {x: -15.5, y: -1.5}
+        - {x: -12.5, y: -1.5}
+        - {x: -16.5, y: -23.5}
+        - {x: 23.5, y: -23.5}
+        - {x: 23.5, y: 16.5}
+        - {x: 16.5, y: 23.5}
     - name: X cleanup_152
       rect:
         serializedVersion: 2
@@ -2032,6 +2697,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 23.5}
+        - {x: -23.5, y: 8.5}
+        - {x: -23.5, y: 0.5}
+        - {x: -15.5, y: -1.5}
+        - {x: -12.5, y: -1.5}
+        - {x: -16.5, y: -23.5}
+        - {x: 23.5, y: -23.5}
+        - {x: 23.5, y: 16.5}
+        - {x: 16.5, y: 23.5}
     - name: X cleanup_153
       rect:
         serializedVersion: 2
@@ -2042,6 +2717,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 23.5}
+        - {x: -11, y: 23.5}
+        - {x: -25, y: 8.5}
+        - {x: -25, y: 0.5}
+        - {x: -17, y: -1.5}
+        - {x: -14, y: -1.5}
+        - {x: -17, y: -18.5}
+        - {x: -16, y: -23.5}
+        - {x: 22, y: -23.5}
+        - {x: 25, y: -17.5}
+        - {x: 25, y: 10.5}
     - name: X cleanup_154
       rect:
         serializedVersion: 2
@@ -2052,6 +2739,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 23.5}
+        - {x: -11, y: 23.5}
+        - {x: -25, y: 8.5}
+        - {x: -25, y: 0.5}
+        - {x: -17, y: -1.5}
+        - {x: -14, y: -1.5}
+        - {x: -17, y: -18.5}
+        - {x: -16, y: -23.5}
+        - {x: 21, y: -23.5}
+        - {x: 25, y: -13.5}
+        - {x: 25, y: 18.5}
     - name: X cleanup_155
       rect:
         serializedVersion: 2
@@ -2062,6 +2761,21 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: -6.5}
+        - {x: 12, y: -4.5}
+        - {x: 10, y: -4.5}
+        - {x: 22, y: -4.5}
+        - {x: 25, y: -3.5}
+        - {x: 25, y: 8.5}
+        - {x: 14, y: 23.5}
+        - {x: -11, y: 23.5}
+        - {x: -25, y: 8.5}
+        - {x: -25, y: 0.5}
+        - {x: -17, y: -2.5}
+        - {x: -15, y: -23.5}
+        - {x: 19, y: -23.5}
+        - {x: 19, y: -17.5}
     - name: X cleanup_156
       rect:
         serializedVersion: 2
@@ -2072,6 +2786,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_157
       rect:
         serializedVersion: 2
@@ -2082,6 +2797,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_158
       rect:
         serializedVersion: 2
@@ -2092,6 +2808,21 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: -18.5}
+        - {x: 1, y: -20.5}
+        - {x: 6, y: -20.5}
+        - {x: 6, y: -19.5}
+        - {x: 2, y: -15.5}
+        - {x: 0, y: -15.5}
+      - - {x: -13, y: 20.5}
+        - {x: -19, y: 20.5}
+        - {x: -19, y: 3.5}
+        - {x: -4, y: -16.5}
+        - {x: 16, y: -16.5}
+        - {x: 19, y: -9.5}
+        - {x: 19, y: 7.5}
+        - {x: 12, y: 14.5}
     - name: X cleanup_159
       rect:
         serializedVersion: 2
@@ -2102,6 +2833,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 12.5}
+        - {x: -9, y: 17.5}
+        - {x: -16, y: 17.5}
+        - {x: -16, y: -10.5}
+        - {x: -8, y: -17.5}
+        - {x: 11, y: -17.5}
+        - {x: 16, y: -12.5}
+        - {x: 16, y: -1.5}
+        - {x: 12, y: 5.5}
     - name: X cleanup_160
       rect:
         serializedVersion: 2
@@ -2112,6 +2853,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_161
       rect:
         serializedVersion: 2
@@ -2122,6 +2864,19 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: -4.5}
+        - {x: 24, y: -2.5}
+        - {x: 24, y: 14.5}
+        - {x: 15, y: 23.5}
+        - {x: -6, y: 23.5}
+        - {x: -7, y: 18.5}
+        - {x: -24, y: 7.5}
+        - {x: -24, y: -1.5}
+        - {x: -18, y: -23.5}
+        - {x: 17, y: -23.5}
+        - {x: 19, y: -17.5}
+        - {x: 13, y: -6.5}
     - name: X cleanup_162
       rect:
         serializedVersion: 2
@@ -2132,6 +2887,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 23.5}
+        - {x: -23.5, y: 8.5}
+        - {x: -23.5, y: 0.5}
+        - {x: -15.5, y: -1.5}
+        - {x: -12.5, y: -1.5}
+        - {x: -16.5, y: -23.5}
+        - {x: 23.5, y: -23.5}
+        - {x: 23.5, y: 16.5}
+        - {x: 16.5, y: 23.5}
     - name: X cleanup_163
       rect:
         serializedVersion: 2
@@ -2142,6 +2907,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 23.5}
+        - {x: -23.5, y: 8.5}
+        - {x: -23.5, y: 0.5}
+        - {x: -15.5, y: -1.5}
+        - {x: -12.5, y: -1.5}
+        - {x: -16.5, y: -23.5}
+        - {x: 23.5, y: -23.5}
+        - {x: 23.5, y: 16.5}
+        - {x: 16.5, y: 23.5}
     - name: X cleanup_164
       rect:
         serializedVersion: 2
@@ -2152,6 +2927,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 23.5}
+        - {x: -11, y: 23.5}
+        - {x: -25, y: 8.5}
+        - {x: -25, y: 0.5}
+        - {x: -17, y: -1.5}
+        - {x: -14, y: -1.5}
+        - {x: -17, y: -18.5}
+        - {x: -16, y: -23.5}
+        - {x: 22, y: -23.5}
+        - {x: 25, y: -17.5}
+        - {x: 25, y: 10.5}
     - name: X cleanup_165
       rect:
         serializedVersion: 2
@@ -2162,6 +2949,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 23.5}
+        - {x: -11, y: 23.5}
+        - {x: -25, y: 8.5}
+        - {x: -25, y: 0.5}
+        - {x: -17, y: -1.5}
+        - {x: -14, y: -1.5}
+        - {x: -17, y: -18.5}
+        - {x: -16, y: -23.5}
+        - {x: 21, y: -23.5}
+        - {x: 25, y: -13.5}
+        - {x: 25, y: 18.5}
     - name: X cleanup_166
       rect:
         serializedVersion: 2
@@ -2172,6 +2971,21 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: -6.5}
+        - {x: 12, y: -4.5}
+        - {x: 10, y: -4.5}
+        - {x: 22, y: -4.5}
+        - {x: 25, y: -3.5}
+        - {x: 25, y: 8.5}
+        - {x: 14, y: 23.5}
+        - {x: -11, y: 23.5}
+        - {x: -25, y: 8.5}
+        - {x: -25, y: 0.5}
+        - {x: -17, y: -2.5}
+        - {x: -15, y: -23.5}
+        - {x: 19, y: -23.5}
+        - {x: 19, y: -17.5}
     - name: X cleanup_167
       rect:
         serializedVersion: 2
@@ -2182,6 +2996,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_168
       rect:
         serializedVersion: 2
@@ -2192,6 +3007,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_169
       rect:
         serializedVersion: 2
@@ -2202,6 +3018,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_170
       rect:
         serializedVersion: 2
@@ -2212,6 +3029,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_171
       rect:
         serializedVersion: 2
@@ -2222,6 +3040,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_172
       rect:
         serializedVersion: 2
@@ -2232,6 +3051,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_173
       rect:
         serializedVersion: 2
@@ -2242,6 +3062,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_174
       rect:
         serializedVersion: 2
@@ -2252,6 +3073,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_175
       rect:
         serializedVersion: 2
@@ -2262,6 +3084,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_176
       rect:
         serializedVersion: 2
@@ -2272,6 +3095,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_177
       rect:
         serializedVersion: 2
@@ -2282,6 +3106,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_178
       rect:
         serializedVersion: 2
@@ -2292,6 +3117,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_179
       rect:
         serializedVersion: 2
@@ -2302,6 +3128,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_180
       rect:
         serializedVersion: 2
@@ -2312,6 +3139,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 23.5}
+        - {x: -20, y: 6.5}
+        - {x: -20, y: -6.5}
+        - {x: -11, y: -23.5}
+        - {x: 20, y: -23.5}
+        - {x: 20, y: 7.5}
+        - {x: 8, y: 23.5}
     - name: X cleanup_181
       rect:
         serializedVersion: 2
@@ -2322,6 +3157,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 22.5}
+        - {x: -20, y: 13.5}
+        - {x: -20, y: -11.5}
+        - {x: -16, y: -22.5}
+        - {x: 18, y: -22.5}
+        - {x: 20, y: -15.5}
+        - {x: 20, y: 8.5}
+        - {x: 16, y: 22.5}
     - name: X cleanup_182
       rect:
         serializedVersion: 2
@@ -2332,6 +3176,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 23.5}
+        - {x: -19.5, y: 9.5}
+        - {x: -19.5, y: -23.5}
+        - {x: 19.5, y: -23.5}
+        - {x: 19.5, y: 11.5}
+        - {x: 15.5, y: 23.5}
     - name: X cleanup_183
       rect:
         serializedVersion: 2
@@ -2342,6 +3193,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 25.5}
+        - {x: -19.5, y: 10.5}
+        - {x: -19.5, y: -5.5}
+        - {x: -6.5, y: -25.5}
+        - {x: 14.5, y: -25.5}
+        - {x: 19.5, y: -13.5}
+        - {x: 19.5, y: 13.5}
+        - {x: 9.5, y: 25.5}
     - name: X cleanup_184
       rect:
         serializedVersion: 2
@@ -2352,6 +3212,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 26.5}
+        - {x: -21, y: 16.5}
+        - {x: -21, y: -1.5}
+        - {x: -9, y: -26.5}
+        - {x: 21, y: -26.5}
+        - {x: 21, y: 25.5}
+        - {x: 18, y: 26.5}
     - name: X cleanup_185
       rect:
         serializedVersion: 2
@@ -2362,6 +3230,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 26}
+        - {x: -21, y: 16}
+        - {x: -21, y: -5}
+        - {x: -11, y: -26}
+        - {x: 14, y: -26}
+        - {x: 21, y: -7}
+        - {x: 21, y: 24}
+        - {x: 18, y: 26}
     - name: X cleanup_186
       rect:
         serializedVersion: 2
@@ -2372,6 +3249,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 26}
+        - {x: -21, y: 11}
+        - {x: -21, y: 2}
+        - {x: -6, y: -26}
+        - {x: 9, y: -26}
+        - {x: 21, y: -4}
+        - {x: 21, y: 17}
+        - {x: 13, y: 26}
     - name: X cleanup_187
       rect:
         serializedVersion: 2
@@ -2382,6 +3268,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 22.5}
+        - {x: -20, y: 20.5}
+        - {x: -20, y: -22.5}
+        - {x: 7, y: -22.5}
+        - {x: 20, y: -14.5}
+        - {x: 20, y: 22.5}
     - name: X cleanup_188
       rect:
         serializedVersion: 2
@@ -2392,6 +3285,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_189
       rect:
         serializedVersion: 2
@@ -2402,6 +3296,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_190
       rect:
         serializedVersion: 2
@@ -2412,6 +3307,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 23.5}
+        - {x: -20, y: 6.5}
+        - {x: -20, y: -6.5}
+        - {x: -11, y: -23.5}
+        - {x: 20, y: -23.5}
+        - {x: 20, y: 7.5}
+        - {x: 8, y: 23.5}
     - name: X cleanup_191
       rect:
         serializedVersion: 2
@@ -2422,6 +3325,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 22.5}
+        - {x: -20, y: 13.5}
+        - {x: -20, y: -11.5}
+        - {x: -16, y: -22.5}
+        - {x: 18, y: -22.5}
+        - {x: 20, y: -15.5}
+        - {x: 20, y: 8.5}
+        - {x: 16, y: 22.5}
     - name: X cleanup_192
       rect:
         serializedVersion: 2
@@ -2432,6 +3344,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 23.5}
+        - {x: -19.5, y: 9.5}
+        - {x: -19.5, y: -23.5}
+        - {x: 19.5, y: -23.5}
+        - {x: 19.5, y: 11.5}
+        - {x: 15.5, y: 23.5}
     - name: X cleanup_193
       rect:
         serializedVersion: 2
@@ -2442,6 +3361,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 25.5}
+        - {x: -19.5, y: 10.5}
+        - {x: -19.5, y: -5.5}
+        - {x: -6.5, y: -25.5}
+        - {x: 14.5, y: -25.5}
+        - {x: 19.5, y: -13.5}
+        - {x: 19.5, y: 13.5}
+        - {x: 9.5, y: 25.5}
     - name: X cleanup_194
       rect:
         serializedVersion: 2
@@ -2452,6 +3380,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 26.5}
+        - {x: -21, y: 16.5}
+        - {x: -21, y: -1.5}
+        - {x: -9, y: -26.5}
+        - {x: 21, y: -26.5}
+        - {x: 21, y: 25.5}
+        - {x: 18, y: 26.5}
     - name: X cleanup_195
       rect:
         serializedVersion: 2
@@ -2462,6 +3398,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 26}
+        - {x: -21, y: 16}
+        - {x: -21, y: -5}
+        - {x: -11, y: -26}
+        - {x: 14, y: -26}
+        - {x: 21, y: -7}
+        - {x: 21, y: 24}
+        - {x: 18, y: 26}
     - name: X cleanup_196
       rect:
         serializedVersion: 2
@@ -2472,6 +3417,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 26}
+        - {x: -21, y: 11}
+        - {x: -21, y: 2}
+        - {x: -6, y: -26}
+        - {x: 9, y: -26}
+        - {x: 21, y: -4}
+        - {x: 21, y: 17}
+        - {x: 13, y: 26}
     - name: X cleanup_197
       rect:
         serializedVersion: 2
@@ -2482,6 +3436,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 22.5}
+        - {x: -20, y: 20.5}
+        - {x: -20, y: -22.5}
+        - {x: 7, y: -22.5}
+        - {x: 20, y: -14.5}
+        - {x: 20, y: 22.5}
     - name: X cleanup_198
       rect:
         serializedVersion: 2
@@ -2492,6 +3453,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_199
       rect:
         serializedVersion: 2
@@ -2502,6 +3464,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_200
       rect:
         serializedVersion: 2
@@ -2512,6 +3475,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_201
       rect:
         serializedVersion: 2
@@ -2522,6 +3486,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_202
       rect:
         serializedVersion: 2
@@ -2532,6 +3497,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 20.5}
+        - {x: -35, y: -0.5}
+        - {x: -35, y: -13.5}
+        - {x: -14, y: -20.5}
+        - {x: 35, y: -20.5}
+        - {x: 35, y: -8.5}
+        - {x: 9, y: 20.5}
     - name: X cleanup_203
       rect:
         serializedVersion: 2
@@ -2542,6 +3515,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 20.5}
+        - {x: -26.5, y: 0.5}
+        - {x: -26.5, y: -15.5}
+        - {x: -10.5, y: -20.5}
+        - {x: 26.5, y: -20.5}
+        - {x: 26.5, y: -0.5}
+        - {x: 10.5, y: 20.5}
     - name: X cleanup_204
       rect:
         serializedVersion: 2
@@ -2552,6 +3533,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.5, y: 20.5}
+        - {x: -20.5, y: 20.5}
+        - {x: -26.5, y: 1.5}
+        - {x: -26.5, y: -13.5}
+        - {x: -6.5, y: -20.5}
+        - {x: 26.5, y: -20.5}
+        - {x: 26.5, y: 0.5}
+        - {x: 22.5, y: 18.5}
     - name: X cleanup_205
       rect:
         serializedVersion: 2
@@ -2562,6 +3552,19 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 24}
+        - {x: -34, y: 12}
+        - {x: -34, y: 0}
+        - {x: -27, y: -13}
+        - {x: -18, y: -24}
+        - {x: -13, y: -24}
+        - {x: -9, y: -23}
+        - {x: -6, y: -20}
+        - {x: -1, y: -24}
+        - {x: 34, y: -24}
+        - {x: 34, y: -20}
+        - {x: 1, y: 24}
     - name: X cleanup_206
       rect:
         serializedVersion: 2
@@ -2572,6 +3575,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 23.5}
+        - {x: -25, y: 8.5}
+        - {x: -25, y: -9.5}
+        - {x: -14, y: -22.5}
+        - {x: -12, y: -23.5}
+        - {x: 25, y: -23.5}
+        - {x: 25, y: 5.5}
+        - {x: 14, y: 23.5}
     - name: X cleanup_207
       rect:
         serializedVersion: 2
@@ -2582,6 +3594,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 22.5}
+        - {x: -22, y: 7.5}
+        - {x: -22, y: -10.5}
+        - {x: -12, y: -22.5}
+        - {x: 22, y: -22.5}
+        - {x: 22, y: 13.5}
+        - {x: 16, y: 22.5}
     - name: X cleanup_208
       rect:
         serializedVersion: 2
@@ -2592,6 +3612,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.5, y: 20.5}
+        - {x: -17.5, y: 20.5}
+        - {x: -26.5, y: 0.5}
+        - {x: -26.5, y: -14.5}
+        - {x: -6.5, y: -20.5}
+        - {x: 26.5, y: -20.5}
+        - {x: 26.5, y: 14.5}
     - name: X cleanup_209
       rect:
         serializedVersion: 2
@@ -2602,6 +3630,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 20.5}
+        - {x: -35, y: -0.5}
+        - {x: -35, y: -13.5}
+        - {x: -14, y: -20.5}
+        - {x: 35, y: -20.5}
+        - {x: 35, y: -8.5}
+        - {x: 9, y: 20.5}
     - name: X cleanup_210
       rect:
         serializedVersion: 2
@@ -2612,6 +3648,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 20.5}
+        - {x: -26.5, y: 0.5}
+        - {x: -26.5, y: -15.5}
+        - {x: -10.5, y: -20.5}
+        - {x: 26.5, y: -20.5}
+        - {x: 26.5, y: -0.5}
+        - {x: 10.5, y: 20.5}
     - name: X cleanup_211
       rect:
         serializedVersion: 2
@@ -2622,6 +3666,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.5, y: 20.5}
+        - {x: -20.5, y: 20.5}
+        - {x: -26.5, y: 1.5}
+        - {x: -26.5, y: -13.5}
+        - {x: -6.5, y: -20.5}
+        - {x: 26.5, y: -20.5}
+        - {x: 26.5, y: 0.5}
+        - {x: 22.5, y: 18.5}
     - name: X cleanup_212
       rect:
         serializedVersion: 2
@@ -2632,6 +3685,19 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 24}
+        - {x: -34, y: 12}
+        - {x: -34, y: 0}
+        - {x: -27, y: -13}
+        - {x: -18, y: -24}
+        - {x: -13, y: -24}
+        - {x: -9, y: -23}
+        - {x: -6, y: -20}
+        - {x: -1, y: -24}
+        - {x: 34, y: -24}
+        - {x: 34, y: -20}
+        - {x: 1, y: 24}
     - name: X cleanup_213
       rect:
         serializedVersion: 2
@@ -2642,6 +3708,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 23.5}
+        - {x: -25, y: 8.5}
+        - {x: -25, y: -9.5}
+        - {x: -14, y: -22.5}
+        - {x: -12, y: -23.5}
+        - {x: 25, y: -23.5}
+        - {x: 25, y: 5.5}
+        - {x: 14, y: 23.5}
     - name: X cleanup_214
       rect:
         serializedVersion: 2
@@ -2652,6 +3727,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 22.5}
+        - {x: -22, y: 7.5}
+        - {x: -22, y: -10.5}
+        - {x: -12, y: -22.5}
+        - {x: 22, y: -22.5}
+        - {x: 22, y: 13.5}
+        - {x: 16, y: 22.5}
     - name: X cleanup_215
       rect:
         serializedVersion: 2
@@ -2662,6 +3745,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.5, y: 20.5}
+        - {x: -17.5, y: 20.5}
+        - {x: -26.5, y: 0.5}
+        - {x: -26.5, y: -14.5}
+        - {x: -6.5, y: -20.5}
+        - {x: 26.5, y: -20.5}
+        - {x: 26.5, y: 14.5}
     - name: X cleanup_216
       rect:
         serializedVersion: 2
@@ -2672,6 +3763,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 26}
+        - {x: -22.5, y: 19}
+        - {x: -22.5, y: 1}
+        - {x: -5.5, y: -26}
+        - {x: 6.5, y: -26}
+        - {x: 22.5, y: -5}
+        - {x: 22.5, y: 22}
+        - {x: 15.5, y: 26}
     - name: X cleanup_217
       rect:
         serializedVersion: 2
@@ -2682,6 +3782,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 26}
+        - {x: -22.5, y: 19}
+        - {x: -22.5, y: 1}
+        - {x: -5.5, y: -26}
+        - {x: 6.5, y: -26}
+        - {x: 22.5, y: -5}
+        - {x: 22.5, y: 22}
+        - {x: 15.5, y: 26}
     - name: X cleanup_218
       rect:
         serializedVersion: 2
@@ -2692,6 +3801,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 26}
+        - {x: -24.5, y: 15}
+        - {x: -24.5, y: 1}
+        - {x: -7.5, y: -26}
+        - {x: 4.5, y: -26}
+        - {x: 24.5, y: -1}
+        - {x: 24.5, y: 10}
+        - {x: 10.5, y: 26}
     - name: X cleanup_219
       rect:
         serializedVersion: 2
@@ -2702,6 +3820,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.5, y: 26}
+        - {x: -10.5, y: 26}
+        - {x: -24.5, y: 16}
+        - {x: -24.5, y: -3}
+        - {x: -11.5, y: -26}
+        - {x: 5.5, y: -26}
+        - {x: 15.5, y: -17}
+        - {x: 24.5, y: -1}
+        - {x: 24.5, y: 13}
     - name: X cleanup_220
       rect:
         serializedVersion: 2
@@ -2712,6 +3840,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 26}
+        - {x: -24.5, y: 16}
+        - {x: -24.5, y: -3}
+        - {x: -11.5, y: -26}
+        - {x: 8.5, y: -26}
+        - {x: 24.5, y: -3}
+        - {x: 24.5, y: 15}
+        - {x: 13.5, y: 26}
     - name: X cleanup_221
       rect:
         serializedVersion: 2
@@ -2722,6 +3859,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 23}
+        - {x: -11, y: 23}
+        - {x: -18, y: 19}
+        - {x: -24, y: 14}
+        - {x: -24, y: -20}
+        - {x: -23, y: -23}
+        - {x: 24, y: -23}
+        - {x: 24, y: 10}
     - name: X cleanup_222
       rect:
         serializedVersion: 2
@@ -2732,6 +3878,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 19}
+        - {x: -1, y: 19}
+        - {x: -27, y: 13}
+        - {x: -29, y: 10}
+        - {x: -29, y: -13}
+        - {x: -28, y: -19}
+        - {x: 25, y: -19}
+        - {x: 29, y: -10}
+        - {x: 29, y: 9}
     - name: X cleanup_223
       rect:
         serializedVersion: 2
@@ -2742,6 +3898,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.5, y: 19}
+        - {x: -23.5, y: 19}
+        - {x: -26.5, y: 15}
+        - {x: -26.5, y: -19}
+        - {x: 16.5, y: -19}
+        - {x: 26.5, y: -11}
+        - {x: 26.5, y: 8}
     - name: X cleanup_224
       rect:
         serializedVersion: 2
@@ -2752,6 +3916,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 19}
+        - {x: -21.5, y: 12}
+        - {x: -24.5, y: 9}
+        - {x: -26.5, y: 2}
+        - {x: -26.5, y: -19}
+        - {x: 26.5, y: -19}
+        - {x: 26.5, y: 9}
+        - {x: 15.5, y: 19}
     - name: X cleanup_225
       rect:
         serializedVersion: 2
@@ -2762,6 +3935,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_226
       rect:
         serializedVersion: 2
@@ -2772,6 +3946,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_227
       rect:
         serializedVersion: 2
@@ -2782,6 +3957,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_228
       rect:
         serializedVersion: 2
@@ -2792,6 +3968,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 26}
+        - {x: -22.5, y: 19}
+        - {x: -22.5, y: 1}
+        - {x: -5.5, y: -26}
+        - {x: 6.5, y: -26}
+        - {x: 22.5, y: -5}
+        - {x: 22.5, y: 22}
+        - {x: 15.5, y: 26}
     - name: X cleanup_229
       rect:
         serializedVersion: 2
@@ -2802,6 +3987,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 26}
+        - {x: -22.5, y: 19}
+        - {x: -22.5, y: 1}
+        - {x: -5.5, y: -26}
+        - {x: 6.5, y: -26}
+        - {x: 22.5, y: -5}
+        - {x: 22.5, y: 22}
+        - {x: 15.5, y: 26}
     - name: X cleanup_230
       rect:
         serializedVersion: 2
@@ -2812,6 +4006,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 26}
+        - {x: -24.5, y: 15}
+        - {x: -24.5, y: 1}
+        - {x: -7.5, y: -26}
+        - {x: 4.5, y: -26}
+        - {x: 24.5, y: -1}
+        - {x: 24.5, y: 10}
+        - {x: 10.5, y: 26}
     - name: X cleanup_231
       rect:
         serializedVersion: 2
@@ -2822,6 +4025,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.5, y: 26}
+        - {x: -10.5, y: 26}
+        - {x: -24.5, y: 16}
+        - {x: -24.5, y: -3}
+        - {x: -11.5, y: -26}
+        - {x: 5.5, y: -26}
+        - {x: 15.5, y: -17}
+        - {x: 24.5, y: -1}
+        - {x: 24.5, y: 13}
     - name: X cleanup_232
       rect:
         serializedVersion: 2
@@ -2832,6 +4045,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 26}
+        - {x: -24.5, y: 16}
+        - {x: -24.5, y: -3}
+        - {x: -11.5, y: -26}
+        - {x: 8.5, y: -26}
+        - {x: 24.5, y: -3}
+        - {x: 24.5, y: 15}
+        - {x: 13.5, y: 26}
     - name: X cleanup_233
       rect:
         serializedVersion: 2
@@ -2842,6 +4064,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 23}
+        - {x: -11, y: 23}
+        - {x: -18, y: 19}
+        - {x: -24, y: 14}
+        - {x: -24, y: -20}
+        - {x: -23, y: -23}
+        - {x: 24, y: -23}
+        - {x: 24, y: 10}
     - name: X cleanup_234
       rect:
         serializedVersion: 2
@@ -2852,6 +4083,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 19}
+        - {x: -1, y: 19}
+        - {x: -27, y: 13}
+        - {x: -29, y: 10}
+        - {x: -29, y: -13}
+        - {x: -28, y: -19}
+        - {x: 25, y: -19}
+        - {x: 29, y: -10}
+        - {x: 29, y: 9}
     - name: X cleanup_235
       rect:
         serializedVersion: 2
@@ -2862,6 +4103,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.5, y: 19}
+        - {x: -23.5, y: 19}
+        - {x: -26.5, y: 15}
+        - {x: -26.5, y: -19}
+        - {x: 16.5, y: -19}
+        - {x: 26.5, y: -11}
+        - {x: 26.5, y: 8}
     - name: X cleanup_236
       rect:
         serializedVersion: 2
@@ -2872,6 +4121,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 19}
+        - {x: -21.5, y: 12}
+        - {x: -24.5, y: 9}
+        - {x: -26.5, y: 2}
+        - {x: -26.5, y: -19}
+        - {x: 26.5, y: -19}
+        - {x: 26.5, y: 9}
+        - {x: 15.5, y: 19}
     - name: X cleanup_237
       rect:
         serializedVersion: 2
@@ -2882,6 +4140,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_238
       rect:
         serializedVersion: 2
@@ -2892,6 +4151,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_239
       rect:
         serializedVersion: 2
@@ -2902,6 +4162,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_240
       rect:
         serializedVersion: 2
@@ -2912,6 +4173,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_241
       rect:
         serializedVersion: 2
@@ -2922,6 +4184,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_242
       rect:
         serializedVersion: 2
@@ -2932,6 +4195,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: 26}
+        - {x: -4, y: 26}
+        - {x: -21, y: 21}
+        - {x: -21, y: 3}
+        - {x: -8, y: -26}
+        - {x: 11, y: -26}
+        - {x: 20, y: -15}
+        - {x: 21, y: -13}
     - name: X cleanup_243
       rect:
         serializedVersion: 2
@@ -2942,6 +4214,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: 26}
+        - {x: -4, y: 26}
+        - {x: -21, y: 21}
+        - {x: -21, y: 3}
+        - {x: -8, y: -26}
+        - {x: 11, y: -26}
+        - {x: 20, y: -15}
+        - {x: 21, y: -13}
     - name: X cleanup_244
       rect:
         serializedVersion: 2
@@ -2952,6 +4233,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 26}
+        - {x: -22.5, y: 22}
+        - {x: -22.5, y: 2}
+        - {x: -9.5, y: -26}
+        - {x: 20.5, y: -26}
+        - {x: 22.5, y: -25}
+        - {x: 22.5, y: 26}
     - name: X cleanup_245
       rect:
         serializedVersion: 2
@@ -2962,6 +4251,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 26}
+        - {x: -22, y: 21}
+        - {x: -22, y: 3}
+        - {x: -9, y: -26}
+        - {x: 17, y: -26}
+        - {x: 22, y: -22}
+        - {x: 22, y: 24}
+        - {x: 19, y: 26}
     - name: X cleanup_246
       rect:
         serializedVersion: 2
@@ -2972,6 +4270,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 3}
+        - {x: -3, y: -26}
+        - {x: 16, y: -26}
+        - {x: 22, y: -18}
+        - {x: 22, y: 26}
+        - {x: -12, y: 26}
+        - {x: -22, y: 24}
     - name: X cleanup_247
       rect:
         serializedVersion: 2
@@ -2982,6 +4288,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: 26}
+        - {x: -4, y: 26}
+        - {x: -21, y: 21}
+        - {x: -21, y: 3}
+        - {x: -8, y: -26}
+        - {x: 11, y: -26}
+        - {x: 20, y: -15}
+        - {x: 21, y: -13}
     - name: X cleanup_248
       rect:
         serializedVersion: 2
@@ -2992,6 +4307,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: 26}
+        - {x: -4, y: 26}
+        - {x: -21, y: 21}
+        - {x: -21, y: 3}
+        - {x: -8, y: -26}
+        - {x: 11, y: -26}
+        - {x: 20, y: -15}
+        - {x: 21, y: -13}
     - name: X cleanup_249
       rect:
         serializedVersion: 2
@@ -3002,6 +4326,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 26}
+        - {x: -22.5, y: 22}
+        - {x: -22.5, y: 2}
+        - {x: -9.5, y: -26}
+        - {x: 20.5, y: -26}
+        - {x: 22.5, y: -25}
+        - {x: 22.5, y: 26}
     - name: X cleanup_250
       rect:
         serializedVersion: 2
@@ -3012,6 +4344,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 26}
+        - {x: -22, y: 21}
+        - {x: -22, y: 3}
+        - {x: -9, y: -26}
+        - {x: 17, y: -26}
+        - {x: 22, y: -22}
+        - {x: 22, y: 24}
+        - {x: 19, y: 26}
     - name: X cleanup_251
       rect:
         serializedVersion: 2
@@ -3022,6 +4363,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 3}
+        - {x: -3, y: -26}
+        - {x: 16, y: -26}
+        - {x: 22, y: -18}
+        - {x: 22, y: 26}
+        - {x: -12, y: 26}
+        - {x: -22, y: 24}
     - name: X cleanup_252
       rect:
         serializedVersion: 2
@@ -3032,6 +4381,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_253
       rect:
         serializedVersion: 2
@@ -3042,6 +4392,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_254
       rect:
         serializedVersion: 2
@@ -3052,6 +4403,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_255
       rect:
         serializedVersion: 2
@@ -3062,6 +4414,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_256
       rect:
         serializedVersion: 2
@@ -3072,6 +4425,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_257
       rect:
         serializedVersion: 2
@@ -3082,6 +4436,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_258
       rect:
         serializedVersion: 2
@@ -3092,6 +4447,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_259
       rect:
         serializedVersion: 2
@@ -3102,6 +4458,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_260
       rect:
         serializedVersion: 2
@@ -3112,6 +4469,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_261
       rect:
         serializedVersion: 2
@@ -3122,6 +4480,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_262
       rect:
         serializedVersion: 2
@@ -3132,6 +4491,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_263
       rect:
         serializedVersion: 2
@@ -3142,6 +4502,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_264
       rect:
         serializedVersion: 2
@@ -3152,6 +4513,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_265
       rect:
         serializedVersion: 2
@@ -3162,6 +4524,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_266
       rect:
         serializedVersion: 2
@@ -3172,6 +4535,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_267
       rect:
         serializedVersion: 2
@@ -3182,6 +4546,19 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: -4.5}
+        - {x: 24, y: -2.5}
+        - {x: 24, y: 14.5}
+        - {x: 15, y: 23.5}
+        - {x: -6, y: 23.5}
+        - {x: -7, y: 18.5}
+        - {x: -24, y: 7.5}
+        - {x: -24, y: -1.5}
+        - {x: -18, y: -23.5}
+        - {x: 17, y: -23.5}
+        - {x: 19, y: -17.5}
+        - {x: 13, y: -6.5}
     - name: X cleanup_268
       rect:
         serializedVersion: 2
@@ -3192,6 +4569,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 23.5}
+        - {x: -23.5, y: 8.5}
+        - {x: -23.5, y: 0.5}
+        - {x: -15.5, y: -1.5}
+        - {x: -12.5, y: -1.5}
+        - {x: -16.5, y: -23.5}
+        - {x: 23.5, y: -23.5}
+        - {x: 23.5, y: 16.5}
+        - {x: 16.5, y: 23.5}
     - name: X cleanup_269
       rect:
         serializedVersion: 2
@@ -3202,6 +4589,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 23.5}
+        - {x: -23.5, y: 8.5}
+        - {x: -23.5, y: 0.5}
+        - {x: -15.5, y: -1.5}
+        - {x: -12.5, y: -1.5}
+        - {x: -16.5, y: -23.5}
+        - {x: 23.5, y: -23.5}
+        - {x: 23.5, y: 16.5}
+        - {x: 16.5, y: 23.5}
     - name: X cleanup_270
       rect:
         serializedVersion: 2
@@ -3212,6 +4609,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 23.5}
+        - {x: -11, y: 23.5}
+        - {x: -25, y: 8.5}
+        - {x: -25, y: 0.5}
+        - {x: -17, y: -1.5}
+        - {x: -14, y: -1.5}
+        - {x: -17, y: -18.5}
+        - {x: -16, y: -23.5}
+        - {x: 22, y: -23.5}
+        - {x: 25, y: -17.5}
+        - {x: 25, y: 10.5}
     - name: X cleanup_271
       rect:
         serializedVersion: 2
@@ -3222,6 +4631,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 23.5}
+        - {x: -11, y: 23.5}
+        - {x: -25, y: 8.5}
+        - {x: -25, y: 0.5}
+        - {x: -17, y: -1.5}
+        - {x: -14, y: -1.5}
+        - {x: -17, y: -18.5}
+        - {x: -16, y: -23.5}
+        - {x: 21, y: -23.5}
+        - {x: 25, y: -13.5}
+        - {x: 25, y: 18.5}
     - name: X cleanup_272
       rect:
         serializedVersion: 2
@@ -3232,6 +4653,21 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: -6.5}
+        - {x: 12, y: -4.5}
+        - {x: 10, y: -4.5}
+        - {x: 22, y: -4.5}
+        - {x: 25, y: -3.5}
+        - {x: 25, y: 8.5}
+        - {x: 14, y: 23.5}
+        - {x: -11, y: 23.5}
+        - {x: -25, y: 8.5}
+        - {x: -25, y: 0.5}
+        - {x: -17, y: -2.5}
+        - {x: -15, y: -23.5}
+        - {x: 19, y: -23.5}
+        - {x: 19, y: -17.5}
     - name: X cleanup_273
       rect:
         serializedVersion: 2
@@ -3242,6 +4678,19 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: -4.5}
+        - {x: 24, y: -2.5}
+        - {x: 24, y: 14.5}
+        - {x: 15, y: 23.5}
+        - {x: -6, y: 23.5}
+        - {x: -7, y: 18.5}
+        - {x: -24, y: 7.5}
+        - {x: -24, y: -1.5}
+        - {x: -18, y: -23.5}
+        - {x: 17, y: -23.5}
+        - {x: 19, y: -17.5}
+        - {x: 13, y: -6.5}
     - name: X cleanup_274
       rect:
         serializedVersion: 2
@@ -3252,6 +4701,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 23.5}
+        - {x: -23.5, y: 8.5}
+        - {x: -23.5, y: 0.5}
+        - {x: -15.5, y: -1.5}
+        - {x: -12.5, y: -1.5}
+        - {x: -16.5, y: -23.5}
+        - {x: 23.5, y: -23.5}
+        - {x: 23.5, y: 16.5}
+        - {x: 16.5, y: 23.5}
     - name: X cleanup_275
       rect:
         serializedVersion: 2
@@ -3262,6 +4721,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 23.5}
+        - {x: -23.5, y: 8.5}
+        - {x: -23.5, y: 0.5}
+        - {x: -15.5, y: -1.5}
+        - {x: -12.5, y: -1.5}
+        - {x: -16.5, y: -23.5}
+        - {x: 23.5, y: -23.5}
+        - {x: 23.5, y: 16.5}
+        - {x: 16.5, y: 23.5}
     - name: X cleanup_276
       rect:
         serializedVersion: 2
@@ -3272,6 +4741,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 23.5}
+        - {x: -11, y: 23.5}
+        - {x: -25, y: 8.5}
+        - {x: -25, y: 0.5}
+        - {x: -17, y: -1.5}
+        - {x: -14, y: -1.5}
+        - {x: -17, y: -18.5}
+        - {x: -16, y: -23.5}
+        - {x: 22, y: -23.5}
+        - {x: 25, y: -17.5}
+        - {x: 25, y: 10.5}
     - name: X cleanup_277
       rect:
         serializedVersion: 2
@@ -3282,6 +4763,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 23.5}
+        - {x: -11, y: 23.5}
+        - {x: -25, y: 8.5}
+        - {x: -25, y: 0.5}
+        - {x: -17, y: -1.5}
+        - {x: -14, y: -1.5}
+        - {x: -17, y: -18.5}
+        - {x: -16, y: -23.5}
+        - {x: 21, y: -23.5}
+        - {x: 25, y: -13.5}
+        - {x: 25, y: 18.5}
     - name: X cleanup_278
       rect:
         serializedVersion: 2
@@ -3292,6 +4785,21 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: -6.5}
+        - {x: 12, y: -4.5}
+        - {x: 10, y: -4.5}
+        - {x: 22, y: -4.5}
+        - {x: 25, y: -3.5}
+        - {x: 25, y: 8.5}
+        - {x: 14, y: 23.5}
+        - {x: -11, y: 23.5}
+        - {x: -25, y: 8.5}
+        - {x: -25, y: 0.5}
+        - {x: -17, y: -2.5}
+        - {x: -15, y: -23.5}
+        - {x: 19, y: -23.5}
+        - {x: 19, y: -17.5}
     - name: X cleanup_279
       rect:
         serializedVersion: 2
@@ -3302,6 +4810,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_280
       rect:
         serializedVersion: 2
@@ -3312,6 +4821,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_281
       rect:
         serializedVersion: 2
@@ -3322,6 +4832,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_282
       rect:
         serializedVersion: 2
@@ -3332,6 +4843,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_283
       rect:
         serializedVersion: 2
@@ -3342,6 +4854,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_284
       rect:
         serializedVersion: 2
@@ -3352,6 +4865,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_285
       rect:
         serializedVersion: 2
@@ -3362,6 +4876,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_286
       rect:
         serializedVersion: 2
@@ -3372,6 +4887,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_287
       rect:
         serializedVersion: 2
@@ -3382,6 +4898,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_288
       rect:
         serializedVersion: 2
@@ -3392,6 +4909,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_289
       rect:
         serializedVersion: 2
@@ -3402,6 +4920,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_290
       rect:
         serializedVersion: 2
@@ -3412,6 +4931,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_291
       rect:
         serializedVersion: 2
@@ -3422,6 +4942,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_292
       rect:
         serializedVersion: 2
@@ -3432,6 +4953,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_293
       rect:
         serializedVersion: 2
@@ -3442,6 +4964,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_294
       rect:
         serializedVersion: 2
@@ -3452,6 +4975,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_295
       rect:
         serializedVersion: 2
@@ -3462,6 +4986,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_296
       rect:
         serializedVersion: 2
@@ -3472,6 +4997,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_297
       rect:
         serializedVersion: 2
@@ -3482,6 +5008,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_298
       rect:
         serializedVersion: 2
@@ -3492,6 +5019,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_299
       rect:
         serializedVersion: 2
@@ -3502,6 +5030,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_300
       rect:
         serializedVersion: 2
@@ -3512,6 +5041,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_301
       rect:
         serializedVersion: 2
@@ -3522,6 +5052,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_302
       rect:
         serializedVersion: 2
@@ -3532,6 +5063,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_303
       rect:
         serializedVersion: 2
@@ -3542,6 +5074,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_304
       rect:
         serializedVersion: 2
@@ -3552,6 +5085,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_305
       rect:
         serializedVersion: 2
@@ -3562,6 +5096,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_306
       rect:
         serializedVersion: 2
@@ -3572,6 +5107,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_307
       rect:
         serializedVersion: 2
@@ -3582,6 +5118,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_308
       rect:
         serializedVersion: 2
@@ -3592,6 +5129,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_309
       rect:
         serializedVersion: 2
@@ -3602,6 +5140,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_310
       rect:
         serializedVersion: 2
@@ -3612,6 +5151,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 26}
+        - {x: -19.5, y: 19}
+        - {x: -20.5, y: 18}
+        - {x: -20.5, y: -26}
+        - {x: 18.5, y: -26}
+        - {x: 20.5, y: -22}
+        - {x: 20.5, y: 20}
+        - {x: 14.5, y: 26}
     - name: X cleanup_311
       rect:
         serializedVersion: 2
@@ -3622,6 +5170,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 26}
+        - {x: -19.5, y: 19}
+        - {x: -20.5, y: 18}
+        - {x: -20.5, y: -26}
+        - {x: 18.5, y: -26}
+        - {x: 20.5, y: -22}
+        - {x: 20.5, y: 20}
+        - {x: 14.5, y: 26}
     - name: X cleanup_312
       rect:
         serializedVersion: 2
@@ -3632,6 +5189,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 26}
+        - {x: -20.5, y: -26}
+        - {x: 20.5, y: -26}
+        - {x: 20.5, y: 24}
+        - {x: 19.5, y: 26}
     - name: X cleanup_313
       rect:
         serializedVersion: 2
@@ -3642,6 +5205,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 24}
+        - {x: -20.5, y: 20}
+        - {x: -20.5, y: -24}
+        - {x: 15.5, y: -24}
+        - {x: 20.5, y: -7}
+        - {x: 20.5, y: 1}
+        - {x: 9.5, y: 24}
     - name: X cleanup_314
       rect:
         serializedVersion: 2
@@ -3652,6 +5223,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.5, y: 23}
+        - {x: -19.5, y: 23}
+        - {x: -21.5, y: 15}
+        - {x: -21.5, y: -23}
+        - {x: 15.5, y: -23}
+        - {x: 21.5, y: -7}
+        - {x: 21.5, y: 7}
     - name: X cleanup_315
       rect:
         serializedVersion: 2
@@ -3662,6 +5241,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.5, y: 23}
+        - {x: -19.5, y: 23}
+        - {x: -21.5, y: 15}
+        - {x: -21.5, y: -23}
+        - {x: 15.5, y: -23}
+        - {x: 21.5, y: -7}
+        - {x: 21.5, y: 7}
     - name: X cleanup_316
       rect:
         serializedVersion: 2
@@ -3672,6 +5259,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.5, y: 22}
+        - {x: 3.5, y: 23}
+        - {x: -10.5, y: 23}
+        - {x: -16.5, y: 21}
+        - {x: -21.5, y: 9}
+        - {x: -21.5, y: -23}
+        - {x: 11.5, y: -23}
+        - {x: 21.5, y: -5}
+        - {x: 21.5, y: 2}
     - name: X cleanup_317
       rect:
         serializedVersion: 2
@@ -3682,6 +5279,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_318
       rect:
         serializedVersion: 2
@@ -3692,6 +5290,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_319
       rect:
         serializedVersion: 2
@@ -3702,6 +5301,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_320
       rect:
         serializedVersion: 2
@@ -3712,6 +5312,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_321
       rect:
         serializedVersion: 2
@@ -3722,6 +5323,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_322
       rect:
         serializedVersion: 2
@@ -3732,6 +5334,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_323
       rect:
         serializedVersion: 2
@@ -3742,6 +5345,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_324
       rect:
         serializedVersion: 2
@@ -3752,6 +5356,23 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: -22}
+        - {x: 20, y: 18}
+        - {x: 17, y: 22}
+        - {x: -5, y: 22}
+        - {x: -20, y: 18}
+        - {x: -20, y: 7}
+        - {x: -16, y: 0}
+        - {x: -9, y: -2}
+        - {x: -6, y: -2}
+        - {x: -9, y: -2}
+        - {x: -12, y: -4}
+        - {x: -16, y: -11}
+        - {x: -17, y: -22}
+        - {x: -6, y: -22}
+        - {x: -1, y: -17}
+        - {x: 5, y: -22}
     - name: X cleanup_325
       rect:
         serializedVersion: 2
@@ -3762,6 +5383,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 24.5}
+        - {x: -20.5, y: -19.5}
+        - {x: -19.5, y: -24.5}
+        - {x: 18.5, y: -24.5}
+        - {x: 20.5, y: -11.5}
+        - {x: 20.5, y: 19.5}
+        - {x: 16.5, y: 24.5}
     - name: X cleanup_326
       rect:
         serializedVersion: 2
@@ -3772,6 +5401,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 24.5}
+        - {x: -20.5, y: -19.5}
+        - {x: -19.5, y: -24.5}
+        - {x: 18.5, y: -24.5}
+        - {x: 20.5, y: -11.5}
+        - {x: 20.5, y: 19.5}
+        - {x: 16.5, y: 24.5}
     - name: X cleanup_327
       rect:
         serializedVersion: 2
@@ -3782,6 +5419,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 26}
+        - {x: -20.5, y: 24}
+        - {x: -20.5, y: -26}
+        - {x: 17.5, y: -26}
+        - {x: 20.5, y: -23}
+        - {x: 20.5, y: 15}
+        - {x: 11.5, y: 26}
     - name: X cleanup_328
       rect:
         serializedVersion: 2
@@ -3792,6 +5437,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20.5, y: 5}
+        - {x: 20.5, y: 15}
+        - {x: 9.5, y: 26}
+        - {x: -8.5, y: 26}
+        - {x: -20.5, y: 23}
+        - {x: -20.5, y: -26}
+        - {x: 17.5, y: -26}
+        - {x: 17.5, y: -22}
+        - {x: 13.5, y: -10}
     - name: X cleanup_329
       rect:
         serializedVersion: 2
@@ -3802,6 +5457,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 24}
+        - {x: -20.5, y: 10}
+        - {x: -20.5, y: -9}
+        - {x: -12.5, y: -24}
+        - {x: 20.5, y: -24}
+        - {x: 20.5, y: 11}
+        - {x: 13.5, y: 24}
     - name: X cleanup_330
       rect:
         serializedVersion: 2
@@ -3812,6 +5475,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_331
       rect:
         serializedVersion: 2
@@ -3822,6 +5486,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_332
       rect:
         serializedVersion: 2
@@ -3832,6 +5497,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_333
       rect:
         serializedVersion: 2
@@ -3842,6 +5508,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_334
       rect:
         serializedVersion: 2
@@ -3852,6 +5519,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_335
       rect:
         serializedVersion: 2
@@ -3862,6 +5530,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_336
       rect:
         serializedVersion: 2
@@ -3872,6 +5541,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_337
       rect:
         serializedVersion: 2
@@ -3882,6 +5552,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_338
       rect:
         serializedVersion: 2
@@ -3892,6 +5563,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_339
       rect:
         serializedVersion: 2
@@ -3902,6 +5574,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_340
       rect:
         serializedVersion: 2
@@ -3912,6 +5585,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_341
       rect:
         serializedVersion: 2
@@ -3922,6 +5596,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_342
       rect:
         serializedVersion: 2
@@ -3932,6 +5607,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: 32}
+        - {x: -31, y: -32}
+        - {x: 31, y: -32}
+        - {x: 31, y: 32}
     - name: X cleanup_343
       rect:
         serializedVersion: 2
@@ -3942,6 +5622,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_344
       rect:
         serializedVersion: 2
@@ -3952,6 +5633,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_345
       rect:
         serializedVersion: 2
@@ -3962,6 +5644,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_346
       rect:
         serializedVersion: 2
@@ -3972,6 +5655,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_347
       rect:
         serializedVersion: 2
@@ -3982,6 +5666,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_348
       rect:
         serializedVersion: 2
@@ -3992,6 +5677,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_349
       rect:
         serializedVersion: 2
@@ -4002,6 +5688,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_350
       rect:
         serializedVersion: 2
@@ -4012,6 +5699,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_351
       rect:
         serializedVersion: 2
@@ -4022,6 +5710,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_352
       rect:
         serializedVersion: 2
@@ -4032,6 +5721,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_353
       rect:
         serializedVersion: 2
@@ -4042,6 +5732,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_354
       rect:
         serializedVersion: 2
@@ -4052,6 +5743,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -73.5, y: 48}
+        - {x: -73.5, y: 27}
+        - {x: -12.5, y: -48}
+        - {x: 13.5, y: -48}
+        - {x: 42.5, y: -12}
+        - {x: 73.5, y: 33}
+        - {x: 73.5, y: 48}
     - name: X cleanup_355
       rect:
         serializedVersion: 2
@@ -4062,6 +5761,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_356
       rect:
         serializedVersion: 2
@@ -4072,6 +5772,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_357
       rect:
         serializedVersion: 2
@@ -4082,6 +5783,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_358
       rect:
         serializedVersion: 2
@@ -4092,6 +5794,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_359
       rect:
         serializedVersion: 2
@@ -4102,6 +5805,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_360
       rect:
         serializedVersion: 2
@@ -4112,6 +5816,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_361
       rect:
         serializedVersion: 2
@@ -4122,6 +5827,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_362
       rect:
         serializedVersion: 2
@@ -4132,6 +5838,45 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.5, y: -20.5}
+        - {x: 8.5, y: -22.5}
+        - {x: 14.5, y: -22.5}
+        - {x: 14.5, y: -20.5}
+        - {x: 12.5, y: -18.5}
+        - {x: 10.5, y: -18.5}
+      - - {x: -7.5, y: -4.5}
+        - {x: -9.5, y: -6.5}
+        - {x: -9.5, y: -16.5}
+        - {x: -7.5, y: -18.5}
+        - {x: -5.5, y: -18.5}
+        - {x: -3.5, y: -16.5}
+        - {x: -3.5, y: -6.5}
+        - {x: -5.5, y: -4.5}
+      - - {x: -16.5, y: -16.5}
+        - {x: -13.5, y: -15.5}
+        - {x: -13.5, y: -12.5}
+        - {x: -15.5, y: -10.5}
+        - {x: -16.5, y: -10.5}
+      - - {x: 4.5, y: -2.5}
+        - {x: 4.5, y: -4.5}
+        - {x: 6.5, y: -6.5}
+        - {x: 16.5, y: -6.5}
+        - {x: 16.5, y: -0.5}
+        - {x: 6.5, y: -0.5}
+      - - {x: -16.5, y: 8.5}
+        - {x: -16.5, y: 2.5}
+        - {x: -10.5, y: -3.5}
+        - {x: -7.5, y: -3.5}
+        - {x: -6.5, y: -1.5}
+        - {x: -6.5, y: 2.5}
+        - {x: -14.5, y: 8.5}
+      - - {x: -9.5, y: 22.5}
+        - {x: -9.5, y: 20.5}
+        - {x: -7.5, y: 18.5}
+        - {x: -5.5, y: 18.5}
+        - {x: -3.5, y: 20.5}
+        - {x: -3.5, y: 22.5}
     - name: X cleanup_363
       rect:
         serializedVersion: 2
@@ -4142,6 +5887,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_364
       rect:
         serializedVersion: 2
@@ -4152,6 +5898,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_365
       rect:
         serializedVersion: 2
@@ -4162,6 +5909,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_366
       rect:
         serializedVersion: 2
@@ -4172,6 +5920,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_367
       rect:
         serializedVersion: 2
@@ -4182,6 +5931,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_368
       rect:
         serializedVersion: 2
@@ -4192,6 +5942,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_369
       rect:
         serializedVersion: 2
@@ -4202,6 +5953,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_370
       rect:
         serializedVersion: 2
@@ -4212,6 +5964,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_371
       rect:
         serializedVersion: 2
@@ -4222,6 +5975,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_372
       rect:
         serializedVersion: 2
@@ -4232,6 +5986,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_373
       rect:
         serializedVersion: 2
@@ -4242,6 +5997,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_374
       rect:
         serializedVersion: 2
@@ -4252,6 +6008,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_375
       rect:
         serializedVersion: 2
@@ -4262,6 +6019,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_376
       rect:
         serializedVersion: 2
@@ -4272,6 +6030,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_377
       rect:
         serializedVersion: 2
@@ -4282,6 +6041,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_378
       rect:
         serializedVersion: 2
@@ -4292,6 +6052,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_379
       rect:
         serializedVersion: 2
@@ -4302,6 +6063,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_380
       rect:
         serializedVersion: 2
@@ -4312,6 +6074,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_381
       rect:
         serializedVersion: 2
@@ -4322,6 +6085,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_382
       rect:
         serializedVersion: 2
@@ -4332,6 +6096,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_383
       rect:
         serializedVersion: 2
@@ -4342,6 +6107,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_384
       rect:
         serializedVersion: 2
@@ -4352,6 +6118,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_385
       rect:
         serializedVersion: 2
@@ -4362,6 +6129,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_386
       rect:
         serializedVersion: 2
@@ -4372,6 +6140,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_387
       rect:
         serializedVersion: 2
@@ -4382,6 +6151,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_388
       rect:
         serializedVersion: 2
@@ -4392,6 +6162,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_389
       rect:
         serializedVersion: 2
@@ -4402,6 +6173,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_390
       rect:
         serializedVersion: 2
@@ -4412,6 +6184,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_391
       rect:
         serializedVersion: 2
@@ -4422,6 +6195,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_392
       rect:
         serializedVersion: 2
@@ -4432,6 +6206,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_393
       rect:
         serializedVersion: 2
@@ -4442,6 +6217,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_394
       rect:
         serializedVersion: 2
@@ -4452,6 +6228,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_395
       rect:
         serializedVersion: 2
@@ -4462,6 +6239,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_396
       rect:
         serializedVersion: 2
@@ -4472,6 +6250,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_397
       rect:
         serializedVersion: 2
@@ -4482,6 +6261,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_398
       rect:
         serializedVersion: 2
@@ -4492,6 +6272,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_399
       rect:
         serializedVersion: 2
@@ -4502,6 +6283,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_400
       rect:
         serializedVersion: 2
@@ -4512,6 +6294,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_401
       rect:
         serializedVersion: 2
@@ -4522,6 +6305,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_402
       rect:
         serializedVersion: 2
@@ -4532,6 +6316,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_403
       rect:
         serializedVersion: 2
@@ -4542,6 +6327,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_404
       rect:
         serializedVersion: 2
@@ -4552,6 +6338,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_405
       rect:
         serializedVersion: 2
@@ -4562,6 +6349,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_406
       rect:
         serializedVersion: 2
@@ -4572,6 +6360,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_407
       rect:
         serializedVersion: 2
@@ -4582,6 +6371,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_408
       rect:
         serializedVersion: 2
@@ -4592,6 +6382,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_409
       rect:
         serializedVersion: 2
@@ -4602,6 +6393,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_410
       rect:
         serializedVersion: 2
@@ -4612,6 +6404,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_411
       rect:
         serializedVersion: 2
@@ -4622,6 +6415,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_412
       rect:
         serializedVersion: 2
@@ -4632,6 +6426,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_413
       rect:
         serializedVersion: 2
@@ -4642,6 +6437,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_414
       rect:
         serializedVersion: 2
@@ -4652,6 +6448,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_415
       rect:
         serializedVersion: 2
@@ -4662,6 +6459,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_416
       rect:
         serializedVersion: 2
@@ -4672,6 +6470,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_417
       rect:
         serializedVersion: 2
@@ -4682,6 +6481,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_418
       rect:
         serializedVersion: 2
@@ -4692,6 +6492,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_419
       rect:
         serializedVersion: 2
@@ -4702,6 +6503,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_420
       rect:
         serializedVersion: 2
@@ -4712,6 +6514,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_421
       rect:
         serializedVersion: 2
@@ -4722,6 +6525,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_422
       rect:
         serializedVersion: 2
@@ -4732,6 +6536,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_423
       rect:
         serializedVersion: 2
@@ -4742,6 +6547,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_424
       rect:
         serializedVersion: 2
@@ -4752,6 +6558,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_425
       rect:
         serializedVersion: 2
@@ -4762,6 +6569,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_426
       rect:
         serializedVersion: 2
@@ -4772,6 +6580,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_427
       rect:
         serializedVersion: 2
@@ -4782,6 +6591,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_428
       rect:
         serializedVersion: 2
@@ -4792,6 +6602,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_429
       rect:
         serializedVersion: 2
@@ -4802,6 +6613,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_430
       rect:
         serializedVersion: 2
@@ -4812,6 +6624,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_431
       rect:
         serializedVersion: 2
@@ -4822,6 +6635,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_432
       rect:
         serializedVersion: 2
@@ -4832,6 +6646,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_433
       rect:
         serializedVersion: 2
@@ -4842,6 +6657,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_434
       rect:
         serializedVersion: 2
@@ -4852,6 +6668,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_435
       rect:
         serializedVersion: 2
@@ -4862,6 +6679,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_436
       rect:
         serializedVersion: 2
@@ -4872,6 +6690,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_437
       rect:
         serializedVersion: 2
@@ -4882,6 +6701,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_438
       rect:
         serializedVersion: 2
@@ -4892,6 +6712,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_439
       rect:
         serializedVersion: 2
@@ -4902,6 +6723,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_440
       rect:
         serializedVersion: 2
@@ -4912,6 +6734,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_441
       rect:
         serializedVersion: 2
@@ -4922,6 +6745,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_442
       rect:
         serializedVersion: 2
@@ -4932,6 +6756,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_443
       rect:
         serializedVersion: 2
@@ -4942,6 +6767,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_444
       rect:
         serializedVersion: 2
@@ -4952,6 +6778,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_445
       rect:
         serializedVersion: 2
@@ -4962,6 +6789,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_446
       rect:
         serializedVersion: 2
@@ -4972,6 +6800,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_447
       rect:
         serializedVersion: 2
@@ -4982,6 +6811,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_448
       rect:
         serializedVersion: 2
@@ -4992,6 +6822,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_449
       rect:
         serializedVersion: 2
@@ -5002,6 +6833,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_450
       rect:
         serializedVersion: 2
@@ -5012,6 +6844,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_451
       rect:
         serializedVersion: 2
@@ -5022,6 +6855,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: X cleanup_452
       rect:
         serializedVersion: 2
@@ -5032,6 +6866,8 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

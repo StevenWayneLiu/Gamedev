@@ -6,13 +6,15 @@ public class InventoryButton : MonoBehaviour {
 
     Text text;
     Button button;
-
+    InventoryScreen invScr;
+    public ItemData itemData;
 
     // Use this for initialization
-    void Start()
+    void Awake()
     {
-        text = GetComponent<Text>();
+        text = gameObject.GetComponentInChildren<Text>();
         button = GetComponent<Button>();
+        invScr = GetComponentInParent<InventoryScreen>();
     }
 
     public Text Text
@@ -20,5 +22,7 @@ public class InventoryButton : MonoBehaviour {
         get { return text; }
         set { text = value; }
     }
+
+    
 
 }

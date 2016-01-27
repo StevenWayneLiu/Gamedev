@@ -48,8 +48,12 @@
      <Compile Include="Assets\Core\Resources\Scripts\Character Scripts\Attributes.cs" />
      <Compile Include="Assets\Core\Resources\Scripts\Character Scripts\Character.cs" />
      <Compile Include="Assets\Core\Resources\Scripts\Character Scripts\CharacterData.cs" />
+     <Compile Include="Assets\Core\Resources\Scripts\Character Scripts\Database.cs" />
      <Compile Include="Assets\Core\Resources\Scripts\Character Scripts\Entity.cs" />
+     <Compile Include="Assets\Core\Resources\Scripts\Character Scripts\IInteractable.cs" />
      <Compile Include="Assets\Core\Resources\Scripts\Character Scripts\Inventory.cs" />
+     <Compile Include="Assets\Core\Resources\Scripts\Character Scripts\Item.cs" />
+     <Compile Include="Assets\Core\Resources\Scripts\Character Scripts\ItemData.cs" />
      <Compile Include="Assets\Core\Resources\Scripts\Character Scripts\Skill.cs" />
      <Compile Include="Assets\Core\Resources\Scripts\Character Scripts\SkillManager.cs" />
      <Compile Include="Assets\Core\Resources\Scripts\Global\GameData.cs" />
@@ -59,7 +63,6 @@
      <Compile Include="Assets\Core\Resources\Scripts\Global\IItemObject.cs" />
      <Compile Include="Assets\Core\Resources\Scripts\Global\IItemRank.cs" />
      <Compile Include="Assets\Core\Resources\Scripts\Global\IStackable.cs" />
-     <Compile Include="Assets\Core\Resources\Scripts\Global\ItemData.cs" />
      <Compile Include="Assets\Core\Resources\Scripts\Global\ItemRank.cs" />
      <Compile Include="Assets\Core\Resources\Scripts\Global\ItemRankDatabase.cs" />
      <Compile Include="Assets\Core\Resources\Scripts\Global\State.cs" />
@@ -77,7 +80,6 @@
      <Compile Include="Assets\Resources\Scripts\Shooter Scripts\EnemyManager.cs" />
      <Compile Include="Assets\Resources\Scripts\Shooter Scripts\LeftMove.cs" />
      <Compile Include="Assets\Resources\Unused\EnemyMoveScript.cs" />
-     <Compile Include="Assets\Resources\Unused\Scripts\FlyerController2D.cs" />
      <Compile Include="Assets\Resources\Unused\Scripts\NavMeshController.cs" />
      <Compile Include="Assets\Resources\Unused\Scripts\PhysicsController2D.cs" />
      <Compile Include="Assets\Resources\Unused\Scripts\RoomGen.cs" />
