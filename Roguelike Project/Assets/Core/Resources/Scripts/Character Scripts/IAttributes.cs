@@ -2,7 +2,7 @@
 using System.Collections;
 
 
-public interface IEntity {
+public interface IAttributes {
 
     string Name { get; set; }
     float MaxHealth { get; set; }
@@ -10,6 +10,5 @@ public interface IEntity {
     float RemHealth { get; }
     float Attack { get; set; }
     float Defense { get; set; }
-    void Death();
 
 }

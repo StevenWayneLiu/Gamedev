@@ -2,13 +2,13 @@
 using System.Collections;
 using UnityEditor;
 
-[CustomEditor(typeof(GameData))]
+[CustomEditor(typeof(GameManager))]
 public class GameDataEditor : Editor {
 
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
-        GameData targ = (GameData)target;
+        GameManager targ = (GameManager)target;
 
         //show number of characters
         EditorGUILayout.LabelField("Characters", targ.Characters.Count.ToString());

@@ -42,7 +42,22 @@ public class RpgController : MonoBehaviour {
         {
             character.ToggleInventory();
         }
-
+        if (Input.GetKeyDown("1"))
+        {
+            character.ToggleInventory();
+        }
+        if (Input.GetKeyDown("2"))
+        {
+            character.ToggleInventory();
+        }
+        if (Input.GetKeyDown("3"))
+        {
+            character.ToggleInventory();
+        }
+        if (Input.GetKeyDown("4"))
+        {
+            character.ToggleInventory();
+        }
     }
 
     float MouseDir()

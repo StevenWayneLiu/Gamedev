@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 //template for character data class in game data
 [System.Serializable]
-public class CharacterData : IEntity
+public class CharacterData : IAttributes
 {
 
     public enum Faction { Player, Enemy, NPC };//whether the character belongs to player or enemy
@@ -84,25 +84,14 @@ public class CharacterData : IEntity
     }
     public float Attack
     {
-        get
-        {
-            throw new System.NotImplementedException();
-        }
-        set
-        {
-            throw new System.NotImplementedException();
-        }
+        get { return stats.strength; }
+
+        set { stats.strength = value; }
     }
     public float Defense
     {
-        get
-        {
-            throw new System.NotImplementedException();
-        }
-        set
-        {
-            throw new System.NotImplementedException();
-        }
+        get { return stats.defense; }
+        set { stats.defense = value; }
     }
     public void Death()
     {

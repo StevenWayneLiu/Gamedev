@@ -6,9 +6,9 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 
 
-public class GameData : MonoBehaviour {
+public class GameManager : MonoBehaviour {
 
-    public static GameData data;//make static and globally accessible
+    public static GameManager instance;//make static and globally accessible
 
     //game data
     public List<CharacterData> Characters = new List<CharacterData>();//list of player's characters
@@ -18,23 +18,21 @@ public class GameData : MonoBehaviour {
 
     public Database<ItemData> WorldItems = new Database<ItemData>();//list of items not owned by an entity; "on the ground" items
 
-
     public Dictionary<string, float> Scores = new Dictionary<string, float>();//data structure to store global number data
 
 	// Use this for initialization
 	void Awake () {
 
         //check for existing gamedata object
-	    if(data == null)//if there's no existing gamedata object
+	    if(instance == null)//if there's no existing gamedata object
         {
             DontDestroyOnLoad(gameObject);//persist this object between scenes
-            data = this;//set static reference to this gamedata object so it can be globally accessed
+            instance = this;//set static reference to this gamedata object so it can be globally accessed
         }
-        else if(data != this)//if there's already a gamedata object and this isn't it
+        else if(instance != this)//if there's already a gamedata object and this isn't it
         {
             Destroy(gameObject);//destroy this one
         }
-
 
 	}
 

@@ -5,9 +5,9 @@ using System.Collections;
 public class Attributes {
 
     public string name;
-    public float maxHealth = 100;
+    public float maxHealth;
     public float curHealth;
-    public int strength;
+    public float strength;
     public float defense;
     public int speed;
     public int move;//movement range of character
@@ -20,7 +20,7 @@ public class Attributes {
         name = "base";
         maxHealth = 100;
         curHealth = maxHealth;
-        strength = 100;
+        strength = 20;
         speed = 1;
         move = 5;
         range = 3;

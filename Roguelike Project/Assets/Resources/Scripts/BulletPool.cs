@@ -25,6 +25,7 @@ public class BulletPool : MonoBehaviour {
     {
         if(cooldownTimer <= 0)//if cooldown is over
         {
+            Debug.Log("Fire bullet");
             for (int i = 0; i < poolSize - 1; i++)//loop through pool looking for an inactive bullet
             {
                 if (!pool[i].activeInHierarchy)
@@ -33,8 +34,8 @@ public class BulletPool : MonoBehaviour {
                     pool[i].transform.position = transform.position;
                     pool[i].transform.rotation = transform.rotation;
                     pool[i].transform.Rotate(new Vector3(0,0,ang));
-                    //tell bullet the character's stats
-                    pool[i].GetComponent<BulletScript>().charAttack = gameObject.GetComponent<Character>().charData.Attack;
+
+                    pool[i].GetComponent<SkillObject>().skill = new Skill();//assign temp skill
 
                     pool[i].SetActive(true);
 

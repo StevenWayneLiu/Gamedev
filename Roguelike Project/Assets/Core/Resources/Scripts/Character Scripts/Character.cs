@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 //holds methods for controlling character, animations, etc. Has references to character data.
-public class Character : MonoBehaviour , IEntity, IInteractable {
+public class Character : MonoBehaviour , IAttributes, IInteractable {
 
     public CharacterData charData;//character info associated with this character
 
@@ -15,6 +15,7 @@ public class Character : MonoBehaviour , IEntity, IInteractable {
     Vector2 direction;//current direction character is facing
     public Animator anim;
     public float maxSpeed = 2f;//unity units per second
+
     
 
     public void Start()
@@ -23,26 +24,27 @@ public class Character : MonoBehaviour , IEntity, IInteractable {
         {
             //create character data for this object
             charData = new CharacterData(CharacterData.Faction.Player, this);
-            GameData.data.Characters.Add(charData);//add character data to the gamedata
+            GameManager.instance.Characters.Add(charData);//add character data to the gamedata
         }
         else if(gameObject.tag == "Enemy")
         {
             //create new enemy data for this object
             charData = new CharacterData(CharacterData.Faction.Enemy, this);
-            GameData.data.Enemies.Add(charData);//add character data to the gamedata
+            GameManager.instance.Enemies.Add(charData);//add character data to the gamedata
         }
         else if (gameObject.tag == "NPC")
         {
             //create new enemy data for this object
             charData = new CharacterData(CharacterData.Faction.NPC, this);
-            GameData.data.Characters.Add(charData);//add character data to the gamedata
+            GameManager.instance.Characters.Add(charData);//add character data to the gamedata
             rbody = gameObject.GetComponent<Rigidbody2D>();
         }
         gameObject.AddComponent<HPBar>();
-        anim = gameObject.GetComponent<Animator>();
+        anim = GetComponent<Animator>();
         velocity = Vector2.zero;
         direction = Vector2.zero;
-        rbody = gameObject.GetComponent<Rigidbody2D>();
+        rbody = GetComponent<Rigidbody2D>();
+        charData.skills.AddEntry(new Skill());
     }
 
 	
@@ -90,33 +92,6 @@ public class Character : MonoBehaviour , IEntity, IInteractable {
         ToggleInventory();
     }
 
-    public Character FindNearest()
-    {
-        Character targ = null;
-        Collider2D[] cols;
-        //circlecast targets
-        cols = Physics2D.OverlapCircleAll(new Vector2(rbody.transform.position.x, rbody.transform.position.y), findRange, 1 << 9);
-        //loop through and find closest target
-        Transform nearest = null;
-        foreach (var i in cols)
-        {
-            if (i.gameObject.GetComponent<Character>() != null && i.tag == "NPC")
-            {
-                if (nearest == null)
-                    nearest = i.transform;
-                else if (Vector3.Distance(rbody.transform.position, nearest.position) > Vector3.Distance(rbody.transform.position, i.transform.position))
-                {
-                    nearest = i.transform;
-                }
-            }
-        }
-
-        if (nearest == null)
-            Debug.Log("No targets found");
-        else
-            targ = nearest.gameObject.GetComponent<Character>();
-        return targ;
-    }
     //open character's inventory for player to see
     public void ToggleInventory()
     {
@@ -146,16 +121,87 @@ public class Character : MonoBehaviour , IEntity, IInteractable {
 
     public void UseSkill(Skill skill, Attributes targ)
     {
-        if (skill.spawnObject)//if skill spawns a prefab object
+        skill.user = this;
+        if (skill.collider)//if skill spawns a prefab object/relies on a collider to be applied
         {
-            //spawn slightly in front of character
-            Instantiate(skill.prefab, rbody.transform.position + new Vector3(direction.x, direction.y, 0f), Quaternion.identity);
+            SkillObject skillObj;
+            if (skill.spawnObject)
+            {
+                //spawn slightly in front of character
+                skillObj = (SkillObject)Instantiate(skill.prefab, rbody.transform.position + new Vector3(direction.x, direction.y, 0f) + skill.startOffset, Quaternion.identity);         
+            }
+            else
+            {
+                skillObj = skill.skillObj;
+            }
+            //give the skillobj any references it needs, like player stats for damage calc, and trip its activation flag
+            skillObj.Skill = skill;
+            ActivateHitbox();
         }
         else//else if skill applies effect directly to target's stats
         {
             //find target
+            List<Character> targets = FindNear(rbody.transform);
+            for (int i = 0; i < skill.MaxTargets; i++)
+            {
+                //apply skill to target
+                skill.CalculateDamage(targets[i]);
+            }
+            
         }
     }
+
+    //functions for finding targets from raycast/overlap
+    public List<Character> FindNear(Transform origin)
+    {
+        List<Character> targs = new List<Character>();
+        Collider2D[] cols;
+        //circlecast targets
+        cols = Physics2D.OverlapCircleAll(new Vector2(origin.position.x, origin.position.y), findRange, 1 << 9);
+        foreach (var collider in cols)
+        {
+            if (collider.GetComponent<Character>())
+                targs.Add(collider.gameObject.GetComponent<Character>());
+        }
+        return targs;
+    }
+    public Character FindNearest()
+    {
+        Character targ = null;
+        Collider2D[] cols;
+        //circlecast targets
+        cols = Physics2D.OverlapCircleAll(new Vector2(rbody.transform.position.x, rbody.transform.position.y), findRange, 1 << 9);
+        //loop through and find closest target
+        Transform nearest = null;
+        foreach (var i in cols)
+        {
+            if (i.gameObject.GetComponent<Character>() != null && i.tag == "NPC")
+            {
+                if (nearest == null)
+                    nearest = i.transform;
+                else if (Vector3.Distance(rbody.transform.position, nearest.position) > Vector3.Distance(rbody.transform.position, i.transform.position))
+                {
+                    nearest = i.transform;
+                }
+            }
+        }
+
+        if (nearest == null)
+            Debug.Log("No targets found");
+        else
+            targ = nearest.gameObject.GetComponent<Character>();
+        return targ;
+    }
+    //allow skill to apply to anything hit by a given collider for a certain duration
+    public void ActivateHitbox()
+    {
+        //turn on flag in projectile's script
+    }
+    public void DeactivateHitbox()
+    {
+        //turn off flag in projectile's script
+    }
+
 
     //properties
 
@@ -180,7 +226,7 @@ public class Character : MonoBehaviour , IEntity, IInteractable {
     }
     public float Attack
     {
-        get { return charData.Defense; }
+        get { return charData.Attack; }
         set { charData.Attack = value; }
     }
     public float Defense
