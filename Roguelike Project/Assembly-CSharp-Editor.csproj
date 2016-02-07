@@ -45,11 +45,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Core\Resources\Scripts\Editor\GameDataEditor.cs" />
-     <Compile Include="Assets\Core\Resources\Scripts\Editor\GlobalItemListEditor.cs" />
-     <Compile Include="Assets\Core\Resources\Scripts\Editor\InventoryEditor.cs" />
-     <Compile Include="Assets\Core\Resources\Scripts\Editor\ItemRankDatabaseEditor.cs" />
-     <Compile Include="Assets\Core\Resources\Scripts\Editor\ListView.cs" />
+     <Compile Include="Assets\Resources\Scripts\Editor\GameDataEditor.cs" />
+     <Compile Include="Assets\Resources\Scripts\Editor\InventoryEditor.cs" />
+     <Compile Include="Assets\Resources\Scripts\Editor\ItemRankDatabaseEditor.cs" />
+     <Compile Include="Assets\Resources\Scripts\Editor\ListView.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Editor\CustomTiledImporterAttribute.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Editor\ICustomTiledImporter.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Editor\ImportTiled2Unity.Material.cs" />
