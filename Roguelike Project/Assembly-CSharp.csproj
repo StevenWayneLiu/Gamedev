@@ -66,7 +66,9 @@
      <Compile Include="Assets\Resources\Scripts\GameObject Scripts\Skills\SkillObject.cs" />
      <Compile Include="Assets\Resources\Scripts\Global\AudioManager.cs" />
      <Compile Include="Assets\Resources\Scripts\Global\CamFollow.cs" />
+     <Compile Include="Assets\Resources\Scripts\Global\Dialogue.cs" />
      <Compile Include="Assets\Resources\Scripts\Global\DialogueManager.cs" />
+     <Compile Include="Assets\Resources\Scripts\Global\GameFlag.cs" />
      <Compile Include="Assets\Resources\Scripts\Global\GameManager.cs" />
      <Compile Include="Assets\Resources\Scripts\Global\GameStateManager.cs" />
      <Compile Include="Assets\Resources\Scripts\Global\Sequence.cs" />

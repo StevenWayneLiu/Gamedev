@@ -11,14 +11,16 @@ public class GameManager : MonoBehaviour {
     public static GameManager instance;//make static and globally accessible
 
     //game data
-    public List<CharacterData> Characters = new List<CharacterData>();//list of player's characters
-    public List<CharacterData> Enemies = new List<CharacterData>();//list of field enemies
-    public Inventory AllItems = new Inventory();//list of all items in the game
-    public Database<Skill> AllSkills = new Database<Skill>();//list of all skills in the game
+    public List<CharacterData> characters = new List<CharacterData>();//list of player's characters
+    public List<CharacterData> enemies = new List<CharacterData>();//list of field enemies
+    public Inventory itemDatabase = new Inventory();//list of all items in the game
+    public Database<Skill> skillDatabase = new Database<Skill>();//list of all skills in the game
 
-    public Database<ItemData> WorldItems = new Database<ItemData>();//list of items not owned by an entity; "on the ground" items
+    public Database<ItemData> worldItems = new Database<ItemData>();//list of items not owned by an entity; "on the ground" items
 
-    public Dictionary<string, float> Scores = new Dictionary<string, float>();//data structure to store global number data
+    public Dictionary<string, float> scores = new Dictionary<string, float>();//data structure to store global number data
+    //game logic flags for remote or delayed event triggers
+    public Dictionary<string, bool> flags = new Dictionary<string, bool>();
 
 	// Use this for initialization
 	void Awake () {
@@ -33,8 +35,8 @@ public class GameManager : MonoBehaviour {
         {
             Destroy(gameObject);//destroy this one
         }
-        AllSkills.Add(new Skill());
-        AllItems.Add(new ItemData());
+        skillDatabase.Add(new Skill());
+        itemDatabase.Add(new ItemData());
 	}
 
     //saving function
@@ -57,8 +59,8 @@ public class GameManager : MonoBehaviour {
         }
         
         //save characters into serializable class
-        pd.Characters = Characters;
-        Enemies = pd.Enemies;
+        pd.Characters = characters;
+        enemies = pd.Enemies;
 
         bf.Serialize(file, pd);//write PlayerData to file location
         file.Close();//close filestream after done
@@ -74,8 +76,8 @@ public class GameManager : MonoBehaviour {
             PlayerData pd = (PlayerData)bf.Deserialize(file);//retrieve playerdata object from file
             file.Close();
 
-            Characters = pd.Characters;
-            Enemies = pd.Enemies;
+            characters = pd.Characters;
+            enemies = pd.Enemies;
         }
     }
 }

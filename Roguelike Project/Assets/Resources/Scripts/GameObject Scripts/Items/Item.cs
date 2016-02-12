@@ -11,7 +11,7 @@ public class Item : MonoBehaviour, IInteractable {
 
 	// Use this for initialization
 	void Start () {
-        data = new ItemData(GameManager.instance.AllItems[itemID]);
+        data = new ItemData(GameManager.instance.itemDatabase[itemID]);
 	}
 	
 	// Update is called once per frame

@@ -5,11 +5,13 @@ using System.Collections.Generic;
 
 public class DialogueManager : MonoBehaviour {
 
-    //have a list of boolean flags
     //have a public list that holds all of the flags for a particular map
     //list that holds all the scenes for a particular map
+    public List<Dialogue> dialogues;
     //bool for pausing scene, default true
     //list that holds the events for a loaded scene
+    //Manager states
+    enum states { Play, Wait };//Manager is either playing a scene, or waiting for input
 
 	// Use this for initialization
 	void Start () {
@@ -29,16 +31,28 @@ public class DialogueManager : MonoBehaviour {
 	}
 
     //load in a sequence to be ready to play
-    public void LoadSequence()
+    public void LoadDialogue()
     {
 
     }
 
-    public void PlaySequence(int flag)
+    public void PlayDialogue(int flag)
     {
         //look up scene that corresponds to the flag in the list
         //start timer
         //display dialogue on the screen
     }
 
+
+
+    //move a character to a target location based on dialogue data
+    public void ScriptedMove(Character targ)
+    {
+
+    }
+    //display a speech bubble over a character
+    public void SpeechBubble(Character targ)
+    {
+
+    }
 }

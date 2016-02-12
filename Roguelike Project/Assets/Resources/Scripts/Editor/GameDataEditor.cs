@@ -11,11 +11,11 @@ public class GameDataEditor : Editor {
         GameManager targ = (GameManager)target;
 
         //show number of characters
-        EditorGUILayout.LabelField("Characters", targ.Characters.Count.ToString());
-        EditorGUILayout.LabelField("Enemies", targ.Enemies.Count.ToString());
-        EditorGUILayout.LabelField("Items", targ.AllItems.Count.ToString());
-        EditorGUILayout.LabelField("Skills", targ.AllSkills.Count.ToString());
-        EditorGUILayout.LabelField("Ground Items", targ.WorldItems.Count.ToString());
+        EditorGUILayout.LabelField("Characters", targ.characters.Count.ToString());
+        EditorGUILayout.LabelField("Enemies", targ.enemies.Count.ToString());
+        EditorGUILayout.LabelField("Items", targ.itemDatabase.Count.ToString());
+        EditorGUILayout.LabelField("Skills", targ.skillDatabase.Count.ToString());
+        EditorGUILayout.LabelField("Ground Items", targ.worldItems.Count.ToString());
     }
 
 }

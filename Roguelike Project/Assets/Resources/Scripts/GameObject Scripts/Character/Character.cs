@@ -24,19 +24,19 @@ public class Character : MonoBehaviour , IAttributes, IInteractable {
         {
             //create character data for this object
             charData = new CharacterData(CharacterData.Faction.Player, this);
-            GameManager.instance.Characters.Add(charData);//add character data to the gamedata
+            GameManager.instance.characters.Add(charData);//add character data to the gamedata
         }
         else if(gameObject.tag == "Enemy")
         {
             //create new enemy data for this object
             charData = new CharacterData(CharacterData.Faction.Enemy, this);
-            GameManager.instance.Enemies.Add(charData);//add character data to the gamedata
+            GameManager.instance.enemies.Add(charData);//add character data to the gamedata
         }
         else if (gameObject.tag == "NPC")
         {
             //create new enemy data for this object
             charData = new CharacterData(CharacterData.Faction.NPC, this);
-            GameManager.instance.Characters.Add(charData);//add character data to the gamedata
+            GameManager.instance.characters.Add(charData);//add character data to the gamedata
             rbody = gameObject.GetComponent<Rigidbody2D>();
         }
         gameObject.AddComponent<HPBar>();
