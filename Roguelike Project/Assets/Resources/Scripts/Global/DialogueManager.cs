@@ -8,10 +8,11 @@ public class DialogueManager : MonoBehaviour {
     //have a public list that holds all of the flags for a particular map
     //list that holds all the scenes for a particular map
     public List<Dialogue> dialogues;
-    //bool for pausing scene, default true
+    public bool progress = false;
     //list that holds the events for a loaded scene
     //Manager states
     enum states { Play, Wait };//Manager is either playing a scene, or waiting for input
+    states curState = states.Play;
 
 	// Use this for initialization
 	void Start () {
@@ -20,14 +21,24 @@ public class DialogueManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //check time against events in list, starting from the first one.
-
-        //if timer not paused, iterate timer
-
-        //while timer >= events[0].timestamp and events is not empty
-            //activate event
-            //pop event from stack
-        //if events is empty, play end of sequence and wrap up.
+        if(curState == states.Wait)
+        {
+            //check input, if recieved then switch flags
+            if(progress)
+            {
+                curState = states.Play;
+            }
+        }
+        if(curState == states.Play)
+        {
+            //load text
+            LoadDialogue();
+            //display text
+            DisplayDialogue();
+            //set state to wait
+            curState = states.Wait;
+        }
+        
 	}
 
     //load in a sequence to be ready to play
@@ -36,11 +47,10 @@ public class DialogueManager : MonoBehaviour {
 
     }
 
-    public void PlayDialogue(int flag)
+    public void DisplayDialogue()
     {
-        //look up scene that corresponds to the flag in the list
-        //start timer
-        //display dialogue on the screen
+
+        //switch to wait mode
     }
 
 
