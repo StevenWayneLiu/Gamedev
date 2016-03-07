@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 7a45ca7d59fa7e641b85aa681e37b8cd
+timeCreated: 1454205446
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - worshipCounter: {instanceID: 0}
+  - selectedCounter: {instanceID: 0}
+  - gameOverScreen: {instanceID: 0}
+  - blackScreen: {instanceID: 0}
+  - summoningCircle: {fileID: 158086, guid: 20e137fb2dfc655428105472a7fbd165, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
