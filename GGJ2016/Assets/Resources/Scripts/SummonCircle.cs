@@ -43,9 +43,9 @@ public class SummonCircle : MonoBehaviour {
             }
                 
             //increment rituals by one
-            GameManager.instance.Rituals++;
-            GameManager.instance.sacrificePoints += sacrificePoints;
-            GameManager.instance.CheckGameOver();
+            //GameManager.instance.Rituals++;
+            //GameManager.instance.sacrificePoints += sacrificePoints;
+            //GameManager.instance.CheckGameOver();
         }
     }
 

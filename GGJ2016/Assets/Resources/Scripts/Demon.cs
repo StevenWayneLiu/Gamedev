@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Demon : Unit {
+public class Demon : Entity{
 
     public float eatTimer = 7f;
     public float eatSpeed = 5f;//time it takes for demon to devour character
@@ -12,9 +12,6 @@ public class Demon : Unit {
 
 	// Use this for initialization
 	void Start () {
-        if(GameManager.instance.Followers > 0)
-            target = GameObject.FindGameObjectWithTag("Follower").transform;//demon heads towards the camera
-        value = 3;
 	}
 	
 	// Update is called once per frame
@@ -26,31 +23,17 @@ public class Demon : Unit {
         //find a target nearby
         if (target == null)
         {
-            if (GameManager.instance.units.Count > 0)
-                target = GameObject.FindGameObjectWithTag("Follower").transform;
         }
 
         //always move towards target
-        if(target != null)
-            Move(target.position);
+        if (target != null)
+        {
+
+        }
 	}
     //when timer counts down to zero, kill target
     public void Eat()
     {
-        if (isEating && target.tag == "Follower")
-        {
-            if (eatTimer >= 0)//if timer isn't up, tick down
-                eatTimer -= Time.deltaTime;
-            else//if timer is up target dies
-            {
-                target.GetComponent<Unit>().Death();
-                target = null;
-                isEating = false;
-                eatTimer = eatSpeed;
-                GameManager.instance.CheckGameOver();
-            }
-            
-        }
     }
 
     public void OnTriggerStay(Collider other)

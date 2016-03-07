@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class Group : MonoBehaviour {
 
-    public List<Unit> units = new List<Unit>();
+    public List<Entity> units = new List<Entity>();
 
 	// Use this for initialization
 	void Start () {
@@ -16,7 +16,7 @@ public class Group : MonoBehaviour {
 	
 	}
 
-    public Unit this[int i]
+    public Entity this[int i]
     {
         get { return units[i]; }
         set { units[i] = value; }
@@ -26,12 +26,12 @@ public class Group : MonoBehaviour {
     {
         foreach (var unit in units)
         {
-            unit.Move(newPos + UnitOffset(unit));
+            //move unit
         }
     }
 
     //find a unit's offset from the center of the group
-    Vector3 UnitOffset(Unit unit)
+    Vector3 UnitOffset(Entity unit)
     {
         Vector3 offset;
         offset = unit.transform.position - transform.position;

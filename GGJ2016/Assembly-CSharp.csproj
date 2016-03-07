@@ -47,7 +47,6 @@
   <ItemGroup>
      <Compile Include="Assets\Resources\Scripts\Altar.cs" />
      <Compile Include="Assets\Resources\Scripts\Attributes.cs" />
-     <Compile Include="Assets\Resources\Scripts\BoardManager.cs" />
      <Compile Include="Assets\Resources\Scripts\ClickMove.cs" />
      <Compile Include="Assets\Resources\Scripts\Demon.cs" />
      <Compile Include="Assets\Resources\Scripts\Enemy.cs" />
@@ -55,15 +54,14 @@
      <Compile Include="Assets\Resources\Scripts\GameManager.cs" />
      <Compile Include="Assets\Resources\Scripts\Group.cs" />
      <Compile Include="Assets\Resources\Scripts\Loader.cs" />
-     <Compile Include="Assets\Resources\Scripts\MapGen.cs" />
      <Compile Include="Assets\Resources\Scripts\Player.cs" />
      <Compile Include="Assets\Resources\Scripts\Skill.cs" />
      <Compile Include="Assets\Resources\Scripts\SmoothCamera.cs" />
      <Compile Include="Assets\Resources\Scripts\SoundManager.cs" />
      <Compile Include="Assets\Resources\Scripts\SummonCircle.cs" />
+     <Compile Include="Assets\Resources\Scripts\TerrainManager.cs" />
      <Compile Include="Assets\Resources\Scripts\Tile.cs" />
      <Compile Include="Assets\Resources\Scripts\TileInfo.cs" />
-     <Compile Include="Assets\Resources\Scripts\Unit.cs" />
      <Compile Include="Assets\Resources\Scripts\Wall.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

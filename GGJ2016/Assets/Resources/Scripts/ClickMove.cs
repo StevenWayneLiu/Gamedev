@@ -54,9 +54,9 @@ public class ClickMove : MonoBehaviour {
         //release to do box cast and select units
         if(Input.GetButtonUp("Fire1"))
         {
-            GameManager.instance.ClearSelected();
+            //GameManager.instance.ClearSelected();
             endBoxSelect = cam.ScreenToWorldPoint(Input.mousePosition + new Vector3(0, 0, selectDepth));
-            GameManager.instance.BoxSelect(startBoxSelect, endBoxSelect);
+            //GameManager.instance.BoxSelect(startBoxSelect, endBoxSelect);
             selectBox.rectTransform.anchoredPosition = Vector2.zero;
             selectBox.rectTransform.sizeDelta = Vector2.zero;
         }
@@ -69,14 +69,14 @@ public class ClickMove : MonoBehaviour {
 
             moveDest = cam.ScreenToWorldPoint(Input.mousePosition);
 
-            if(GameManager.instance.SelectCount > 0)//if followers are selected, move followers
+            /*if(GameManager.instance.SelectCount > 0)//if followers are selected, move followers
             {
                 GameManager.instance.FollowerMove(moveDest);
             }
             else//if no followers are selected, move camera
             {
                 cam.GetComponent<SmoothCamera>().moveDest = moveDest;
-            }
+            }*/
         }
             
 	}
