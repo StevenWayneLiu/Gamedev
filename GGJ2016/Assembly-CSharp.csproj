@@ -59,10 +59,10 @@
      <Compile Include="Assets\Resources\Scripts\SmoothCamera.cs" />
      <Compile Include="Assets\Resources\Scripts\SoundManager.cs" />
      <Compile Include="Assets\Resources\Scripts\SummonCircle.cs" />
+     <Compile Include="Assets\Resources\Scripts\TerrainData.cs" />
      <Compile Include="Assets\Resources\Scripts\TerrainManager.cs" />
      <Compile Include="Assets\Resources\Scripts\Tile.cs" />
      <Compile Include="Assets\Resources\Scripts\TileInfo.cs" />
-     <Compile Include="Assets\Resources\Scripts\Wall.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

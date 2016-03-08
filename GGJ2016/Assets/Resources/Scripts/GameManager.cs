@@ -22,8 +22,8 @@ public class GameManager : MonoBehaviour
 	private bool enemiesMoving;								//Boolean to check if enemies are moving.
 	private bool doingSetup = true;							//Boolean to check if we're setting up board, prevent Player from moving during setup.
 
-    public List<Wall> tileTypes;                            //List of types of tiles
-
+    public List<TerrainData> terrainTypes = new List<TerrainData>();                            //List of types of tiles
+    public List<Texture> spriteSheets = new List<Texture>();
         
 		
 		
@@ -48,8 +48,8 @@ public class GameManager : MonoBehaviour
 		//Assign enemies to a new List of Enemy objects.
 		enemies = new List<Enemy>();
 
-        tileTypes = new List<Wall>();
-        tileTypes.Add(new Wall());
+        terrainTypes = new List<TerrainData>();
+        terrainTypes.Add(new TerrainData());
 
 		//Call the InitGame function to initialize the first level 
 		InitGame();

@@ -49,6 +49,7 @@ public class TerrainManager : MonoBehaviour
     List<Vector3> vertices = new List<Vector3>();
     List<int> triangles = new List<int>();
     List<Vector3> colVertices = new List<Vector3>();
+    List<Vector2> uvs = new List<Vector2>();
     int textWidth;                                                  //the fraction of the sprite sheet's height for one tile
     int textHeight;                                                 //the fraction of the sprite sheet's width for one tile
     List<Vector2> toRender = new List<Vector2>();                   //list of items to render each pass
@@ -173,9 +174,9 @@ public class TerrainManager : MonoBehaviour
         return GameManager.instance.entities[gridPos];
     }
     //return tile information for tile at gridPos
-    public Wall GetTileInfo(Vector2 gridPos)
+    public TerrainData GetTileInfo(Vector2 gridPos)
     {
-        return GameManager.instance.tileTypes[grid[(int)gridPos.x,(int)gridPos.y]];
+        return GameManager.instance.terrainTypes[grid[(int)gridPos.x,(int)gridPos.y]];
     }
 
     //generate mesh for array
@@ -218,38 +219,48 @@ public class TerrainManager : MonoBehaviour
         mesh.normals = normals;
 
         //assign UVs
-        Vector2[] uvs = new Vector2[vertices.Count];
-        for (int z = 0; z < rows * (columns + 1); z += columns + 1)//iterate rows
+        for (int z = 0; z < rows; z ++)//iterate rows
         {
             for (int x = 0; x < columns; x++)//iterate columns
             {
                 //lower triangle: 0, 3, 1
-                uvs[x + z] = new Vector2(0, 0);
-                uvs[x + z + columns + 1] = new Vector2(0, 1);
-                uvs[x + z + 1] = new Vector2(1, 0);
-                uvs[x + z + columns + 2] = new Vector2(1, 1);
+                uvs.Add(new Vector2(x % 2, z % 2));
             }
         }
-        mesh.uv = uvs;
+        mesh.uv = uvs.ToArray();
 
     }
     void GenCollisionMesh()
     {
 
     }
+    //go through all tiles to be re-rendered and render them.
     void RenderMap()
     {
         if(toRender.Count > 0)
         {
-
-        }
-        else
-        {
-
+            for (int i = 0; i < toRender.Count; i++)
+            {
+                int place = (int)toRender[i].y * columns + (int)toRender[i].x;
+                int type = grid[(int)toRender[i].x, (int)toRender[i].y];
+                Vector2 uvCoord = GameManager.instance.terrainTypes[type].normUVCoords;
+                uvs[place] = uvCoord;
+                uvs[place] = uvCoord;
+                uvs[place] = uvCoord;
+                uvs[place] = uvCoord;
+            }
         }
     }
 
-
+    //Load in all terrain types into the game data
+    void LoadTerrainTypes()
+    {
+        if (GameManager.instance.spriteSheets.Count == 0)
+        {
+            GameManager.instance.spriteSheets.Add(Resources.Load<Texture>("Scavengers_SpriteSheet"));
+        }
+        GameManager.instance.terrainTypes.Add(new TerrainData(new Vector2(5,0), new Vector2(5,0), 2));
+    }
 
 }
 
