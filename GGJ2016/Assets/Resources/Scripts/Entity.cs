@@ -7,10 +7,9 @@ public abstract class Entity : MonoBehaviour
 {
     public Attributes stats = new Attributes();
 	public float moveTime = 0.1f;			//Time it will take object to move, in seconds.
-	public LayerMask blockingLayer;			//Layer on which collision will be checked.
 		
 	private BoxCollider2D boxCollider; 		//The BoxCollider2D component attached to this object.
-	private Rigidbody2D rb2D;				//The Rigidbody2D component attached to this object.
+	private Rigidbody rb;				//The Rigidbody2D component attached to this object.
 	private float inverseMoveTime;			//Used to make movement more efficient.
     protected Vector2 gridPos = new Vector2(1, 1);//index on grid that this character is standing at
     public Vector2 dir;                     //Direction character is facing
@@ -22,7 +21,7 @@ public abstract class Entity : MonoBehaviour
 		boxCollider = GetComponent <BoxCollider2D> ();
 			
 		//Get a component reference to this object's Rigidbody2D
-		rb2D = GetComponent <Rigidbody2D> ();
+		rb = GetComponent <Rigidbody> ();
 			
 		//By storing the reciprocal of the move time we can use it by multiplying instead of dividing, this is more efficient.
 		inverseMoveTime = 1f / moveTime;
@@ -38,7 +37,7 @@ public abstract class Entity : MonoBehaviour
 		Vector2 dest = gridPos + new Vector2(xDir, yDir);
 			
         //check if destination is an invalid tile coordinate
-        if (dest.x >= TerrainManager.instance.columns || dest.y >= TerrainManager.instance.rows || dest.x < 0 || dest.y < 0)
+        if (TerrainManager.instance.isInBounds(dest))
         {
             return false;
         }
@@ -52,7 +51,6 @@ public abstract class Entity : MonoBehaviour
         }
 	}
 		
-		
 	//Co-routine for moving units from one space to next, takes a parameter end to specify where to move to.
 	protected IEnumerator SmoothMovement (Vector3 end)
 	{
@@ -64,10 +62,10 @@ public abstract class Entity : MonoBehaviour
 		while(sqrRemainingDistance > float.Epsilon)
 		{
 			//Find a new position proportionally closer to the end, based on the moveTime
-			Vector3 newPosition = Vector3.MoveTowards(rb2D.position, end, inverseMoveTime * Time.deltaTime);
+			Vector3 newPosition = Vector3.MoveTowards(rb.position, end, inverseMoveTime * Time.deltaTime);
 				
 			//Call MovePosition on attached Rigidbody2D and move it to the calculated position.
-			rb2D.MovePosition (newPosition);
+			rb.MovePosition (newPosition);
 				
 			//Recalculate the remaining distance after moving.
 			sqrRemainingDistance = (transform.position - end).sqrMagnitude;
@@ -112,7 +110,7 @@ public abstract class Entity : MonoBehaviour
                 dirArea = new Vector2(area[i].x, area[i].y * dir.y);
             }
             Vector2 pos = gridPos + area[i];
-            if (TerrainManager.instance.grid[(int)pos.x, (int)pos.y] != null && GameManager.instance.entities[pos] != null)
+            if (TerrainManager.instance.isInBounds(pos) && GameManager.instance.entities[pos] != null)
             { 
                 //attack entity at location
                 GameManager.instance.entities[pos].stats.health -= stats.strength;

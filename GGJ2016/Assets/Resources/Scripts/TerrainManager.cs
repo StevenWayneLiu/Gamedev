@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System;
 using System.Collections.Generic; 		//Allows us to use Lists.
 using Random = UnityEngine.Random; 		//Tells Random to use the Unity Engine random number generator.
 
@@ -8,41 +7,12 @@ using Random = UnityEngine.Random; 		//Tells Random to use the Unity Engine rand
 [RequireComponent(typeof(MeshRenderer))]
 public class TerrainManager : MonoBehaviour
 {
-	// Using Serializable allows us to embed a class with sub properties in the inspector.
-	[Serializable]
-	public class Count
-	{
-		public int minimum; 			//Minimum value for our Count class.
-		public int maximum; 			//Maximum value for our Count class.
-			
-			
-		//Assignment constructor.
-		public Count (int min, int max)
-		{
-			minimum = min;
-			maximum = max;
-		}
-	}
     public static TerrainManager instance;
 	public int columns = 8; 										//Number of columns in our game board.
 	public int rows = 8;											//Number of rows in our game board.
     public float tileSize = 1;                                      //number of world units per grid unit
     public int[,] grid;                                            //Holds all floor tiles
-
-    [SerializeField]
-    int minRoomSize = 10;
-		
-        
-    public Count wallCount = new Count (5, 9);						//Lower and upper limit for our random number of walls per level.
-	public Count foodCount = new Count (1, 5);						//Lower and upper limit for our random number of food items per level.
 	public GameObject exit;											//Prefab to spawn for exit.
-	public GameObject[] floorTiles;									//Array of floor prefabs.
-	public GameObject[] wallTiles;									//Array of wall prefabs.
-	public GameObject[] foodTiles;									//Array of food prefabs.
-	public GameObject[] enemyTiles;									//Array of enemy prefabs.
-	public GameObject[] outerWallTiles;								//Array of outer tile prefabs.
-	private Transform boardHolder;									//A variable to store a reference to the transform of our Board object.
-	private List <Vector3> gridPositions = new List <Vector3> ();	//A list of possible locations to place tiles.
 
     //mesh/collision information
     Mesh mesh;
@@ -73,16 +43,18 @@ public class TerrainManager : MonoBehaviour
 
         mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
-        GenMesh();
+
+        LoadTerrainTypes();
         InitializeGridArray();
+        GenMesh();
+
+        //Instantiate the exit tile in the upper right hand corner of our game board
+        //Instantiate(exit, new Vector3(columns - 1, rows - 1, 0f), Quaternion.identity);
     }
 
 	//Generate the array holding tile data
 	void InitializeGridArray ()
 	{
-		//Clear our list gridPositions.
-		gridPositions.Clear ();
-
         //create grid array
         grid = new int[columns,rows];
         for (int x = 0; x < columns; x++)
@@ -94,76 +66,11 @@ public class TerrainManager : MonoBehaviour
         }
 	}
 		
-		
-	//Sets up the outer walls and floor (background) of the game board.
-	void BoardSetup ()
-	{
-		//Instantiate Board and set boardHolder to its transform.
-		boardHolder = new GameObject ("Board").transform;
-        InitializeGridArray();
-	}
-		
-		
-	//RandomPosition returns a random position from our list gridPositions.
-	Vector3 RandomPosition ()
-	{
-		//Declare an integer randomIndex, set it's value to a random number between 0 and the count of items in our List gridPositions.
-		int randomIndex = Random.Range (0, (columns - 2)*(rows - 2));
-			
-		//Declare a variable of type Vector3 called randomPosition, set it's value to the entry at randomIndex from our List gridPositions.
-		Vector3 randomPosition = gridPositions[randomIndex];
-			
-		//Remove the entry at randomIndex from the list so that it can't be re-used.
-		gridPositions.RemoveAt (randomIndex);
-			
-		//Return the randomly selected Vector3 position.
-		return randomPosition;
-	}
-		
     //Generates map features by setting terrain data		
-	void GenerateTerrainData (GameObject[] tileArray, int minimum, int maximum)
+	void GenerateTerrainData ()
 	{
-		//Choose a random number of objects to instantiate within the minimum and maximum limits
-		int objectCount = Random.Range (minimum, maximum+1);
-			
-		//Instantiate objects until the randomly chosen limit objectCount is reached
-		for(int i = 0; i < objectCount; i++)
-		{
-			//Choose a position for randomPosition by getting a random position from our list of available Vector3s stored in gridPosition
-			Vector3 randomPosition = RandomPosition();
-				
-			//Choose a random tile from tileArray and assign it to tileChoice
-				
-			//Instantiate tileChoice at the position returned by RandomPosition with no change in rotation
-		}
 	}
 		
-		
-	//SetupScene initializes our level and calls the previous functions to lay out the game board
-	public void SetupScene (int level)
-	{
-		//Creates the outer walls and floor.
-		BoardSetup ();
-			
-		//Reset our list of gridpositions.
-		InitializeGridArray ();
-			
-		//Instantiate a random number of wall tiles based on minimum and maximum, at randomized positions.
-		GenerateTerrainData (wallTiles, wallCount.minimum, wallCount.maximum);
-			
-		//Instantiate a random number of food tiles based on minimum and maximum, at randomized positions.
-		GenerateTerrainData (foodTiles, foodCount.minimum, foodCount.maximum);
-			
-		//Determine number of enemies based on current level number, based on a logarithmic progression
-		int enemyCount = (int)Mathf.Log(level, 2f);
-			
-		//Instantiate a random number of enemies based on minimum and maximum, at randomized positions.
-		GenerateTerrainData (enemyTiles, enemyCount, enemyCount);
-			
-		//Instantiate the exit tile in the upper right hand corner of our game board
-		Instantiate (exit, new Vector3 (columns - 1, rows - 1, 0f), Quaternion.identity);
-	}
-
     public Vector2 WorldPos(Vector2 gridPos)
     {
         return gridPos * tileSize + new Vector2(tileSize/2f,tileSize/2f);
@@ -183,29 +90,30 @@ public class TerrainManager : MonoBehaviour
     void GenMesh()
     {
         //assign vertices
-        for (int z = 0; z <= rows; z++)
+        for (int z = 0; z < rows; z++)
         {
-            for (int x = 0; x <= columns; x++)
+            for (int x = 0; x < columns; x++)
             {
-                vertices.Add(new Vector3(x * tileSize, 0 * tileSize, z * tileSize));
+                //assign vertices clockwise from bottom left corner
+                vertices.Add(new Vector3(x * tileSize, 0, z * tileSize));
+                vertices.Add(new Vector3(x * tileSize, 0, (z + 1) * tileSize));
+                vertices.Add(new Vector3((x + 1) * tileSize, 0, (z + 1) * tileSize));
+                vertices.Add(new Vector3((x + 1) * tileSize, 0, z * tileSize));
             }
         }
         mesh.vertices = vertices.ToArray();
 
         //assign triangles
-        for (int z = 0; z < rows * (columns + 1); z += columns + 1)//iterate rows
+        for (int i = 0; i < vertices.Count; i+=4)//iterate rows
         {
-            for (int x = 0; x < columns; x++)//iterate columns
-            {
-                //lower triangle: 0, 3, 1
-                triangles.Add(x + z);
-                triangles.Add(x + z + columns + 1);
-                triangles.Add(x + z + 1);
-                //upper triangle: 1, 3, 2
-                triangles.Add(x + z + 1);
-                triangles.Add(x + z + columns + 1);
-                triangles.Add(x + z + columns + 2);
-            }
+                //lower triangle: 0, 1, 3
+                triangles.Add(i);
+                triangles.Add(i + 1);
+                triangles.Add(i + 3);
+                //upper triangle: 1, 2, 3
+                triangles.Add(i + 1);
+                triangles.Add(i + 2);
+                triangles.Add(i + 3);
         }
 
         mesh.triangles = triangles.ToArray();
@@ -219,17 +127,22 @@ public class TerrainManager : MonoBehaviour
         mesh.normals = normals;
 
         //assign UVs
-        for (int z = 0; z < rows; z ++)//iterate rows
+        for (int z = 0; z < rows; z++)//iterate rows
         {
             for (int x = 0; x < columns; x++)//iterate columns
             {
-                //lower triangle: 0, 3, 1
-                uvs.Add(new Vector2(x % 2, z % 2));
+                //clockwise starting from bottom left
+                uvs.Add(new Vector2(0, 64f / 224f));
+                uvs.Add(new Vector2(0, 96f / 224f));
+                uvs.Add(new Vector2(1f / 8f, 96f / 224f));
+                uvs.Add(new Vector2(1f / 8f, 64f / 224f));
             }
         }
         mesh.uv = uvs.ToArray();
-
+        mesh.Optimize();
+        mesh.RecalculateNormals();
     }
+
     void GenCollisionMesh()
     {
 
@@ -241,15 +154,19 @@ public class TerrainManager : MonoBehaviour
         {
             for (int i = 0; i < toRender.Count; i++)
             {
+                //find index of grid square in vertex/uv list
                 int place = (int)toRender[i].y * columns + (int)toRender[i].x;
+                //find the terrain type at grid location
                 int type = grid[(int)toRender[i].x, (int)toRender[i].y];
-                Vector2 uvCoord = GameManager.instance.terrainTypes[type].normUVCoords;
-                uvs[place] = uvCoord;
-                uvs[place] = uvCoord;
-                uvs[place] = uvCoord;
-                uvs[place] = uvCoord;
+                //find the correct tile on sprite sheet for terrain type
+                Vector2 uv = GameManager.instance.terrainTypes[type].normUV;
+                uvs[place] = uv;
+                uvs[place] = uv + Vector2.up;
+                uvs[place] = uv + Vector2.one;
+                uvs[place] = uv + Vector2.right;
             }
         }
+        mesh.uv = uvs.ToArray();
     }
 
     //Load in all terrain types into the game data
@@ -259,8 +176,15 @@ public class TerrainManager : MonoBehaviour
         {
             GameManager.instance.spriteSheets.Add(Resources.Load<Texture>("Scavengers_SpriteSheet"));
         }
-        GameManager.instance.terrainTypes.Add(new TerrainData(new Vector2(5,0), new Vector2(5,0), 2));
+        GameManager.instance.terrainTypes.Add(new TerrainData(new Vector2(0,2/7), new Vector2(1/8,3/7), 2));
+    }
+
+    public bool isInBounds(Vector2 coords)
+    {
+        if (coords.x < 0 || coords.x >= columns || coords.y < 0 || coords.y >= rows)
+            return false;
+        else
+            return true;
     }
 
 }
-
