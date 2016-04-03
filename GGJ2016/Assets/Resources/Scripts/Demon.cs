@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Demon : Entity{
+public class Demon : Actor{
 
     public float eatTimer = 7f;
     public float eatSpeed = 5f;//time it takes for demon to devour character
@@ -10,9 +10,7 @@ public class Demon : Entity{
     public Transform target;//target demon is aggro'd onto
     public Collider eatCollider;
 
-	// Use this for initialization
-	void Start () {
-	}
+
 	
 	// Update is called once per frame
 	void FixedUpdate () {

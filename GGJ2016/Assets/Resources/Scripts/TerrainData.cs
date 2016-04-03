@@ -6,7 +6,7 @@ public class TerrainData
 	public AudioClip chopSound1;				//1 of 2 audio clips that play when the wall is attacked by the player.
 	public AudioClip chopSound2;				//2 of 2 audio clips that play when the wall is attacked by the player.
     public int spriteSheet = 0;                     //index of sprite sheet in global sprite sheet list
-    public Vector2 normUV;                  //UV coordinates for normal texture
+    public Vector2 normUV;                  //UV coordinates for bottom left corner of normal texture
     public Vector2 normUV2;                 //upper right corner
     public Vector2 dmgUV;                   //UV coordinates for damaged texture
     public Vector2 dmgUV2;

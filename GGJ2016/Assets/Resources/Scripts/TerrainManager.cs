@@ -8,11 +8,11 @@ using Random = UnityEngine.Random; 		//Tells Random to use the Unity Engine rand
 public class TerrainManager : MonoBehaviour
 {
     public static TerrainManager instance;
-	public int columns = 8; 										//Number of columns in our game board.
-	public int rows = 8;											//Number of rows in our game board.
+	public int columns = 8; 								        //Number of columns in our game board.
+	public int rows = 8;									        //Number of rows in our game board.
     public float tileSize = 1;                                      //number of world units per grid unit
-    public int[,] grid;                                            //Holds all floor tiles
-	public GameObject exit;											//Prefab to spawn for exit.
+    public int[,] grid;                                             //Holds all floor tiles
+	public GameObject exit;									        //Prefab to spawn for exit.
 
     //mesh/collision information
     Mesh mesh;
@@ -23,22 +23,15 @@ public class TerrainManager : MonoBehaviour
     int textWidth;                                                  //the fraction of the sprite sheet's height for one tile
     int textHeight;                                                 //the fraction of the sprite sheet's width for one tile
     List<Vector2> toRender = new List<Vector2>();                   //list of items to render each pass
+    public Dictionary<Vector2, List<Actor>> gridContents;                 //Holds contents of tiles
 
     void Awake()
     {
-        //Check if instance already exists
-        if (instance == null)
-
-            //if not, set instance to this
+        if (instance == null)//Check if instance already exists
             instance = this;
-
-        //If instance already exists and it's not this:
-        else if (instance != this)
-
-            //Then destroy this. This enforces our singleton pattern, meaning there can only ever be one instance of a GameManager.
+        else if (instance != this)//if there is and it's not this, destroy this
             Destroy(gameObject);
 
-        //Sets this to not be destroyed when reloading scene
         DontDestroyOnLoad(gameObject);
 
         mesh = new Mesh();
@@ -46,10 +39,9 @@ public class TerrainManager : MonoBehaviour
 
         LoadTerrainTypes();
         InitializeGridArray();
+        GenerateTerrainData();
         GenMesh();
-
-        //Instantiate the exit tile in the upper right hand corner of our game board
-        //Instantiate(exit, new Vector3(columns - 1, rows - 1, 0f), Quaternion.identity);
+        
     }
 
 	//Generate the array holding tile data
@@ -57,11 +49,12 @@ public class TerrainManager : MonoBehaviour
 	{
         //create grid array
         grid = new int[columns,rows];
-        for (int x = 0; x < columns; x++)
+        for (int y = 0; y < rows; y++)
         {
-            for (int y = 0; y < rows; y++)
+            for (int x = 0; x < columns; x++)
             {
                 grid[x,y] = 0;
+                toRender.Add(new Vector2(x, y));//set tile to be rendered
             }
         }
 	}
@@ -69,22 +62,8 @@ public class TerrainManager : MonoBehaviour
     //Generates map features by setting terrain data		
 	void GenerateTerrainData ()
 	{
+
 	}
-		
-    public Vector2 WorldPos(Vector2 gridPos)
-    {
-        return gridPos * tileSize + new Vector2(tileSize/2f,tileSize/2f);
-    }
-    //return information of thing on tile at gridPos
-    public Entity GetTileContents(Vector2 gridPos)
-    {
-        return GameManager.instance.entities[gridPos];
-    }
-    //return tile information for tile at gridPos
-    public TerrainData GetTileInfo(Vector2 gridPos)
-    {
-        return GameManager.instance.terrainTypes[grid[(int)gridPos.x,(int)gridPos.y]];
-    }
 
     //generate mesh for array
     void GenMesh()
@@ -127,18 +106,18 @@ public class TerrainManager : MonoBehaviour
         mesh.normals = normals;
 
         //assign UVs
-        for (int z = 0; z < rows; z++)//iterate rows
+        for (int y = 0; y < rows; y++)
         {
-            for (int x = 0; x < columns; x++)//iterate columns
+            for(int x = 0; x < columns; x++)
             {
-                //clockwise starting from bottom left
-                uvs.Add(new Vector2(0, 64f / 224f));
-                uvs.Add(new Vector2(0, 96f / 224f));
-                uvs.Add(new Vector2(1f / 8f, 96f / 224f));
-                uvs.Add(new Vector2(1f / 8f, 64f / 224f));
+                uvs.Add(new Vector2(0, 2 / 7f));
+                uvs.Add(new Vector2(0 / 8f, 3 / 7f));
+                uvs.Add(new Vector2(1 / 8f, 3 / 7f));
+                uvs.Add(new Vector2(1 / 8f, 2 / 7f));
             }
         }
-        mesh.uv = uvs.ToArray();
+        RenderMap();
+
         mesh.Optimize();
         mesh.RecalculateNormals();
     }
@@ -155,15 +134,18 @@ public class TerrainManager : MonoBehaviour
             for (int i = 0; i < toRender.Count; i++)
             {
                 //find index of grid square in vertex/uv list
-                int place = (int)toRender[i].y * columns + (int)toRender[i].x;
+                int place = ((int)toRender[i].y * columns + (int)toRender[i].x)*4;
                 //find the terrain type at grid location
                 int type = grid[(int)toRender[i].x, (int)toRender[i].y];
                 //find the correct tile on sprite sheet for terrain type
-                Vector2 uv = GameManager.instance.terrainTypes[type].normUV;
-                uvs[place] = uv;
-                uvs[place] = uv + Vector2.up;
-                uvs[place] = uv + Vector2.one;
-                uvs[place] = uv + Vector2.right;
+                Vector2 uvBL = GameManager.instance.terrainTypes[type].normUV;
+                Vector2 uvUR = GameManager.instance.terrainTypes[type].normUV2;
+                Debug.Log(uvBL);
+                Debug.Log(uvUR);
+                uvs[place] = uvBL;
+                uvs[place+1] = new Vector2(uvBL.x, uvUR.y);
+                uvs[place+2] = uvUR;
+                uvs[place+3] = new Vector2(uvUR.x, uvBL.y);
             }
         }
         mesh.uv = uvs.ToArray();
@@ -176,7 +158,18 @@ public class TerrainManager : MonoBehaviour
         {
             GameManager.instance.spriteSheets.Add(Resources.Load<Texture>("Scavengers_SpriteSheet"));
         }
-        GameManager.instance.terrainTypes.Add(new TerrainData(new Vector2(0,2/7), new Vector2(1/8,3/7), 2));
+        //GameManager.instance.terrainTypes.Add(new TerrainData(new Vector2(0, 2 / 7f), new Vector2(1 / 8f, 3 / 7f), 2));
+        GameManager.instance.terrainTypes.Add(new TerrainData(new Vector2(1 / 8f, 2 / 7f), new Vector2(2 / 8f, 3 / 7f), 2));
+    }
+
+    public void editTerrain(Vector2[] coords, int type)
+    {
+        foreach (Vector2 coord in coords)
+        {
+            grid[(int)coord.x, (int)coord.y] = type;
+            toRender.Add(coord);
+        }
+        RenderMap();
     }
 
     public bool isInBounds(Vector2 coords)
@@ -185,6 +178,33 @@ public class TerrainManager : MonoBehaviour
             return false;
         else
             return true;
+    }
+
+    //getters
+    
+    public Vector3 WorldPos(Vector2 gridPos)
+    {
+        Vector3 wPos = new Vector3(gridPos.x, 0, gridPos.y);
+        return wPos * tileSize + new Vector3(tileSize / 2f, 0, tileSize / 2f);
+    }
+    //return information of thing on tile at gridPos
+    public List<Actor> GetTileContents(Vector2 gridPos)
+    {
+        return gridContents[gridPos];
+    }
+    //return tile information for tile at gridPos
+    public TerrainData GetTileInfo(Vector2 gridPos)
+    {
+        return GameManager.instance.terrainTypes[grid[(int)gridPos.x, (int)gridPos.y]];
+    }
+    //return true if tile is able to be moved into
+    //returns false if tile is impassable or occupied
+    public bool isValidMove(Vector2 dest)
+    {
+        if (isInBounds(dest))
+            return true;
+        else
+            return false;
     }
 
 }

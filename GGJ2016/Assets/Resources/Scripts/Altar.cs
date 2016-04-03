@@ -5,11 +5,12 @@ using System.Collections.Generic;
 public class Altar : MonoBehaviour {
 
     public int cost = 3;//sacrifice cost for this
-    int currValue = 0;//value of all things currently on the circle
+    public int currValue = 0;//value of all things currently on the circle
     public bool filled = false;
     public bool active = true;
     public SummonCircle circle;//parent circle of this node
-    public List<Entity> targets = new List<Entity>();
+    public List<Actor> targets = new List<Actor>();
+    public List<Vector2> connectorTiles = new List<Vector2>();      //list of connecting tiles attached to this altar
 
 	// Use this for initialization
 	void Start () {
@@ -33,4 +34,10 @@ public class Altar : MonoBehaviour {
     }
 
     public int SacrificePoints { get { return currValue; } set { currValue = value; } }
+
+    //call when this altar is connected to another one
+    public void FindNeighbor()
+    {
+
+    }
 }

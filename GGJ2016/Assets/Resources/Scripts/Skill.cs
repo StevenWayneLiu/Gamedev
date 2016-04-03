@@ -20,4 +20,9 @@ public class Skill {
         multiplier = m;
     }
 
+    public void ApplyEffect(Actor targ)
+    {
+
+    }
+
 }

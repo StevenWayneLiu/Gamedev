@@ -45,12 +45,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Resources\Scripts\Actor.cs" />
      <Compile Include="Assets\Resources\Scripts\Altar.cs" />
      <Compile Include="Assets\Resources\Scripts\Attributes.cs" />
-     <Compile Include="Assets\Resources\Scripts\ClickMove.cs" />
      <Compile Include="Assets\Resources\Scripts\Demon.cs" />
-     <Compile Include="Assets\Resources\Scripts\Enemy.cs" />
-     <Compile Include="Assets\Resources\Scripts\Entity.cs" />
      <Compile Include="Assets\Resources\Scripts\GameManager.cs" />
      <Compile Include="Assets\Resources\Scripts\Group.cs" />
      <Compile Include="Assets\Resources\Scripts\Loader.cs" />
